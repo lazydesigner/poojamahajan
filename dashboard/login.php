@@ -1,5 +1,6 @@
 <?php
-include './init.php';
+include '../routes.php';
+include './connection.php'; 
 $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 ?>
 
@@ -51,7 +52,6 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <li><a href="<?=get_url() ?>login/">Login</a></li>
                 <li><a href="<?=get_url() ?>sign-up/">Sign up</a></li>
             </ul>
-            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>

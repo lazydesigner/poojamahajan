@@ -55,7 +55,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="theme-color" content="#ffffff">
 
     <meta name="description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
-    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <meta name="robots" content="noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Book Premium call girls in Telibagh | Poojamahajan" />

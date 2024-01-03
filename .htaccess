@@ -12,6 +12,7 @@ ErrorDocument 404 https://poojamahajan.com/404
 
 
 #Dashboard
+ReWriteRule ^dashboard/login([/]?)$ dashboard/login.php [NC,L]
 ReWriteRule ^dashboard([/]?)$ dashboard/list_of_cities.php [NC,L]
 ReWriteRule ^dashboard/add-location([/]?)$ dashboard/add_location.php [NC,L]
 ReWriteRule ^dashboard/edit-location/([0-9\-]+)([/]?)$ dashboard/edit_location.php?id=$1 [NC,L]
