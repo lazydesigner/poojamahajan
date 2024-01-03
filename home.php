@@ -236,17 +236,15 @@
 
         <div class="main-content">
             <h2>Genuine Escort Service and call girls real images and Whatsapp numbers</h2>
-            <p><a href="https://poojamahajan.com/">Poojamahajan.com</a> provide contact information for <a href="https://poojamahajan.com/call-girl-in-delhi/dwarka/">Independent call girls</a>, who post
+            <p><a href="https://poojamahajan.com/">Poojamahajan.com</a> provide contact information forIndependent call girls, who post
                 their contact numbers or WhatsApp number via our advertisement. Our visitors can go through the profiles
-                of all our listed <a href="https://poojamahajan.com/call-girl-in-delhi/chandni-chowk">independent
-                    escorts</a> and their services. Anybody who lives or visits India can visit our website.
-                Poojamahajan.com feature<strong> local call girls, <a href="https://poojamahajan.com/call-girl-in-delhi/saket/">college girls</a>, <a href="https://poojamahajan.com/call-girl-in-delhi/greater-kailash/">desi bhabhi</a>, Russian
-                    escorts, <a href="https://poojamahajan.com/call-girl-in-delhi/chandni-chowk">Punjabi
-                        girls</a>,</strong> etc on our platform. Our escorts are the most loved and demanding call girls
+                of all our listed independent escorts and their services. Anybody who lives or visits India can visit our website.
+                Poojamahajan.com feature<strong> local call girls, college girls, desi bhabhi, Russian
+                    escorts, Punjabi girls,</strong> etc on our platform. Our escorts are the most loved and demanding call girls
                 in India. Our website list only genuine profiles through many verification layers.</p>
             <h2>Independent Escort and independent call girls in India</h2>
-            <p>Poojamahajan.com allows only <a href="https://poojamahajan.com/call-girl-in-delhi/pooja-in-connaught-place/">independent call
-                    girls</a> to post ads on our website. We highly restrict pimps, agents, or brokers to list their
+            <p>Poojamahajan.com allows only independent call
+                    girls to post ads on our website. We highly restrict pimps, agents, or brokers to list their
                 numbers/ads on our portal. We have support emails to rectify gimps, brokers, agents, or agencies’ false
                 images or descriptions from our website.</p>
             <p><span style="color: #000000;">Anyone can contact our support channels if they find any image or content
@@ -259,9 +257,9 @@
             <h2>Girls for friendship using the Facebook name or WhatsApp number</h2>
             <p>Finding girls near you can be very difficult as there are many fake apps in the market. Sometimes it
                 becomes very awful to find a genuine girl or lady near for friendship. Here our website comes into the
-                role. Thousands of <a href="https://poojamahajan.com/goa-escorts/">call girls and escorts</a> have
+                role. Thousands of call girls and escorts have
                 posted their profiles on our website with their photos and contact details.</p>
-            <p>While posting these details we encourage our users to post genuine and legitimate details Like a <a href="https://www.facebook.com/" target="_blank" rel="nofollow noopener">Facebook</a> or <a href="https://www.instagram.com/" target="_blank" rel="nofollow noopener">Instagram</a> profile
+            <p>While posting these details we encourage our users to post genuine and legitimate details Like a Facebook or Instagram profile
                 name, real images, genuine descriptions, and correct contact details. We also let our users put their
                 service details along with profiles. We encourage our users to contact profiles with respect and in a
                 decent manner.</p>
@@ -272,7 +270,7 @@
 
             <h2>Versatile services provided by different escorts our client wants</h2>
             <p>On <a href="https://poojamahajan.com/">poojamahajan.com</a>, we understand that our visitors trust us and
-                our profiles. It’s our primary responsibility to have a <a href="https://poojamahajan.com/call-girl-in-gurugram/">wide range of escorts</a> to provide
+                our profiles. It’s our primary responsibility to have a wide range of escorts to provide
                 versatile services. With different Indian or foreign profiles, you can select different services and
                 fulfil your fantasies.</p>
             <p>No matter what fantasy or desire you are looking for-&nbsp;<strong style="font-style: inherit;">Girlfriend-like experience-</strong><span style="font-style: inherit; font-weight: inherit;"> Prostitutes or Casual Sex partners are not as
@@ -288,20 +286,20 @@
                 Kolkata, Kamathipura near Mumbai, GB Road in Delhi, Meergunj in Prayagraj, Budhwar peth near Pune,
                 Chaturbhujsthan near Muzaffarpur, Itwari in Nagpur, Shivdapur in Varanasi, Kalyanpur in Kanpur, etc.</p>
             <p>But visiting these places may be awful or sometimes quite risky. So our website play the great role here.
-                We work as a communication channel between clients and <a href="https://poojamahajan.com/lucknow-escorts/meenaz-telibagh/">independent escort</a> through
+                We work as a communication channel between clients and independent escort through
                 advertisement. As per Indian Law, our advertisement is not show in public places but only available for
                 those who look for such personal services.</p>
             <p>Secondly, we are not broker or Pimp because carrying prostitution in group or combined business is also
-                illegal. So we only encourage <a href="https://poojamahajan.com/lucknow-escorts/bhumi-indira-nagar/">independent escort</a> or <a href="https://poojamahajan.com/lucknow-escorts/jaya-mahanagar/">call girls</a> on our website.</p>
+                illegal. So we only encourage independent escort or call on our website.</p>
             <p>
 
                 We also encourage having a fair deal in cash but not in advance. So there is no way to cheat on the sake
                 of false service. Poojamahajan.com cannot guarantee for any satisfaction or any payment issue after your
                 physical meeting. But we ensure that we will remove advertisement of any publisher if proven wrong.</p>
             <p>We will try to manage such issue only through website support channel or contact details. Red light areas
-                are full of robbery, fraud, and other issue. So please be safe and stay healthy. Try our <a href="https://poojamahajan.com/lucknow-escorts/shashi-adil-nagar/">gorgeous and trustworthy
-                    independent call girls</a> with versatile payment options. For any such issue, clients can mail or
-                visit <a href="https://poojamahajan.com/contact-us/">contact us</a>.</p>
+                are full of robbery, fraud, and other issue. So please be safe and stay healthy. Try our gorgeous and trustworthy
+                    independent call girls with versatile payment options. For any such issue, clients can mail or
+                visit <a href="<?= get_url() ?>contact-us/">contact us</a>.</p>
         </div>
 
     </div>

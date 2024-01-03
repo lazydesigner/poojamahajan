@@ -275,10 +275,10 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         ?>
             <div class="profile-section-box">
                 <div class="profile-section-box-image">
-                    <a href="http://localhost/poojamahajan.com/<?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+                    <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
                 </div>
                 <div class="profile-section-box-detail">
-                    <h3><a href="http://localhost/poojamahajan.com/<?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
+                    <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
                     <div class="multiline-ellipsis" style="margin-bottom: 2%;"><?= $row['content'] ?></div>
                     <div class="profile-section-button-detail">
                         <button><i class="ri-whatsapp-fill"></i> WhatsApp</button>
