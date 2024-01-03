@@ -47,6 +47,7 @@ if (mysqli_num_rows($result) > 0) {
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/list-of-profile.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
+    <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>Call Girls in Hazratganj - Rs.3500- Hazratganj Escorts</title>
 
     <style>
@@ -83,8 +84,8 @@ if (mysqli_num_rows($result) > 0) {
         <nav class="navbar">
             <span class="brand-name"><a href="<?=get_url() ?>">Poojamahajan</a></span>
             <ul class="nav-ul" id="nav-ul">
-                <li><a href="">Home</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="<?=get_url() ?>">Home</a></li>
+                <li><a href="<?=get_url() ?>contact-us/">Contact Us</a></li>
                 <li><a href="">Login</a></li>
                 <li><a href="">Sign Up</a></li>
             </ul>
