@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/index.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
-    <title>The Best Escort Services In India | Pooja Mahajan</title>
+    <title> Pooja Mahajan | 404</title>
     <meta name="description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
@@ -18,16 +18,6 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="canonical" href="https://poojamahajan.com/404" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="The Best Escort Services In India | Pooja Mahajan" />
-    <meta property="og:description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
-    <meta property="og:url" content="https://poojamahajan.com/" />
-    <meta property="og:site_name" content="Escort" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="The Best Escort Services In India | Pooja Mahajan" />
-    <meta name="twitter:description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
-
     <style>
         .contact-form-row{
             width: 100%;
@@ -74,7 +64,7 @@
                 <li><a href="<?=get_url() ?>login/">Login</a></li>
                 <li><a href="<?=get_url() ?>sign-up/">Sign up</a></li>
             </ul>
-            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post-Ad</a></div>
+            <div style="width: 20%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;">Post-Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>

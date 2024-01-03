@@ -75,7 +75,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <title>Call Girls in Hazratganj - Rs.3500- Hazratganj Escorts</title>
+    <title>Poojamahajan - Search your Escort</title>
     <link rel="canonical" href="<?=$fullURL ?>" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
@@ -127,7 +127,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <li><a href="<?= get_url() ?>login/">Login</a></li>
                 <li><a href="<?=get_url() ?>sign-up/">Sign up</a></li>
             </ul>
-            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post Ad</a></div>
+            <div style="width: 20%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;">Post Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
@@ -237,7 +237,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <div class="new-footer-col">
                 <strong>HELP / INFO</strong>
                 <ul>
-                    <li><a href="<?= get_url() ?>terms-and-condition/">Teams And Conditions</a></li>
+                    <li><a href="<?= get_url() ?>terms-and-conditions/">Teams And Conditions</a></li>
                     <li><a href="<?= get_url() ?>privacy-policy/">Privacy Policy</a></li>
                     <li><a href="<?= get_url() ?>faqs/">Help and Faqs</a></li>
                 </ul>
@@ -246,8 +246,8 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <strong>USEFUL LINKS</strong>
                 <ul>
                     <li><a href="<?= get_url() ?>contact-us/">Contact US</a></li>
-                    <li><a href="">Post Your Ad</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="<?=get_url() ?>login/">Post Your Ad</a></li>
+                    <!-- <li><a href="">Blog</a></li> -->
                 </ul>
             </div>
         </div>

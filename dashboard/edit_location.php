@@ -43,10 +43,11 @@ if(mysqli_num_rows($res)>0){
             </div>
             <div class="action-pannel">
 
-                <form action="./pages/add_city_detail.php" method="POST">
+                <form action="<?= get_url() ?>dashboard/pages/edit_city_detail.php" method="POST">
                     <div class="page-detail">
                         <h2>Page Details</h2>
                         <div class="form-group">
+                            <input type="text" name="page_id" hidden value="<?=$id ?>" class="form-control" placeholder="Page Title">
                             <input type="text" name="page_title" value="<?=$row['page_title'] ?>" class="form-control" placeholder="Page Title">
                         </div>
                         <div class="form-group">
@@ -68,7 +69,7 @@ if(mysqli_num_rows($res)>0){
                         <textarea name="bottom_content" id="bottom-content" cols="30" rows="10"><?=$row['bottom_content'] ?></textarea>
                     </div>
                     <div class="form-group-row">
-                        <button class="form-button-create">Create City</button>
+                        <button class="form-button-create">Edit City</button>
                     </div>
                 </form>
 

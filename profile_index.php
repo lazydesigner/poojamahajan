@@ -48,27 +48,27 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <link rel="canonical" href="<?= $fullURL ?>" />
-    <title>Book Premium call girls in Telibagh | Poojamahajan</title>
+    <title><?=$area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
     <meta name="theme-color" content="#ffffff">
 
-    <meta name="description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
+    <meta name="description" content="Experience some outsanding service by model call girls from <?=$area2 ?> directly to your home. If you want me to come to your room." />
     <meta name="robots" content="noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Book Premium call girls in Telibagh | Poojamahajan" />
-    <meta property="og:description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
-    <meta property="og:url" content="https://poojamahajan.com/<?= $row['profile_name'] ?>-telibagh/" />
+    <meta property="og:title" content="<?=$area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
+    <meta property="og:description" content="Experience some outsanding service by model call girls from <?=$area2 ?> directly to your home. If you want me to come to your room." />
+    <meta property="og:url" content="<?= $fullURL ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta property="article:section" content="lucknow-escorts" />
     <meta property="og:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
     <meta property="og:image:secure_url" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
     <meta property="og:image:alt" content="<?= $row['profile_name'] ?> Telibagh" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Book Premium call girls in Telibagh | Poojamahajan" />
-    <meta name="twitter:description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
+    <meta name="twitter:title" content="<?=$area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
+    <meta name="twitter:description" content="Experience some outsanding service by model call girls from <?=$area2 ?> directly to your home. If you want me to come to your room." />
     <meta name="twitter:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
     <style>
         @media screen and (max-width:780px) {
@@ -125,7 +125,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <li><a href="<?= get_url() ?>login/">Login</a></li>
                 <li><a href="<?= get_url() ?>sign-up/">Sign up</a></li>
             </ul>
-            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post Ad</a></div>
+            <div style="width: 20%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;">Post Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>

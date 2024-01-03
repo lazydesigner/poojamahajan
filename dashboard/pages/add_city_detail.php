@@ -15,7 +15,7 @@ $sql = "INSERT INTO `city`(`page_title`, `page_meta`, `page_h1`, `city`, `top_co
 
 $result = mysqli_query($con, $sql);
 if($result){
-    header('Location: http://localhost/poojamahajan.com/dashboard/location_index.php');
+    header('Location: http://localhost/poojamahajan.com/dashboard/');
 }else{
     echo 'Not Inserted';
 }

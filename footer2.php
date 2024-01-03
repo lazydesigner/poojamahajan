@@ -16,7 +16,7 @@
           <div class="new-footer-col">
             <strong>HELP / INFO</strong>
             <ul>
-                <li><a href="<?= get_url() ?>terms-and-condition/">Teams And Conditions</a></li>
+                <li><a href="<?= get_url() ?>terms-and-conditions/">Teams And Conditions</a></li>
                 <li><a href="<?= get_url() ?>privacy-policy/">Privacy Policy</a></li>
                 <li><a href="<?= get_url() ?>faqs/">Help and Faqs</a></li>
             </ul>
@@ -25,7 +25,7 @@
             <strong>USEFUL LINKS</strong>
             <ul>                
                 <li><a href="<?= get_url() ?>contact-us/">Contact US</a></li>
-                <li><a href="">Post Your Ad</a></li>
+                <li><a href="<?=get_url() ?>login/">Post Your Ad</a></li>
                 <!-- <li><a href="">Blog</a></li> -->
             </ul>
           </div>  

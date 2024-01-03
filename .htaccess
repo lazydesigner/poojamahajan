@@ -26,6 +26,8 @@ ReWriteRule ^dashboard/edit-profile/([0-9\-]+)([/]?)$ dashboard/edit_profile.php
 ReWriteRule ^contact-us([/]?)$ contact-us.php [NC,L]
 ReWriteRule ^call-girls([/]?)$ call-girls.php [NC,L]
 ReWriteRule ^faqs([/]?)$ faq.php [NC,L]
+ReWriteRule ^terms-and-conditions([/]?)$ terms-and-condition.php [NC,L]
+ReWriteRule ^privacy-policy([/]?)$ privacy.php [NC,L]
 ReWriteRule ^login([/]?)$ login.php [NC,L]
 ReWriteRule ^sign-up([/]?)$ login.php [NC,L]
 ReWriteRule ^about-us([/]?)$ about-us.php [NC,L]
