@@ -292,7 +292,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <?= $data2['bottom_content'] ?>
         </div>
         <div class="list-of-profile" style="margin: 3% 0;">
-            <h3>FAQS About Kr Puram Call Girls Service - Poojamahajan</h3>
+            <h3>FAQS About <?= $city ?> Call Girls Service - Poojamahajan</h3>
             <!-- <div class="faq-body">
                 <div class="faq-que" id="faq-body"><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</strong><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span><div class="q"></div></div>
                 <div class="faq-ans"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ut consequatur, ab accusantium nesciunt doloribus quod dignissimos perspiciatis maiores quia excepturi dolor modi delectus quos. Illo incidunt obcaecati nulla quasi.</p></div>
