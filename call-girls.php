@@ -79,12 +79,12 @@
             text-align: center;
         }
     </style>
-    <script>
+    <!-- <script>
         const mySchema2 = {
             "@context": "https://schema.org/",
             "@type": "WebSite",
             "name": "Poojamahajan",
-            "url": "<?= $fullURL ?>",
+            "url": "<?php //$fullURL ?>",
             "potentialAction": {
                 "@type": "SearchAction",
                 "target": "https://poojamahajan.com/search?{search_term_string}",
@@ -96,7 +96,7 @@
         script2.type = "application/ld+json";
         script2.text = JSON.stringify(mySchema2);
         document.head.appendChild(script2);
-    </script>
+    </script> -->
 
 
 </head>

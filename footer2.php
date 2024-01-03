@@ -26,7 +26,7 @@
             <ul>                
                 <li><a href="<?= get_url() ?>contact-us/">Contact US</a></li>
                 <li><a href="">Post Your Ad</a></li>
-                <li><a href="">Blog</a></li>
+                <!-- <li><a href="">Blog</a></li> -->
             </ul>
           </div>  
         </div>

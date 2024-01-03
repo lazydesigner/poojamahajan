@@ -130,8 +130,14 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         }
 
         @media screen and (max-width:500px) {
-            .profile-section-box-image { width: 50%;}
-            .profile-section-button-detail button {width: 85px; font-size: 16px;}
+            .profile-section-box-image {
+                width: 50%;
+            }
+
+            .profile-section-button-detail button {
+                width: 85px;
+                font-size: 16px;
+            }
 
         }
     </style>
@@ -174,50 +180,50 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 remove_agree_terms.style.display = 'block';
             }
         }
-        const mySchema2 = {
-            "@context": "https://schema.org/",
-            "@type": "WebSite",
-            "name": "Poojamahajan",
-            "url": "<?= $fullURL ?>",
-            "potentialAction": {
-                "@type": "SearchAction",    
-                "target": "https://poojamahajan.com/search?{search_term_string}",
-                "query-input": "required name=search_term_string"
+        // const mySchema2 = {
+        //     "@context": "https://schema.org/",
+        //     "@type": "WebSite",
+        //     "name": "Poojamahajan",
+        //     "url": "<?php // $fullURL ?>",
+        //     "potentialAction": {
+        //         "@type": "SearchAction",
+        //         "target": "https://poojamahajan.com/search?{search_term_string}",
+        //         "query-input": "required name=search_term_string"
 
-            }
-        }
-        const script2 = document.createElement('script');
-        script2.type = "application/ld+json";
-        script2.text = JSON.stringify(mySchema2);
-        document.head.appendChild(script2);
+        //     }
+        // }
+        // const script2 = document.createElement('script');
+        // script2.type = "application/ld+json";
+        // script2.text = JSON.stringify(mySchema2);
+        // document.head.appendChild(script2);
     </script>
-        <script>
-    const mySchema3 ={
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-        "@type": "Question",
-        "name": "What is the price of call girls in <?= $city ?>?",
-        "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The price of call girls differs from model to model. Generally, the price starts at Rs. 2000 per shot and Rs. 10,000 per night. Contact the provided number for more details."
+    <script>
+        const mySchema3 = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                "@type": "Question",
+                "name": "What is the price of call girls in <?= $city ?>?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The price of call girls differs from model to model. Generally, the price starts at Rs. 2000 per shot and Rs. 10,000 per night. Contact the provided number for more details."
+                }
+            }, {
+                "@type": "Question",
+                "name": "How do I reserve a call girl in <?= $city ?>?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Anyone can book a call girls by visiting our official website and contacting us at the provided number. As we used to update numbers timely, only contact live numbers on our website."
+                }
+            }, {
+                "@type": "Question",
+                "name": "What kind of services do these call girls provide in <?= $city ?>?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our call girls provide various services like body kissing, licking, sex, foreplay, 69, etc. But we don't guarantee anal sex or lip kissing."
+                }
+            }]
         }
-    },{
-        "@type": "Question",
-        "name": "How do I reserve a call girl in <?= $city ?>?",
-        "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Anyone can book a call girls by visiting our official website and contacting us at the provided number. As we used to update numbers timely, only contact live numbers on our website."
-        }
-    },{
-        "@type": "Question",
-        "name": "What kind of services do these call girls provide in <?= $city ?>?",
-        "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our call girls provide various services like body kissing, licking, sex, foreplay, 69, etc. But we don't guarantee anal sex or lip kissing."
-        }
-    }]
-    }
         const script3 = document.createElement('script');
         script3.type = "application/ld+json";
         script3.text = JSON.stringify(mySchema3);
@@ -325,15 +331,30 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <h3>Top Cities of India</h3>
             <div class="top-cities-of-india">
                 <a href="<?= get_url() ?><?= $cate ?>/delhi/"><button>Delhi</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/dehradun/"><button>Dehradun</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/agra/"><button>Agra</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/guwahati/"><button>Guwahati</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/rishikesh/"><button>Rishikesh</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/ghaziabad/"><button>Ghaziabad</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/kota/"><button>Kota</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/arunachal-pradesh/"><button>Arunachal Pradesh</button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/bhopal/"><button>Bhopal</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/gurugram/"><button>Gurugram</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/faridabad/"><button>Faridabad</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/mumbai/"><button>Mumbai</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/ajmer/"><button>Ajmer</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/varanasi/"><button>Varanasi</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/dehradun/"><button>Dehradun</button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/ahmedabad/"><button>Ahmedabad</button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/lucknow/"><button>Lucknow</button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/noida/"><button>Noida</button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/goa/"><button>Goa</button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/jaipur/"><button>Jaipur</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/agra/"><button>Agra</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/faridabad/"><button>Faridabad</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/dehradun/"><button>Dehradun</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/udaipur/"><button>Udaipur</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/indore/"><button>Indore</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/patna/"><button>Patna</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/visakhapatnam/"><button>Visakhapatnam</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/manali/"><button>Manali</button></a>
             </div>
 
             <h3>Areas of <span style="text-transform: capitalize;"><?= $city ?></span></h3>
@@ -453,13 +474,13 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             });
         });
     </script>
-<script type="application/ld+json">
+    <script type="application/ld+json">
         "@context": "http://schema.org/",
-            "@type": "Organization",
-            "name": "Poojamahajan",
-            "url": "https://poojamahajan.com",
-            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
-        </script>
+        "@type": "Organization",
+        "name": "Poojamahajan",
+        "url": "https://poojamahajan.com",
+        "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+    </script>
 </body>
 
 </html>

@@ -51,22 +51,22 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         }
     </style>
     <script>
-        const mySchema2 = {
-            "@context": "https://schema.org/",
-            "@type": "WebSite",
-            "name": "Poojamahajan",
-            "url": "<?= $fullURL ?>",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://poojamahajan.com/search?{search_term_string}",
-                "query-input": "required name=search_term_string"
+        // const mySchema2 = {
+        //     "@context": "https://schema.org/",
+        //     "@type": "WebSite",
+        //     "name": "Poojamahajan",
+        //     "url": "<?php // $fullURL ?>",
+        //     "potentialAction": {
+        //         "@type": "SearchAction",
+        //         "target": "https://poojamahajan.com/search?{search_term_string}",
+        //         "query-input": "required name=search_term_string"
 
-            }
-        }
-        const script2 = document.createElement('script');
-        script2.type = "application/ld+json";
-        script2.text = JSON.stringify(mySchema2);
-        document.head.appendChild(script2);
+        //     }
+        // }
+        // const script2 = document.createElement('script');
+        // script2.type = "application/ld+json";
+        // script2.text = JSON.stringify(mySchema2);
+        // document.head.appendChild(script2);
     </script>
 </head>
 
