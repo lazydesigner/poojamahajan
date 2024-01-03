@@ -31,7 +31,7 @@ if (mysqli_num_rows($res) > 0) {
     $row = mysqli_fetch_assoc($res);
 }
 
-
+$fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 ?>
 
 <!DOCTYPE html>
@@ -41,15 +41,17 @@ if (mysqli_num_rows($res) > 0) {
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css" integrity="sha512-pI8MMQ9fC050RkbUOr8cJ75T5bYJpT1PAiML/7QZM6Fr74Ef6csO2/Cl92q+Qpxidm7WonXr6f+DbyxNHPGH8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/profile.css">
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css" integrity="sha512-pI8MMQ9fC050RkbUOr8cJ75T5bYJpT1PAiML/7QZM6Fr74Ef6csO2/Cl92q+Qpxidm7WonXr6f+DbyxNHPGH8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/profile.css"> 
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">  
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>    
+    <link rel="canonical" href="<?=$fullURL ?>" />
     <title>Book Premium call girls in Telibagh | Poojamahajan</title>
+
     <meta name="description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <link rel="canonical" href="https://poojamahajan.com/lucknow-escorts/<?= $row['profile_name'] ?>-telibagh/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Book Premium call girls in Telibagh | Poojamahajan" />
@@ -64,6 +66,24 @@ if (mysqli_num_rows($res) > 0) {
     <meta name="twitter:title" content="Book Premium call girls in Telibagh | Poojamahajan" />
     <meta name="twitter:description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
     <meta name="twitter:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
+    <script>
+     const mySchema2 = {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Poojamahajan",
+            "url": "<?= $fullURL ?>",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://poojamahajan.com/search?{search_term_string}",
+                "query-input": "required name=search_term_string"
+
+            }
+        }
+        const script2 = document.createElement('script');
+        script2.type = "application/ld+json";
+        script2.text = JSON.stringify(mySchema2);
+        document.head.appendChild(script2);
+    </script>
 </head>
 
 <body>
@@ -71,11 +91,12 @@ if (mysqli_num_rows($res) > 0) {
         <nav class="navbar">
             <span class="brand-name"><a href="<?=get_url() ?>">Poojamahajan</a></span>
             <ul class="nav-ul" id="nav-ul">
-                <li><a href="">Home</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Sign Up</a></li>
+            <li><a href="<?=get_url() ?>">Home</a></li>
+                <li><a href="<?=get_url() ?>contact-us/">Contact Us</a></li>
+                <li><a href="<?=get_url() ?>login/">Login</a></li>
+                <li><a href="<?=get_url() ?>sign-up/">Sign up</a></li>
             </ul>
+            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
@@ -259,46 +280,7 @@ if (mysqli_num_rows($res) > 0) {
             });
         </script>
     </div>
-    <footer>
-        <div class="footer-row">
-            <div class="footer-col">
-                <p class="footer-p">This website may contain content of an adult nature. If you are easily offended or are under the age of 18, please exit now. The posts and pages within are intended for adults only and may include scenes of sexual content, suggestive pictures, or graphic violence. Reader discretion is advised.</p>
-                <div class="follow-up">
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                </div>
-                <div class="dmca-logo">
-                    <img src="../assets/images/dmca_protected_16_120.png" alt="">
-                </div>
-            </div>
-            <div class="footer-col">
-                <div class="only-18">
-                    <img src="../assets/images/18-1.png.webp" width="100%" height="100%" alt="">
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul class="footer-col-ul">
-                    <li><a href="">Post Ad</a></li>
-
-                    <li><a href="">Review</a></li>
-                    <li><a href="">Price List</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Terms & Conditions</a></li>
-                </ul>
-                <div class="dmca-logo">
-                    <img src="../assets/images/dmca-compliant-grayscale.png" alt="">
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include './footer2.php' ?>
 
 
 
@@ -378,6 +360,13 @@ document.getElementById('menu-option').addEventListener('click',()=>{
           }
           document.getElementById("defaultOpen").click();
     </script>
+    <script type="application/ld+json">
+        "@context": "http://schema.org/",
+            "@type": "Organization",
+            "name": "Poojamahajan",
+            "url": "https://poojamahajan.com",
+            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+        </script>
 </body>
 
 </html>

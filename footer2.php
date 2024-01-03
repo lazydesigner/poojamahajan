@@ -1,30 +1,30 @@
-    <footer>
+<footer>
         <div class="new-footer-row">
           <div class="new-footer-col">
             <div class="new-footer-logo">
-            <img src="<?= get_url() ?>dashboard/assets/images/POOJA.webp.png" width="100%" height="100%" class="footer-logo-img" alt="">
+            <a href="<?= get_url() ?>"><img src="<?= get_url() ?>dashboard/assets/images/POOJA.webp.png" width="100%" height="100%" class="footer-logo-img" alt=""></a>
             </div>
           </div>  
           <div class="new-footer-col">
             <strong>LINKS</strong>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact US</a></li>
+                <li><a href="<?= get_url() ?>">Home</a></li>
+                <li><a href="<?= get_url() ?>about-us/">About Us</a></li>
+                <li><a href="<?= get_url() ?>call-girls/">Call Girls</a></li>
             </ul>
           </div>  
           <div class="new-footer-col">
             <strong>HELP / INFO</strong>
             <ul>
-                <li><a href="">Teams And Conditions</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Help and Faqs</a></li>
+                <li><a href="<?= get_url() ?>terms-and-condition/">Teams And Conditions</a></li>
+                <li><a href="<?= get_url() ?>privacy-policy/">Privacy Policy</a></li>
+                <li><a href="<?= get_url() ?>faqs/">Help and Faqs</a></li>
             </ul>
           </div>  
           <div class="new-footer-col">
             <strong>USEFUL LINKS</strong>
-            <ul>
-                <li><a href="">Contact Us</a></li>
+            <ul>                
+                <li><a href="<?= get_url() ?>contact-us/">Contact US</a></li>
                 <li><a href="">Post Your Ad</a></li>
                 <li><a href="">Blog</a></li>
             </ul>
@@ -36,10 +36,13 @@
         <div class="new-footer-row2">
             <p>&copy; Copyrights 2023. All Rights Reserved</p>
             <ul>
-                <li><i class="ri-facebook-circle-line"></i></li>
-                <li><i class="ri-instagram-line"></i></li>
-                <li><i class="ri-twitter-x-line"></i></li>
-                <li><i class="ri-linkedin-box-line"></i></li>
+                <li><a href="https://www.behance.net/poojamahajan4"><i class="ri-behance-line"></i></a></li>
+                <!-- <li><a href=""><i class="ri-instagram-line"></i></a></li> -->
+                <li><a href="https://www.flickr.com/photos/195962025@N07/"><i class="ri-flickr-fill"></i></a></li>
+                <li><a href="https://www.tumblr.com/poojamahajan1"><i class="ri-tumblr-fill"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCxJhGcJloIJavPcWub8DEJg"><i class="ri-youtube-fill"></i></a></li>
+                <li><a href="https://soundcloud.com/user-77189773"><i class="ri-soundcloud-fill"></i></a></li>
+                <li><a href="https://www.reddit.com/user/poojamahajan1/comments/x20lqg/pooja_mahajan/?rdt=58757"><i class="ri-reddit-fill"></i></a></li>
             </ul>
         </div>
     </footer>

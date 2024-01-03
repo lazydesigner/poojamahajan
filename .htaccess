@@ -5,7 +5,11 @@ Options -Indexes
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 
+
+
 ReWriteRule ^$ home.php [NC,L]
+ErrorDocument 404 https://poojamahajan.com/404
+
 
 #Dashboard
 ReWriteRule ^dashboard([/]?)$ dashboard/list_of_cities.php [NC,L]
@@ -19,11 +23,15 @@ ReWriteRule ^dashboard/edit-profile/([0-9\-]+)([/]?)$ dashboard/edit_profile.php
 #Main Page  
 
 ReWriteRule ^contact-us([/]?)$ contact-us.php [NC,L]
-ReWriteRule ^faq([/]?)$ faq.php [NC,L]
+ReWriteRule ^call-girls([/]?)$ call-girls.php [NC,L]
+ReWriteRule ^faqs([/]?)$ faq.php [NC,L]
+ReWriteRule ^login([/]?)$ login.php [NC,L]
+ReWriteRule ^sign-up([/]?)$ login.php [NC,L]
+ReWriteRule ^about-us([/]?)$ about-us.php [NC,L]
 ReWriteRule ^search([/]?)$ search.php [NC,L]
 ReWriteRule ^call-girls/([0-9A-Za-z\-]+)([/]?)$ location.php?state=$1 [NC,L]
 ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ area.php?state=$1&city=$2 [NC,L]
 ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ profile_index.php?state=$1&city=$2&id=$3 [NC,L]
 
-
+ReWriteRule ^404([/]?)$ 404-page.php [NC,L]
 #ReWriteRule ^([0-9A-Za-z\-]+)([/]?)([/]?)$ home.php?page_id=$1 [NC,L]

@@ -12,9 +12,9 @@ $b = explode('-', $_GET['category']);
 $age = explode('-', $_GET['age']);
 
 if (isset($a[1])) {
-    if(isset($a[2])){
+    if (isset($a[2])) {
         $area = $a[0] . ' ' . $a[1] . ' ' . $a[2];
-    }else{
+    } else {
         $area = $a[0] . ' ' . $a[1];
     }
 } else {
@@ -60,6 +60,7 @@ $result = mysqli_query($con, $sql);
 if (mysqli_num_rows($result) > 0) {
     $data = mysqli_fetch_assoc($result);
 }
+$fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 ?>
 
 <!DOCTYPE html>
@@ -75,6 +76,7 @@ if (mysqli_num_rows($result) > 0) {
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>Call Girls in Hazratganj - Rs.3500- Hazratganj Escorts</title>
+    <link rel="canonical" href="<?=$fullURL ?>" />
 
     <style>
         .multiline-ellipsis {
@@ -102,19 +104,26 @@ if (mysqli_num_rows($result) > 0) {
             padding: 1%;
         }
     </style>
-
+<script type="application/ld+json">
+        "@context": "http://schema.org/",
+            "@type": "Organization",
+            "name": "Poojamahajan",
+            "url": "https://poojamahajan.com",
+            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+        </script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <span class="brand-name"><a href="<?=get_url() ?>">Poojamahajan</a></span>
+            <span class="brand-name"><a href="<?= get_url() ?>">Poojamahajan</a></span>
             <ul class="nav-ul" id="nav-ul">
-                <li><a href="<?=get_url() ?>">Home</a></li>
-                <li><a href="<?=get_url() ?>contact-us/">Contact Us</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Sign Up</a></li>
+                <li><a href="<?= get_url() ?>">Home</a></li>
+                <li><a href="<?= get_url() ?>contact-us/">Contact Us</a></li>
+                <li><a href="<?= get_url() ?>login/">Login</a></li>
+                <li><a href="<?=get_url() ?>sign-up/">Sign up</a></li>
             </ul>
+            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
@@ -130,27 +139,31 @@ if (mysqli_num_rows($result) > 0) {
                 <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
                     <meta itemprop="position" content="1">
                 </li>
-                <?php if(!empty($city)){?>
-                <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="<?= get_url() ?>call-girls/<?= $city ?>" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $city ?></span></a>
-                    <meta itemprop="position" content="2">
-                </li><?php } ?>
-                <?php if(!empty($_GET['locality'])){?>
-                <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb"><span itemprop="name"><?= $area ?></span></a>
-                    <meta itemprop="position" content="3">
-                </li><?php } ?>
+                <?php if (!empty($city)) { ?>
+                    <li><b><i class="ri-arrow-right-s-line"></i></b></li>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="<?= get_url() ?>call-girls/<?= $city ?>" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $city ?></span></a>
+                        <meta itemprop="position" content="2">
+                    </li><?php } ?>
+                <?php if (!empty($_GET['locality'])) { ?>
+                    <li><b><i class="ri-arrow-right-s-line"></i></b></li>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb"><span itemprop="name"><?= $area ?></span></a>
+                        <meta itemprop="position" content="3">
+                    </li><?php } ?>
             </ol>
-            <div class="result"><?=$count_result['a'] ?> Results for <?= $cat ?> in <span style="text-transform: capitalize;"><?php if (!empty($city)) {
-                                                                                                            if (!empty($area)) {
-                                                                                                                echo $area . ', ' . $city;
-                                                                                                            } else {
-                                                                                                                echo $city;
-                                                                                                            }
-                                                                                                        } else {
-                                                                                                            echo 'India';
-                                                                                                        } ?></span></div>
-            <?php if (isset($data)) { ?> <h1>Call girls in <?php if(!empty($area)){echo $area;}else{echo 'India';} ?> with WhatsApp number</h1><?php } ?>
+            <div class="result"><?= $count_result['a'] ?> Results for <?= $cat ?> in <span style="text-transform: capitalize;"><?php if (!empty($city)) {
+                                                                                                                                    if (!empty($area)) {
+                                                                                                                                        echo $area . ', ' . $city;
+                                                                                                                                    } else {
+                                                                                                                                        echo $city;
+                                                                                                                                    }
+                                                                                                                                } else {
+                                                                                                                                    echo 'India';
+                                                                                                                                } ?></span></div>
+            <?php if (isset($data)) { ?> <h1>Call girls in <?php if (!empty($area)) {
+                                                                echo $area;
+                                                            } else {
+                                                                echo 'India';
+                                                            } ?> with WhatsApp number</h1><?php } ?>
         </div>
 
         <?php if (isset($data)) { ?>
@@ -204,35 +217,35 @@ if (mysqli_num_rows($result) > 0) {
     </div>
     <footer>
         <div class="new-footer-row">
-          <div class="new-footer-col">
-            <div class="new-footer-logo">
-            <img src="<?= get_url() ?>dashboard/assets/images/POOJA.webp.png" width="100%" height="100%" class="footer-logo-img" alt="">
+            <div class="new-footer-col">
+                <div class="new-footer-logo">
+                    <a href="<?= get_url() ?>"><img src="<?= get_url() ?>dashboard/assets/images/POOJA.webp.png" width="100%" height="100%" class="footer-logo-img" alt=""></a>
+                </div>
             </div>
-          </div>  
-          <div class="new-footer-col">
-            <strong>LINKS</strong>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact US</a></li>
-            </ul>
-          </div>  
-          <div class="new-footer-col">
-            <strong>HELP / INFO</strong>
-            <ul>
-                <li><a href="">Teams And Conditions</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Help and Faqs</a></li>
-            </ul>
-          </div>  
-          <div class="new-footer-col">
-            <strong>USEFUL LINKS</strong>
-            <ul>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Post Your Ad</a></li>
-                <li><a href="">Blog</a></li>
-            </ul>
-          </div>  
+            <div class="new-footer-col">
+                <strong>LINKS</strong>
+                <ul>
+                    <li><a href="<?= get_url() ?>">Home</a></li>
+                    <li><a href="<?= get_url() ?>about-us/">About Us</a></li>
+                    <li><a href="<?= get_url() ?>call-girls/">Call Girls</a></li>
+                </ul>
+            </div>
+            <div class="new-footer-col">
+                <strong>HELP / INFO</strong>
+                <ul>
+                    <li><a href="<?= get_url() ?>terms-and-condition/">Teams And Conditions</a></li>
+                    <li><a href="<?= get_url() ?>privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="<?= get_url() ?>faqs/">Help and Faqs</a></li>
+                </ul>
+            </div>
+            <div class="new-footer-col">
+                <strong>USEFUL LINKS</strong>
+                <ul>
+                    <li><a href="<?= get_url() ?>contact-us/">Contact US</a></li>
+                    <li><a href="">Post Your Ad</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
         </div>
         <div class="new-footer-row-2">
             <p>The purpose of this website is to provide information between advertisers and entertainment seekers. We had never established any linkage with prositution, brokerage, pimp, escort service, brothels, etc. We are not accountable for any liability as we host third-party content, images, and phone numbers. We are not responsible for any transaction that took place between the model, advertiser, and client. Hereby, we request our visitors not to make any advance payments. We are just an online platform to advertise content and details on our web space. By visiting our website, you confirm the age of 18 and above.</p>
@@ -240,10 +253,13 @@ if (mysqli_num_rows($result) > 0) {
         <div class="new-footer-row2">
             <p>&copy; Copyrights 2023. All Rights Reserved</p>
             <ul>
-                <li><i class="ri-facebook-circle-line"></i></li>
-                <li><i class="ri-instagram-line"></i></li>
-                <li><i class="ri-twitter-x-line"></i></li>
-                <li><i class="ri-linkedin-box-line"></i></li>
+                <li><a href="https://www.behance.net/poojamahajan4"><i class="ri-behance-line"></i></a></li>
+                <!-- <li><a href=""><i class="ri-instagram-line"></i></a></li> -->
+                <li><a href="https://www.flickr.com/photos/195962025@N07/"><i class="ri-flickr-fill"></i></a></li>
+                <li><a href="https://www.tumblr.com/poojamahajan1"><i class="ri-tumblr-fill"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCxJhGcJloIJavPcWub8DEJg"><i class="ri-youtube-fill"></i></a></li>
+                <li><a href="https://soundcloud.com/user-77189773"><i class="ri-soundcloud-fill"></i></a></li>
+                <li><a href="https://www.reddit.com/user/poojamahajan1/comments/x20lqg/pooja_mahajan/?rdt=58757"><i class="ri-reddit-fill"></i></a></li>
             </ul>
         </div>
     </footer>
@@ -293,10 +309,10 @@ if (mysqli_num_rows($result) > 0) {
         document.getElementById('area-locality').addEventListener('change', () => {
             window.location.href = '<?= get_url() ?>call-girls/<?= $city ?>/' + document.getElementById('area-locality').value + ''
         })
-        document.getElementById('menu-option').addEventListener('click',()=>{
+        document.getElementById('menu-option').addEventListener('click', () => {
             document.getElementById('nav-ul').classList.toggle('nav-ul-active')
         })
-        document.getElementById('search-filter-menu').addEventListener('click',()=>{
+        document.getElementById('search-filter-menu').addEventListener('click', () => {
             document.getElementById('search-filter').classList.toggle('search-filter-active')
         })
     </script>

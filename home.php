@@ -33,7 +33,7 @@
             "url": "https://poojamahajan.com/",
             "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://poojamahajan.com/?s={search_term_string}",
+                "target": "https://poojamahajan.com/search?={search_term_string}",
                 "query-input": "required name=search_term_string"
             }
         }
@@ -43,27 +43,25 @@
 </head>
 
 <body>
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org/",
+<script type="application/ld+json">
+        "@context": "http://schema.org/",
             "@type": "Organization",
-            "name": "Ctgal",
-            "url": "https://poojamahajan.com/",
+            "name": "Poojamahajan",
+            "url": "https://poojamahajan.com",
             "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
-        }
-    </script>
+        </script>
 
 
     <header>
         <nav class="navbar">
             <span class="brand-name"><a href="<?= get_url() ?>">Poojamahajan</a></span>
             <ul class="nav-ul" id="nav-ul">
-                <li><a href="<?= get_url() ?>">Home</a></li>
-                <li><a href="<?= get_url() ?>contact-us/">Contact Us</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Sign Up</a></li>
+            <li><a href="<?=get_url() ?>">Home</a></li>
+                <li><a href="<?=get_url() ?>contact-us/">Contact Us</a></li>
+                <li><a href="<?=get_url() ?>login/">Login</a></li>
+                <li><a href="<?=get_url() ?>sign-up/">Sign up</a></li>
             </ul>
-            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post-Ad</a></div>
+            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>

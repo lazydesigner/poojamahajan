@@ -1,7 +1,7 @@
 <?php
 include './init.php';
 $cate = 'call-girls';
-
+$fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 ?>
 
 <!DOCTYPE html>
@@ -18,6 +18,7 @@ $cate = 'call-girls';
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>Call Girls in Hazratganj - Rs.3500- Hazratganj Escorts</title>
+    <link rel="canonical" href="<?=$fullURL ?>" />
 
     <style>
         .multiline-ellipsis {
@@ -45,7 +46,24 @@ $cate = 'call-girls';
             padding: 1%;
         }
     </style>
+    <script>
+        const mySchema2 = {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Poojamahajan",
+            "url": "<?= $fullURL ?>",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://poojamahajan.com/search?{search_term_string}",
+                "query-input": "required name=search_term_string"
 
+            }
+        }
+        const script2 = document.createElement('script');
+        script2.type = "application/ld+json";
+        script2.text = JSON.stringify(mySchema2);
+        document.head.appendChild(script2);
+    </script>
 </head>
 
 <body>
@@ -53,11 +71,12 @@ $cate = 'call-girls';
         <nav class="navbar">
             <span class="brand-name"><a href="<?=get_url() ?>">Poojamahajan</a></span>
             <ul class="nav-ul" id="nav-ul">
-                <li><a href="<?=get_url() ?>">Home</a></li>
+            <li><a href="<?=get_url() ?>">Home</a></li>
                 <li><a href="<?=get_url() ?>contact-us/">Contact Us</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Sign Up</a></li>
+                <li><a href="<?=get_url() ?>login/">Login</a></li>
+                <li><a href="<?=get_url() ?>sign-up/">Sign up</a></li>
             </ul>
+            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
@@ -261,7 +280,62 @@ $cate = 'call-girls';
     });
 
 </script>
-
+<script type="application/ld+json">
+        "@context": "http://schema.org/",
+            "@type": "Organization",
+            "name": "Poojamahajan",
+            "url": "https://poojamahajan.com",
+            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+        </script>
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What is the price of call girls?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The price of call girls differs from model to model. Generally, the price starts at Rs. 2000 per shot and Rs. 10,000 per night. Contact the provided number for more details."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do I reserve a call girl?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Anyone can book a call girls by visiting our official website and contacting us at the provided number. As we used to update numbers timely, only contact live numbers on our website."
+    }
+  },{
+    "@type": "Question",
+    "name": "What kind of services do these call girls provide?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our call girls provide various services like body kissing, licking, sex, foreplay, 69, etc. But we don't guarantee anal sex or lip kissing."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do I contact you in case of any fraud or mischievous activity?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You can simply email us at poojamahajan.com@gmail.com with all the proofs. We can’t help you in the case of an advance payment made to any independent escort before any physical meeting."
+    }
+  },{
+    "@type": "Question",
+    "name": "How is Poojamahajan responsible for services?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We are responsible only for phone numbers live on our website. If you contact any number that is no longer on our website, we are not responsible for any deals outside our website. As Poojamahajan is just a platform to connect independent call girls and clients, we are not responsible for any kind of deal in terms of service or payment. So do the deal wisely."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do I remove any content or images from poojamahajan.com?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If you want any content or image removed from our website,. Then you need to email us at poojamahajan.com@gmail.com with recurried proof and a URL where the content is live."
+    }
+  }]
+}
+</script>
 </body>
 
 </html>

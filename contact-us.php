@@ -1,4 +1,4 @@
-<?php include './init.php'; ?>
+<?php include './init.php'; $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +13,7 @@
     <meta name="description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
-    <link rel="canonical" href="https://poojamahajan.com/" />
+    <link rel="canonical" href="<?=$fullURL ?>" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="The Best Escort Services In India | Pooja Mahajan" />
@@ -54,7 +54,24 @@
         .contact-form-group textarea:focus{border: 1px solid dodgerblue}
         .contact-form-group button{width: 150px;height: 40px;background-color: #9f21e3;color: white;border: 0;cursor: pointer;border-radius: 1px;}
     </style>
+    <script>
+        const mySchema2 = {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Poojamahajan",
+            "url": "<?= $fullURL ?>",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://poojamahajan.com/search?{search_term_string}",
+                "query-input": "required name=search_term_string"
 
+            }
+        }
+        const script2 = document.createElement('script');
+        script2.type = "application/ld+json";
+        script2.text = JSON.stringify(mySchema2);
+        document.head.appendChild(script2);
+    </script>
 
    
 </head>
@@ -65,11 +82,12 @@
         <nav class="navbar">
             <span class="brand-name"><a href="<?=get_url() ?>">Poojamahajan</a></span>
             <ul class="nav-ul" id="nav-ul">
-                <li><a href="<?=get_url() ?>">Home</a></li>
+            <li><a href="<?=get_url() ?>">Home</a></li>
                 <li><a href="<?=get_url() ?>contact-us/">Contact Us</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Sign Up</a></li>
+                <li><a href="<?=get_url() ?>login/">Login</a></li>
+                <li><a href="<?=get_url() ?>sign-up/">Sign up</a></li>
             </ul>
+            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
@@ -176,6 +194,12 @@
             document.getElementById('search-filter').classList.toggle('search-filter-active')
         })
     </script>
-
+<script type="application/ld+json">
+        "@context": "http://schema.org/",
+            "@type": "Organization",
+            "name": "Poojamahajan",
+            "url": "https://poojamahajan.com",
+            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+        </script>
 </body>
 </html>

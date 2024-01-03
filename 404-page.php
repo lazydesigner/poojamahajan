@@ -13,7 +13,7 @@
     <meta name="description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
-    <link rel="canonical" href="https://poojamahajan.com/" />
+    <link rel="canonical" href="https://poojamahajan.com/404" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="The Best Escort Services In India | Pooja Mahajan" />
@@ -65,11 +65,12 @@
         <nav class="navbar">
             <span class="brand-name"><a href="<?=get_url() ?>">Poojamahajan</a></span>
             <ul class="nav-ul" id="nav-ul">
-                <li><a href="<?=get_url() ?>">Home</a></li>
+            <li><a href="<?=get_url() ?>">Home</a></li>
                 <li><a href="<?=get_url() ?>contact-us/">Contact Us</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Sign Up</a></li>
+                <li><a href="<?=get_url() ?>login/">Login</a></li>
+                <li><a href="<?=get_url() ?>sign-up/">Sign up</a></li>
             </ul>
+            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post-Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>

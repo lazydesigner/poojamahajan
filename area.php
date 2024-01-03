@@ -6,13 +6,13 @@ $cate = 'call-girls';
 
 $a = explode('-', $_GET['city']);
 
-if (isset($a[1])) {    
-    if(isset($a[2])){
+if (isset($a[1])) {
+    if (isset($a[2])) {
         $area = $a[0] . ' ' . $a[1] . ' ' . $a[2];
-    }else{
+    } else {
         $area = $a[0] . ' ' . $a[1];
     }
-}else {
+} else {
     $area = $a[0];
 }
 
@@ -33,6 +33,7 @@ $result = mysqli_query($con, $sql);
 if (mysqli_num_rows($result) > 0) {
     $data = mysqli_fetch_assoc($result);
 }
+$fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
 ?>
 
@@ -49,6 +50,7 @@ if (mysqli_num_rows($result) > 0) {
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>Call Girls in Hazratganj - Rs.3500- Hazratganj Escorts</title>
+    <link rel="canonical" href="<?= $fullURL ?>" />
 
     <style>
         .multiline-ellipsis {
@@ -77,18 +79,38 @@ if (mysqli_num_rows($result) > 0) {
         }
     </style>
 
+    <script>
+            const mySchema2 = {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Poojamahajan",
+            "url": "<?= $fullURL ?>",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://poojamahajan.com/search?{search_term_string}",
+                "query-input": "required name=search_term_string"
+
+            }
+        }
+        const script2 = document.createElement('script');
+        script2.type = "application/ld+json";
+        script2.text = JSON.stringify(mySchema2);
+        document.head.appendChild(script2);
+    </script>
+
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <span class="brand-name"><a href="<?=get_url() ?>">Poojamahajan</a></span>
+            <span class="brand-name"><a href="<?= get_url() ?>">Poojamahajan</a></span>
             <ul class="nav-ul" id="nav-ul">
-                <li><a href="<?=get_url() ?>">Home</a></li>
-                <li><a href="<?=get_url() ?>contact-us/">Contact Us</a></li>
-                <li><a href="">Login</a></li>
-                <li><a href="">Sign Up</a></li>
+                <li><a href="<?= get_url() ?>">Home</a></li>
+                <li><a href="<?= get_url() ?>contact-us/">Contact Us</a></li>
+                <li><a href="<?= get_url() ?>login/">Login</a></li>
+                <li><a href="<?= get_url() ?>sign-up/">Sign up</a></li>
             </ul>
+            <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post-Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
@@ -110,14 +132,14 @@ if (mysqli_num_rows($result) > 0) {
                     <meta itemprop="position" content="2">
                 </li>
                 <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="" ><span itemprop="name"><?= $area ?></span></a>
+                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href=""><span itemprop="name"><?= $area ?></span></a>
                     <meta itemprop="position" content="3">
                 </li>
             </ol>
             <h1>Call girls in <?= $area ?> with WhatsApp number</h1>
         </div>
 
-        <div class="list-of-profile">
+        <div class="list-of-profile" style="background-color: rgb(241, 241, 241);">
             <h2>Are you looking for call girls in <?= $area ?> for friendship?</h2>
             <p>On our website, Poojamahajan Escort Portal, you can find multiple ads for <?= $area ?> call girls who offer the best erotic services in this locality. If you're tired of searching for reliable call girls here and there, now search poojamahajan.com with <?= $area ?> name and with just a few clicks, you can see gorgeous call girls near you.</p>
             <p>During their visit to the <?= $city ?>, a charming model escort is with our clients. You can book tempting call girls for your personal needs on any occasion. Our escorts are both elite and polite. A sultry figure call girl without a sense of manners or speech will ruin your mood if you reserve one. So we prefer passionate and curvy-calling girls of our plateform with dressing sense.</p>
@@ -145,7 +167,7 @@ if (mysqli_num_rows($result) > 0) {
             </div>
         <?php } ?>
 
-        <div class="list-of-profile">
+        <div class="list-of-profile" style="background-color: rgb(241, 241, 241);">
             <h2>FAQ</h2>
             <h3>What things do I need to take care of while booking a call girl in <?= $area ?>?</h3>
             <p>You need to look into following things while booking a call girls in area: -</p>
@@ -157,21 +179,21 @@ if (mysqli_num_rows($result) > 0) {
                 <li>Try to deal only in cash payments.</li>
             </ol>
         </div>
-        <div class="list-of-profile" style="margin: 3% 0;">
+        <div class="list-of-profile" style="margin: 3% 0; background-color: rgb(241, 241, 241);">
             <h3>Top Cities of India</h3>
             <div class="top-cities-of-india">
-                <a href="<?= get_url() ?><?=$cate ?>/delhi"><button>Delhi</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/dehradun"><button>Dehradun</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/bhopal"><button>Bhopal</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/ahmedabad"><button>Ahmedabad</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/lucknow"><button>Lucknow</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/noida"><button>Noida</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/goa"><button>Goa</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/jaipur"><button>Jaipur</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/agra"><button>Agra</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/faridabad"><button>Faridabad</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/delhi"><button>Delhi</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/dehradun"><button>Dehradun</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/bhopal"><button>Bhopal</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/ahmedabad"><button>Ahmedabad</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/lucknow"><button>Lucknow</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/noida"><button>Noida</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/goa"><button>Goa</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/jaipur"><button>Jaipur</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/agra"><button>Agra</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/faridabad"><button>Faridabad</button></a>
             </div>
-            
+
             <h3>Areas of <span style="text-transform: capitalize;"><?= $city ?></span></h3>
             <div class="top-cities-of-india" id="area-near">
             </div>
@@ -216,7 +238,7 @@ if (mysqli_num_rows($result) > 0) {
             citys.append('city_id', '<?= $city ?>')
             citys.append('status', 'city_id')
             citys.append('area', '<?= $_GET['city'] ?>')
-            citys.append('cate', '<?=$cate ?>')
+            citys.append('cate', '<?= $cate ?>')
             fetch('<?= get_url() ?>dashboard/fetch_data.php', {
                     method: 'POST',
                     body: citys
@@ -231,14 +253,20 @@ if (mysqli_num_rows($result) > 0) {
             window.location.href = '<?= get_url() ?>call-girls/<?= $city ?>/' + document.getElementById('area-locality').value + ''
         })
 
-        document.getElementById('menu-option').addEventListener('click',()=>{
+        document.getElementById('menu-option').addEventListener('click', () => {
             document.getElementById('nav-ul').classList.toggle('nav-ul-active')
         })
-        document.getElementById('search-filter-menu').addEventListener('click',()=>{
+        document.getElementById('search-filter-menu').addEventListener('click', () => {
             document.getElementById('search-filter').classList.toggle('search-filter-active')
         })
     </script>
-
+        <script type="application/ld+json">
+            "@context": "http://schema.org/",
+            "@type": "Organization",
+            "name": "Poojamahajan",
+            "url": "https://poojamahajan.com",
+            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+        </script>
 </body>
 
 </html>
