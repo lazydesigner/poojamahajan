@@ -12,7 +12,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css" integrity="sha512-pI8MMQ9fC050RkbUOr8cJ75T5bYJpT1PAiML/7QZM6Fr74Ef6csO2/Cl92q+Qpxidm7WonXr6f+DbyxNHPGH8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/list-of-profile.css">
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/list-of-profile.css?v=1">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/faq.css?v=1" defer>
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
@@ -189,16 +189,31 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         <div class="list-of-profile" style="margin: 3% 0;background-color: lightgrey;">
             <h3>Top Cities of India</h3>
             <div class="top-cities-of-india">
-                <a href="<?= get_url() ?><?=$cate ?>/delhi"><button>Delhi</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/dehradun"><button>Dehradun</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/bhopal"><button>Bhopal</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/ahmedabad"><button>Ahmedabad</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/lucknow"><button>lucknow</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/noida"><button>Noida</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/goa"><button>Goa</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/jaipur"><button>Jaipur</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/agra"><button>Agra</button></a>
-                <a href="<?= get_url() ?><?=$cate ?>/faridabad"><button>Faridabad</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/delhi/"><button>Delhi</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/agra/"><button>Agra</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/guwahati/"><button>Guwahati</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/rishikesh/"><button>Rishikesh</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/ghaziabad/"><button>Ghaziabad</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/kota/"><button>Kota</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/arunachal-pradesh/"><button>Arunachal Pradesh</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/bhopal/"><button>Bhopal</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/gurugram/"><button>Gurugram</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/faridabad/"><button>Faridabad</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/mumbai/"><button>Mumbai</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/ajmer/"><button>Ajmer</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/varanasi/"><button>Varanasi</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/dehradun/"><button>Dehradun</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/ahmedabad/"><button>Ahmedabad</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/lucknow/"><button>Lucknow</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/noida/"><button>Noida</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/goa/"><button>Goa</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/jaipur/"><button>Jaipur</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/dehradun/"><button>Dehradun</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/udaipur/"><button>Udaipur</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/indore/"><button>Indore</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/patna/"><button>Patna</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/visakhapatnam/"><button>Visakhapatnam</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/manali/"><button>Manali</button></a>
             </div>
            
 

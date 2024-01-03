@@ -51,12 +51,13 @@
 
 .top-cities-of-india button{
     width: auto;
-    margin:1% 2%;
+    margin:1%;
     padding: 1% 2%;
     height: 40px;
-    border: 0;
-    border-radius: 3px;
-    background-color: rgb(149, 149, 149);
+    border: 0; 
+    border-radius: 15px;
+    background: rgb(209,209,209);
+    background: linear-gradient(160deg, rgba(209,209,209,1) 26%, rgba(157,158,159,1) 68%);
     cursor: pointer;
 }
 .top-cities-of-india button:hover {text-decoration: underline;}
