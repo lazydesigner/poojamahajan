@@ -72,6 +72,7 @@ if (mysqli_num_rows($result) > 0) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/list-of-profile.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>Call Girls in Hazratganj - Rs.3500- Hazratganj Escorts</title>
 
@@ -201,49 +202,7 @@ if (mysqli_num_rows($result) > 0) {
 
 
     </div>
-    <footer>
-        <div class="footer-row">
-            <div class="footer-col">
-                <p class="footer-p">This website may contain content of an adult nature. If you are easily offended or
-                    are under the age of 18, please exit now. The posts and pages within are intended for adults only
-                    and may include scenes of sexual content, suggestive pictures, or graphic violence. Reader
-                    discretion is advised.</p>
-                <div class="follow-up">
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                    <i class="ri-facebook-box-fill"></i>
-                </div>
-                <div class="dmca-logo">
-                    <img src="<?= get_url() ?>dashboard/assets/images/dmca_protected_16_120.png" alt="">
-                </div>
-            </div>
-            <div class="footer-col">
-                <div class="only-18">
-                    <img src="<?= get_url() ?>dashboard/assets/images/18-1.png.webp" width="100%" height="100%" alt="">
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul class="footer-col-ul">
-                    <li><a href="">Post Ad</a></li>
-
-                    <li><a href="">Review</a></li>
-                    <li><a href="">Price List</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Terms & Conditions</a></li>
-                </ul>
-                <div class="dmca-logo">
-                    <img src="<?= get_url() ?>dashboard/assets/images/dmca-compliant-grayscale.png" alt="">
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include './footer2.php' ?>
 
     <script>
         document.getElementById('serach-city-input').addEventListener('keyup', (e) => {

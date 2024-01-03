@@ -56,7 +56,7 @@
 
     <header>
         <nav class="navbar">
-            <span class="brand-name"><a href="<?= get_url() ?>">Poojamahajan2</a></span>
+            <span class="brand-name"><a href="<?= get_url() ?>">Poojamahajan</a></span>
             <ul class="nav-ul" id="nav-ul">
                 <li><a href="<?= get_url() ?>">Home</a></li>
                 <li><a href="<?= get_url() ?>contact-us/">Contact Us</a></li>
