@@ -49,8 +49,19 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <title>Call Girls in Hazratganj - Rs.3500- Hazratganj Escorts</title>
+    <title>350+ Call girls in <?= $area ?> both incall & outcall 24/7 - Poojamahajan</title>
     <link rel="canonical" href="<?= $fullURL ?>" />
+
+    <meta name="description" content="Book No. 1 <?= $area ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment.">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="350+ Call girls in <?= $area ?> both incall & outcall 24/7 - Poojamahajan" />
+    <meta property="og:description" content="Book No. 1 <?= $area ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment." />
+    <meta property="og:url" content="<?= $fullURL ?>" />
+    <meta property="og:site_name" content="Escort" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="350+ Call girls in <?= $area ?> both incall & outcall 24/7 - Poojamahajan" />
+    <meta name="twitter:description" content="Book No. 1 <?= $area ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment." />
 
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">

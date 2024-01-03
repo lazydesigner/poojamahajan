@@ -11,7 +11,7 @@ $res = mysqli_query($con, $query);
 if(mysqli_num_rows($res)>0){
     $row = mysqli_fetch_assoc($res);
 }else{
-    echo '404 Page Not Found';
+    header('Location :'.get_url().'404');
 }
 
 ?>
