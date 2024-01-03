@@ -10,7 +10,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/index.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
-    <title>Terms & Conditions</title>
+    <title>Disclaimer</title>
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
     <link rel="canonical" href="<?= $fullURL ?>" />
@@ -125,7 +125,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                     <meta itemprop="position" content="2">
                 </li>
             </ol>
-            <strong>Last updated: June 18, 2022</strong>
+            <strong>Last updated: January 3, 2024</strong>
             <h1 style="font-size: 2.5rem;font-weight:bold">Interpretation and Definitions</h1>
             <h2>Interpretation</h2>
             <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>

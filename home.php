@@ -28,6 +28,9 @@
     <meta name="twitter:title" content="The Best Escort Services In India | Pooja Mahajan" />
     <meta name="twitter:description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
 
+    <style>
+        .main-content h3{font-size: 1.7rem;}
+    </style>
 
     <script type="application/ld+json">
         {
@@ -241,8 +244,8 @@
                 Poojamahajan.com feature<strong> local call girls, college girls, desi bhabhi, Russian
                     escorts, Punjabi girls,</strong> etc on our platform. Our escorts are the most loved and demanding call girls
                 in India. Our website list only genuine profiles through many verification layers.</p>
-            <h2>Independent Escort and independent call girls in India</h2>
-            <p>Poojamahajan.com allows only independent call
+            <h3>Independent Escort and independent call girls in India</h3>
+            <p><a href="https://poojamahajan.com/">Poojamahajan.com</a> allows only independent call
                     girls to post ads on our website. We highly restrict pimps, agents, or brokers to list their
                 numbers/ads on our portal. We have support emails to rectify gimps, brokers, agents, or agencies’ false
                 images or descriptions from our website.</p>
@@ -267,7 +270,7 @@
                 one night stand. <span style="color: #0000ff;"><strong>We request our visitors not to pay any amount in
                         advance without any physical contact.</strong></span></p>
 
-            <h2>Versatile services provided by different escorts our client wants</h2>
+            <h3>Versatile services provided by different escorts our client wants</h3>
             <p>On <a href="https://poojamahajan.com/">poojamahajan.com</a>, we understand that our visitors trust us and
                 our profiles. It’s our primary responsibility to have a wide range of escorts to provide
                 versatile services. With different Indian or foreign profiles, you can select different services and
@@ -282,8 +285,8 @@
                 relations. You can have passionate nights however you both likes.</p>
             <h2>Payment guidelines in Red light area</h2>
             <p>You can visit any red light area of you city or famous red light areas of India like Sonagachi in
-                Kolkata, Kamathipura near Mumbai, GB Road in Delhi, Meergunj in Prayagraj, Budhwar peth near Pune,
-                Chaturbhujsthan near Muzaffarpur, Itwari in Nagpur, Shivdapur in Varanasi, Kalyanpur in Kanpur, etc.</p>
+                Kolkata, Kamathipura near <a href="<?= get_url() ?>call-girls/mumbai" target="_blank">Mumbai</a>, GB Road in <a href="<?= get_url() ?>call-girls/delhi" target="_blank">Delhi</a>, Meergunj in Prayagraj, Budhwar peth near Pune,
+                Chaturbhujsthan near Muzaffarpur, Itwari in Nagpur, Shivdapur in <a href="<?= get_url() ?>call-girls/varanasi" target="_blank">Varanasi</a>, Kalyanpur in Kanpur, etc.</p>
             <p>But visiting these places may be awful or sometimes quite risky. So our website play the great role here.
                 We work as a communication channel between clients and independent escort through
                 advertisement. As per Indian Law, our advertisement is not show in public places but only available for
