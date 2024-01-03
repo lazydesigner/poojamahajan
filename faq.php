@@ -102,7 +102,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                     <meta itemprop="position" content="2">
                 </li>
             </ol>
-            <h1>How to Book call using poojamahajan.com</h1>
+            <h1>How to Book call girls using poojamahajan.com</h1>
         </div>
 
         <div class="list-of-profile" style="background-color: lightgrey;">

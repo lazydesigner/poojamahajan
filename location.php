@@ -292,7 +292,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <?= $data2['bottom_content'] ?>
         </div>
         <div class="list-of-profile" style="margin: 3% 0;">
-            <h1>FAQ</h1>
+            <h3>FAQS About Kr Puram Call Girls Service - Poojamahajan</h3>
             <!-- <div class="faq-body">
                 <div class="faq-que" id="faq-body"><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</strong><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span><div class="q"></div></div>
                 <div class="faq-ans"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ut consequatur, ab accusantium nesciunt doloribus quod dignissimos perspiciatis maiores quia excepturi dolor modi delectus quos. Illo incidunt obcaecati nulla quasi.</p></div>
@@ -303,23 +303,23 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             </div> -->
             <div class="faq-container">
                 <div class="faq-item">
-                    <div class="faq-question"><span>What is the price of call girls in <?= $city ?>?</span><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
+                    <div class="faq-question"><h4 style="margin: 0;font-size:1.2rem"><span>What is the price of call girls in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
                     <div class="faq-answer">The price of call girls differs from model to model. Generally, the price starts at Rs. 2000 per shot and Rs. 10,000 per night. Contact the provided number for more details.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><span>How do I reserve a call girl in <?= $city ?>?</span><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
+                    <div class="faq-question"><h4 style="margin: 0;font-size:1.2rem"><span>How do I reserve a call girl in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
                     <div class="faq-answer">Anyone can book a call girls by visiting our official website and contacting us at the provided number. As we used to update numbers timely, only contact live numbers on our website.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><span>Is there any refund policy?</span><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
+                    <div class="faq-question"><h4 style="margin: 0;font-size:1.2rem"><span>Is there any refund policy?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
                     <div class="faq-answer">If you make an advance booking, we are unable to refund money after 9 p.m. because we have cancelled other bookings for you. Yes, we provide a refund if you are not satisfied on the basis of cooperation and denial of service from our call girl side. </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><span>What kind of services do these call girls provide in <?= $city ?>?</span><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
+                    <div class="faq-question"><h4 style="margin: 0;font-size:1.2rem"><span>What kind of services do these call girls provide in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
                     <div class="faq-answer">Our call girls provide various services like body kissing, licking, sex, foreplay, 69, etc. But we don't guarantee anal sex or lip kissing. </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><span>Is it safe to hire a call girl in <?= $city ?>?</span><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
+                    <div class="faq-question"><h4 style="margin: 0;font-size:1.2rem"><span>Is it safe to hire a call girl in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
                     <div class="faq-answer">Yes, our service is 100% safe in terms of privacy, handling, and safety. Apart from this, we don't encourage any advance payments, so our services are 100 percent safe.</div>
                 </div>
                 <!-- Add more FAQ items as needed -->
