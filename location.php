@@ -124,6 +124,12 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             border-radius: 2px;
             color: tomato;
         }
+
+        @media screen and (max-width:500px) {
+            .profile-section-box-image { width: 50%;}
+            .profile-section-button-detail button {width: 85px; font-size: 16px;}
+
+        }
     </style>
     <script>
         function setCookie(cname, cvalue, exdays) {

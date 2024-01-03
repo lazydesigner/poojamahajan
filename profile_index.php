@@ -8,13 +8,13 @@ $id = $_GET['id'];
 
 $a = explode('-', $_GET['city']);
 
-if (isset($a[1])) {    
-    if(isset($a[2])){
+if (isset($a[1])) {
+    if (isset($a[2])) {
         $area2 = $a[0] . ' ' . $a[1] . ' ' . $a[2];
-    }else{
+    } else {
         $area2 = $a[0] . ' ' . $a[1];
     }
-}else {
+} else {
     $area2 = $a[0];
 }
 
@@ -41,13 +41,13 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css" integrity="sha512-pI8MMQ9fC050RkbUOr8cJ75T5bYJpT1PAiML/7QZM6Fr74Ef6csO2/Cl92q+Qpxidm7WonXr6f+DbyxNHPGH8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/profile.css"> 
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">  
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>    
-    <link rel="canonical" href="<?=$fullURL ?>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css" integrity="sha512-pI8MMQ9fC050RkbUOr8cJ75T5bYJpT1PAiML/7QZM6Fr74Ef6csO2/Cl92q+Qpxidm7WonXr6f+DbyxNHPGH8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/profile.css">
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
+    <link rel="canonical" href="<?= $fullURL ?>" />
     <title>Book Premium call girls in Telibagh | Poojamahajan</title>
 
     <meta name="description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
@@ -66,8 +66,33 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="twitter:title" content="Book Premium call girls in Telibagh | Poojamahajan" />
     <meta name="twitter:description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
     <meta name="twitter:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
+    <style>
+        @media screen and (max-width:780px) {
+            .profile-image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+            }
+            .sub-profile{margin: auto;}
+        }
+        .container {width: 83%;}
+        @media screen and (max-width:525px) {
+            .profile-image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            }
+
+            .profile-section {
+                flex-wrap: wrap;
+            }
+            .profile-section-col:last-child {
+                flex: 100%;
+            }
+            .profile-section-col:last-child {
+                margin-top: 10%;
+            }
+        .container {width: 98%;}
+        }
+    </style>
     <script>
-     const mySchema2 = {
+        const mySchema2 = {
             "@context": "https://schema.org/",
             "@type": "WebSite",
             "name": "Poojamahajan",
@@ -89,12 +114,12 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 <body>
     <header>
         <nav class="navbar">
-            <span class="brand-name"><a href="<?=get_url() ?>">Poojamahajan</a></span>
+            <span class="brand-name"><a href="<?= get_url() ?>">Poojamahajan</a></span>
             <ul class="nav-ul" id="nav-ul">
-            <li><a href="<?=get_url() ?>">Home</a></li>
-                <li><a href="<?=get_url() ?>contact-us/">Contact Us</a></li>
-                <li><a href="<?=get_url() ?>login/">Login</a></li>
-                <li><a href="<?=get_url() ?>sign-up/">Sign up</a></li>
+                <li><a href="<?= get_url() ?>">Home</a></li>
+                <li><a href="<?= get_url() ?>contact-us/">Contact Us</a></li>
+                <li><a href="<?= get_url() ?>login/">Login</a></li>
+                <li><a href="<?= get_url() ?>sign-up/">Sign up</a></li>
             </ul>
             <div style="width: 20%;align-self:end"><a href="" style="float: right;">Post Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
@@ -103,11 +128,11 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     </header>
     <div class="container">
         <div class="search-filter" id="search-filter">
-        <?php include './navbar.php' ?>
+            <?php include './navbar.php' ?>
         </div>
 
         <div class="page-detail-and-information">
-        <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
                 <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
                     <meta itemprop="position" content="1">
                 </li>
@@ -116,7 +141,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                     <meta itemprop="position" content="2">
                 </li>
                 <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" ><span itemprop="name"><?= $area2 ?></span></a>
+                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb"><span itemprop="name"><?= $area2 ?></span></a>
                     <meta itemprop="position" content="3">
                 </li>
             </ol>
@@ -233,27 +258,29 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <h2>Profiles from same Place</h2>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <?php while($rows = mysqli_fetch_assoc($result)) { 
+                    <?php while ($rows = mysqli_fetch_assoc($result)) {
                         $ax = json_decode($rows['profile_images'], true);
-                        ?>
+                    ?>
 
                         <div class="swiper-slide">
                             <div class="sub-profile">
                                 <div class="sub-profile-image">
-                                    <img src="<?=$ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="">
+                                    <img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="">
                                 </div>
                                 <div class="sub-profile-detail">
-                                    <a href="<?=get_url() ?><?=$rows['page_url'] ?>" style="color:white"><p><?=$rows['page_h1']?></p></a>
+                                    <a href="<?= get_url() ?><?= $rows['page_url'] ?>" style="color:white">
+                                        <p><?= $rows['page_h1'] ?></p>
+                                    </a>
                                 </div>
                                 <div class="sub-profile-information">
-                                    <span><?=$rows['state']?></span>
-                                    <span><?=$rows['profile_age']?> Years</span>
+                                    <span><?= $rows['state'] ?></span>
+                                    <span><?= $rows['profile_age'] ?> Years</span>
                                 </div>
                             </div>
                         </div>
                     <?php } ?>
 
-                    
+
                 </div>
                 <div class="swiper-pagination" style="display: none;"></div>
             </div>
@@ -269,6 +296,25 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 loop: true,
                 spaceBetween: 60,
                 freeMode: true,
+                breakpoints: {
+                    // when window width is >= 320px
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    // when window width is >= 480px
+                    420: {
+                        slidesPerView: 2
+                    },
+                    // when window width is >= 640px
+                    640: {
+                        slidesPerView:3
+                    },
+                    780:{
+                        slidesPerView: 5,
+                        spaceBetween: 60,
+                    }
+                },
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
@@ -285,88 +331,91 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
 
     <script>
-        document.getElementById('serach-city-input').addEventListener('keyup', (e)=>{
-    if( e.target.value.trim() != '' ){
-        const formdata = new FormData()
-    formdata.append('search-city',e.target.value)
-    formdata.append('category',document.getElementById('category').value)
-    formdata.append('status', 'search-city')
-    fetch('<?= get_url() ?>dashboard/fetch_data.php',{
-        method:'POST',
-        body:formdata
-    }).then(res=>res.json())
-    .then(d=>{
-        document.getElementById('list-of-cities').style.display = 'block';
-        document.getElementById('list-of-cities-id').innerHTML = d['city'];
-        
-    })
-    }else{
-        document.getElementById('list-of-cities').style.display = 'none';
-        document.getElementById('list-of-cities-id').innerHTML = '';
-    }
-})
-document.addEventListener('click',()=>{
-        document.getElementById('list-of-cities').style.display = 'none';
-        document.getElementById('list-of-cities-id').innerHTML = '';
-        document.getElementById('serach-city-input').value = '<?=$city?>';
-})
-Area_Locality()
+        document.getElementById('serach-city-input').addEventListener('keyup', (e) => {
+            if (e.target.value.trim() != '') {
+                const formdata = new FormData()
+                formdata.append('search-city', e.target.value)
+                formdata.append('category', document.getElementById('category').value)
+                formdata.append('status', 'search-city')
+                fetch('<?= get_url() ?>dashboard/fetch_data.php', {
+                        method: 'POST',
+                        body: formdata
+                    }).then(res => res.json())
+                    .then(d => {
+                        document.getElementById('list-of-cities').style.display = 'block';
+                        document.getElementById('list-of-cities-id').innerHTML = d['city'];
 
-function Area_Locality(){
-    const citys = new FormData()
-    citys.append('city_id', '<?=$city ?>')  
-    citys.append('status', 'city_id')
-    citys.append('area', '<?=$area ?>')
-    fetch('<?= get_url() ?>dashboard/fetch_data.php', {
-            method: 'POST',
-            body: citys
-        }).then(res => res.json())
-        .then(d => {
-            document.getElementById('area-locality').innerHTML = d['output']
+                    })
+            } else {
+                document.getElementById('list-of-cities').style.display = 'none';
+                document.getElementById('list-of-cities-id').innerHTML = '';
+            }
         })
-}
+        document.addEventListener('click', () => {
+            document.getElementById('list-of-cities').style.display = 'none';
+            document.getElementById('list-of-cities-id').innerHTML = '';
+            document.getElementById('serach-city-input').value = '<?= $city ?>';
+        })
+        Area_Locality()
 
-document.getElementById('area-locality').addEventListener('change',()=>{
-    window.location.href = '<?= get_url() ?>call-girls/<?=$city ?>/'+document.getElementById('area-locality').value+''
-})
-document.getElementById('menu-option').addEventListener('click',()=>{
+        function Area_Locality() {
+            const citys = new FormData()
+            citys.append('city_id', '<?= $city ?>')
+            citys.append('status', 'city_id')
+            citys.append('area', '<?= $area ?>')
+            fetch('<?= get_url() ?>dashboard/fetch_data.php', {
+                    method: 'POST',
+                    body: citys
+                }).then(res => res.json())
+                .then(d => {
+                    document.getElementById('area-locality').innerHTML = d['output']
+                })
+        }
+
+        document.getElementById('area-locality').addEventListener('change', () => {
+            window.location.href = '<?= get_url() ?>call-girls/<?= $city ?>/' + document.getElementById('area-locality').value + ''
+        })
+        document.getElementById('menu-option').addEventListener('click', () => {
             document.getElementById('nav-ul').classList.toggle('nav-ul-active')
         })
-        document.getElementById('search-filter-menu').addEventListener('click',()=>{
+        document.getElementById('search-filter-menu').addEventListener('click', () => {
             document.getElementById('search-filter').classList.toggle('search-filter-active')
         })
     </script>
-        <script>
-        document.getElementById('change-to-number').addEventListener('click',(e)=>{document.getElementById('change-to-number').innerText = "+91 8800925952"})
+    <script>
+        document.getElementById('change-to-number').addEventListener('click', (e) => {
+            document.getElementById('change-to-number').innerText = "+91 8800925952"
+        })
+
         function openCity(evt, tabName) {
             // Declare all variables
             var i, tabcontent, tablinks;
-          
+
             // Get all elements with class="tabcontent" and hide them
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
+                tabcontent[i].style.display = "none";
             }
-          
+
             // Get all elements with class="tablinks" and remove the class "active"
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
-          
+
             // Show the current tab, and add an "active" class to the button that opened the tab
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
-          }
-          document.getElementById("defaultOpen").click();
+        }
+        document.getElementById("defaultOpen").click();
     </script>
     <script type="application/ld+json">
         "@context": "http://schema.org/",
-            "@type": "Organization",
-            "name": "Poojamahajan",
-            "url": "https://poojamahajan.com",
-            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
-        </script>
+        "@type": "Organization",
+        "name": "Poojamahajan",
+        "url": "https://poojamahajan.com",
+        "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+    </script>
 </body>
 
 </html>
