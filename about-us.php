@@ -30,6 +30,10 @@ include './init.php';
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Poojamahajan Escort service - About us" />
     <meta name="twitter:description" content="poojamahajan in is the most prominent and leading web portal to provide you with escort girls." />
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
     <style>
         .profile-section p{
             font-size: 1.1rem;

@@ -52,6 +52,10 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <title>Call Girls in Hazratganj - Rs.3500- Hazratganj Escorts</title>
     <link rel="canonical" href="<?= $fullURL ?>" />
 
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
     <style>
         .multiline-ellipsis {
             overflow: hidden;

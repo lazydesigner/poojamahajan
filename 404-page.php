@@ -13,6 +13,10 @@
     <meta name="description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="canonical" href="https://poojamahajan.com/404" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />

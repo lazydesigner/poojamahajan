@@ -52,6 +52,10 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="twitter:title" content="Book Premium call girls in <?= $city ?> | Poojamahajan" />
     <meta name="twitter:description" content="Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room." />
 
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
     <style>
         .multiline-ellipsis {
             overflow: hidden;
