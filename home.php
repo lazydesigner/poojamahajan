@@ -366,12 +366,7 @@
             document.getElementById('search-filter').classList.toggle('search-filter-active')
         })
     </script>
-    <script>
-        if (!window.location.href.endsWith('/')) {
-            // Add a trailing slash to the URL
-            window.history.replaceState(null, null, window.location.href + '/');
-        }
-    </script>
+    
 </body>
 
 </html>
