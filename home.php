@@ -49,14 +49,14 @@
             "@type": "Organization",
             "name": "Ctgal",
             "url": "https://poojamahajan.com/",
-            "logo": "https://poojamahajan.com/assets/images/cropped-cropped-Poojamahajan-150x121.png"
+            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
         }
     </script>
 
 
     <header>
         <nav class="navbar">
-            <span class="brand-name"><a href="<?= get_url() ?>">Poojamahajan</a></span>
+            <span class="brand-name"><a href="<?= get_url() ?>">Poojamahajan2</a></span>
             <ul class="nav-ul" id="nav-ul">
                 <li><a href="<?= get_url() ?>">Home</a></li>
                 <li><a href="<?= get_url() ?>contact-us/">Contact Us</a></li>
