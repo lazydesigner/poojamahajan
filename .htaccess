@@ -1,0 +1,29 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+Options -Indexes
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+ReWriteRule ^$ home.php [NC,L]
+
+#Dashboard
+ReWriteRule ^dashboard([/]?)$ dashboard/list_of_cities.php [NC,L]
+ReWriteRule ^dashboard/add-location([/]?)$ dashboard/add_location.php [NC,L]
+ReWriteRule ^dashboard/edit-location/([0-9\-]+)([/]?)$ dashboard/edit_location.php?id=$1 [NC,L]
+ReWriteRule ^dashboard/profiles([/]?)$ dashboard/list_of_profiles.php [NC,L]
+ReWriteRule ^dashboard/add-profiles([/]?)$ dashboard/add_profile.php [NC,L]
+ReWriteRule ^dashboard/edit-profile/([0-9\-]+)([/]?)$ dashboard/edit_profile.php?id=$1 [NC,L]
+
+
+#Main Page  
+
+ReWriteRule ^contact-us([/]?)$ contact-us.php [NC,L]
+ReWriteRule ^faq([/]?)$ faq.php [NC,L]
+ReWriteRule ^search([/]?)$ search.php [NC,L]
+ReWriteRule ^call-girls/([0-9A-Za-z\-]+)([/]?)$ location.php?state=$1 [NC,L]
+ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ area.php?state=$1&city=$2 [NC,L]
+ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ profile_index.php?state=$1&city=$2&id=$3 [NC,L]
+
+
+#ReWriteRule ^([0-9A-Za-z\-]+)([/]?)([/]?)$ home.php?page_id=$1 [NC,L]
