@@ -193,7 +193,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         </tr>
                         <tr>
                             <td> Location:</td>
-                            <td><span style="text-transform:capitalize;"><?= $row['profile_location'] ?></span></td>
+                            <td><a href="<?= get_url() ?>call-girls/<?=$city ?>/<?=$area ?>/"><span style="text-transform:capitalize;"><?= $row['profile_location'] ?></span></a></td>
                         </tr>
                         <tr>
                             <td> Language:</td>

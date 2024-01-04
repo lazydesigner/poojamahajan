@@ -1,5 +1,6 @@
 <?php
 include '../connection.php';
+include '../../routes.php';
 
 $page_id = $_POST['page_id'];
 $page_title = $_POST['page_title'];
@@ -15,7 +16,7 @@ $sql = "UPDATE `city` SET `page_title`='$page_title',`page_meta`='$page_meta',`c
 
 $result = mysqli_query($con, $sql);
 if($result){
-    header('Location: http://localhost/poojamahajan.com/dashboard/');
+    header('Location:'.get_url().'dashboard/');
 }else{
     echo 'Not Inserted';
 }

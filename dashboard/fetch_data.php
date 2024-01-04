@@ -60,6 +60,24 @@ if($_POST['status'] == 'city_id'){
     }
     
 
+}elseif($_POST['status'] == 'search_the_field' ){
+    $keyword = $_POST['keyword'];
+    $query = "SELECT * FROM `profiles` WHERE `profile_name` LIKE '%$keyword%' or `area` LIKE '%$keyword%' or `state` LIKE '%$keyword%'";
+    $result = mysqli_query($con, $query);
+    $output = '';
+    if (mysqli_num_rows($result) > 0) {
+        // output data of each row
+        while($row = mysqli_fetch_assoc($result)) {
+            $output .= "<tr>
+            <td>".$row['profile_name']."</td>
+            <td>". $row['page_h1'] ."</td>
+            <td style='display: flex;gap:1%'><a href='".get_url().$row['page_url']."'><button>View</button></a><a href='".get_url()."dashboard/edit-profile/".$row['id']."'><button>Edit</button></a></td>
+        </tr>";
+         }
+         echo json_encode(['result'=>$output]);
+    }else{
+        echo json_encode(['result'=> 'No Profile Found Found']);
+    }
 }
 
 

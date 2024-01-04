@@ -133,6 +133,13 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             .profile-section-box-image {
                 width: 50%;
             }
+            .confirm-18-body {
+            width: 100%;
+            /* height: 50%; */
+            transform: translate(0%, 0%);
+            background-color: white;
+            padding: 2%;
+        }
 
             .profile-section-button-detail button {
                 width: 85px;

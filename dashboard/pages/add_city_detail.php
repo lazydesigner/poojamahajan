@@ -1,5 +1,6 @@
 <?php
 include '../connection.php';
+include '../../routes.php';
 
 
 $page_title = $_POST['page_title'];
@@ -15,7 +16,7 @@ $sql = "INSERT INTO `city`(`page_title`, `page_meta`, `page_h1`, `city`, `top_co
 
 $result = mysqli_query($con, $sql);
 if($result){
-    header('Location: http://localhost/poojamahajan.com/dashboard/');
+    header('Location:'.get_url().'dashboard/');
 }else{
     echo 'Not Inserted';
 }

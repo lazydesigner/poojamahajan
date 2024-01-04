@@ -250,7 +250,7 @@
                 numbers/ads on our portal. We have support emails to rectify gimps, brokers, agents, or agencies’ false
                 images or descriptions from our website.</p>
             <p><span style="color: #000000;">Anyone can contact our support channels if they find any image or content
-                    misleading or false.</span> Prostitution should be by choice not by force. Many independent girls or
+                    misleading or false.</span> <a href="https://en.wikipedia.org/wiki/Prostitution" target="_blank">Prostitution</a> should be by choice not by force. Many independent girls or
                 ladies want to earn or enjoy their service and earn some extra income.</p>
             <p>Personal service can be an alternative source of income. We also have channels to promote ads of male
                 escorts, LGBTQA, and gigolos. Anyone can join our website and promote legitimate content/photos/contact

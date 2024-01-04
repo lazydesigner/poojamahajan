@@ -29,16 +29,17 @@
     <meta name="theme-color" content="#ffffff">
 
     <style>
+        body{
+            height: auto!important;
+        }
         .profile-image-grid-list {
             width: 100%;
             height: auto;
             margin-top: 4%;
-            height: 400px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            grid-template-rows: auto;
-            /* grid-template-columns: 220px 220px; */
-            gap: 3%;
+            /* height: 400px; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
         }
 
         .sub-profile {
@@ -46,6 +47,7 @@
             height: 300px;
             background-color: #9f21e3;
             position: relative;
+            margin: 2% 0;
         }
 
         .sub-profile-image {
@@ -77,6 +79,12 @@
             background-color: white;
             color: #9f21e3;
             text-align: center;
+        }
+        @media screen and (max-width:770px) {
+            .container{width: 90%;}
+        }
+        @media screen and (max-width:500px) {
+            .container{width: 100%;}
         }
     </style>
     <!-- <script>
@@ -159,7 +167,7 @@
             </div>
         </div>
     </div>
-    <?php // include './footer2.php' ?>
+    <?php include './footer2.php' ?>
     <script>
         document.getElementById('serach-city-input').addEventListener('keyup', (e) => {
             if (e.target.value.trim() != '') {

@@ -43,12 +43,12 @@ if(mysqli_num_rows($res)>0){
                 </ul>
             </div>
             <div class="action-pannel">
-                <form action="./pages/add_profile.php" method="POST">
+                <form action="<?= get_url() ?>dashboard/pages/edit_profile.php" method="POST">
                     <div class="page-detail">
                         <p>Page Detail</p>
                         <div class="form-group-row">
                             <div class="form-group">
-                                <!-- <input type="text" class="form-control" placeholder="Page Title" name="page_title" id="page_title"> -->
+                                <input type="text" hidden class="form-control" placeholder="Page Title" value="<?=$_GET['id'] ?>" name="pro_id" id="page_title">
                             </div>
                             <!-- <select id="" name="service_type">
                                 <option value="call-girls">Call Girls</option>
@@ -56,7 +56,7 @@ if(mysqli_num_rows($res)>0){
                             </select> -->
                         </div>
                         <div class="form-group-row">
-                        <select id="" name="service_type">
+                            <select id="" name="service_type">
                                 <option value="call-girls">Call Girls</option>
                                 <option value="escorts">Escorts</option>
                             </select>
@@ -170,10 +170,10 @@ if(mysqli_num_rows($res)>0){
                         </div>
                         <div class="form-group-row">
                             <!-- <div> <label for="">Profile About</label> -->
-                            <textarea style="width: 100%;" id="content" name="content" cols="30" rows="10" placeholder="About Profile"></textarea>
+                            <textarea style="width: 100%;" id="content" name="content" cols="30" rows="10" placeholder="About Profile"><?=$row['content'] ?></textarea>
                         </div>
                         <div class="form-group-row">
-                            <button class="form-button-create">Create Profile</button>
+                            <button class="form-button-create">Edit Profile</button>
                         </div>
                     </div>
             </div>
@@ -261,17 +261,11 @@ if(mysqli_num_rows($res)>0){
 
 </html>
 <!-- 
-Manali - post ad
-Aleo
+Rajpur Road
  
-Old Manali
-
-Ajmer - post ad
-Vaishali Nagar
+Dalanwala
  
-Panchsheel Nagar
-
-pooja@1Majan
+Clement Town
  
-Kotra
+Prem Nagar
  -->
