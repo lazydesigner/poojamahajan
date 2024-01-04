@@ -87,7 +87,6 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             height: 100%;
             background-color: rgba(0, 0, 0, .5);
             display: none;
-
             position: fixed;
             top: 0;
             left: 0;
@@ -105,6 +104,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             transform: translate(50%, 10%);
             background-color: white;
             padding: 2%;
+            border-radius: 10px;
         }
 
         .btn1 {
@@ -139,6 +139,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             transform: translate(0%, 0%);
             background-color: white;
             padding: 2%;
+            border-radius: 0px;
         }
 
             .profile-section-button-detail button {
