@@ -155,7 +155,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
             let expires = "expires=" + d.toGMTString();
             document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-            let user = getCookie("agree");
+            let user = getCookie("confirm");
             if (user != "") {
                 var remove_agree_terms = document.getElementById("confirm-18");
                 remove_agree_terms.style.display = 'none';
@@ -179,7 +179,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         }
 
         function checkCookie() {
-            let user = getCookie("agree");
+            let user = getCookie("confirm");
             if (user != "") {
                 var remove_agree_terms = document.getElementById("confirm-18");
                 remove_agree_terms.style.display = 'none';
@@ -394,7 +394,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <p>
 
                 By clicking the <b>"Accept"</b> button, users certify that they are over 18 years old and release the service providers, owners, and creators of Poojamahajan.com from any responsibility regarding the content and use of this service.</p>
-            <div style="margin-top: 2%;"><button class="btn1" onclick="setCookie('agree', 'accepted', 30)">Confirm</button>
+            <div style="margin-top: 2%;"><button class="btn1" onclick="setCookie('confirm', 'accepted', 30)">Confirm</button>
                 <a href="<?= get_url() ?>"><button class="btn2">Reject</button></a>
             </div>
         </div>
