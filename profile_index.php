@@ -205,7 +205,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         </tr>
                         <tr>
                             <td> Profile Type:</td>
-                            <td><?= $row['profile_type'] ?></td>
+                            <td style="text-transform:capitalize;"><?= $row['profile_type'] ?></td>
                         </tr>
                         <tr>
                             <td> Bust-Waist-Hip:</td>
