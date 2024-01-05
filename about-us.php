@@ -80,6 +80,7 @@ include './init.php';
     </header>
     <div class="container" style="width: 75%;padding:2% 0">
         <div class="page-detail-and-information">
+        <div id="breadcrumbs">
             <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
                 <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Poojamahajan" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
                     <meta itemprop="position" content="1">
@@ -89,6 +90,7 @@ include './init.php';
                     <meta itemprop="position" content="2">
                 </li>
             </ol>
+        </div>
             <h1 style="font-size: 2.3rem;">About Our Poojamahajan Escort Service</h1>
         </div>
         <div class="profile-section">
