@@ -18,7 +18,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="The Best 100s Escort Services In India | Pooja Mahajan" />
     <meta property="og:description" content="IWanna feel heaven? Call me then because I can provide real erotic service in cheap rates. I will open for you the magnificent world" />
-    <meta property="og:url" content="<?=$fullURL ?>" />
+    <meta property="og:url" content="<?=$fullURL ?>/" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="The Best 100s Escort Services In India | Pooja Mahajan" />

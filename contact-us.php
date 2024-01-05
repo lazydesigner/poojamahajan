@@ -13,7 +13,7 @@
     <meta name="description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
-    <link rel="canonical" href="<?=$fullURL ?>" />
+    <link rel="canonical" href="<?=$fullURL ?>/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="The Best Escort Services In India | Pooja Mahajan" />

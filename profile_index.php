@@ -60,7 +60,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?=$area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
     <meta property="og:description" content="Experience some outsanding service by model call girls from <?=$area2 ?> directly to your home. If you want me to come to your room." />
-    <meta property="og:url" content="<?= $fullURL ?>" />
+    <meta property="og:url" content="<?= $fullURL ?>/" />
     <meta property="og:site_name" content="Escort" />
     <meta property="article:section" content="lucknow-escorts" />
     <meta property="og:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
