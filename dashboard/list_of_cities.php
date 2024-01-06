@@ -75,7 +75,7 @@
                             <!-- <th><? //$city['city_id'] ?></th> -->
                             <th><?=$city['city'] ?></th>
                             <th><?=$city['page_title'] ?></th>
-                            <th><a href="<?= get_url() ?>dashboard/edit-location/<?=$city['city_id'] ?>"><button>Edit</button></a><a href="<?= get_url() ?>call-girls/<?=$city['city'] ?>"><button>View</button></a></th>
+                            <th style="display: flex;gap:.5%"><a href="<?= get_url() ?>dashboard/edit-location/<?=$city['city_id'] ?>"><button>Edit</button></a><a href="<?= get_url() ?>call-girls/<?=$city['city'] ?>"><button>View</button></a></th>
                         </tr>
                         
                         <?php } ?>

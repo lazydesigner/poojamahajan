@@ -229,12 +229,43 @@ RewriteRule ^dehradun-escorts/?$ /call-girls/dehradun/ [R=301,L]
 #UDAIPUR
 RewriteRule ^udaipur-escorts/?$ /call-girls/udaipur/ [R=301,L]
 #PAGES
-RewriteRule ^udaipur-escorts/?$ /call-girls/udaipur/ [R=301,L]
+RewriteRule ^udaipur-escorts/adiba-in-surajpole/?$ /call-girls/udaipur/surajpole/call-girl-130/ [R=301,L]
+RewriteRule ^udaipur-escorts/dipika-in-ambamata/?$ /call-girls/udaipur/ambamata/call-girl-131/ [R=301,L]
+RewriteRule ^udaipur-escorts/iva-ambrai-ghat/?$ /call-girls/udaipur/ambrai-ghat/call-girl-132/ [R=301,L]
+RewriteRule ^udaipur-escorts/nusrat-in-hiran-magri/?$ /call-girls/udaipur/hiran-magri/call-girl-133/ [R=301,L]
+RewriteRule ^udaipur-escorts/payel-in-lal-ghat-road/?$ /call-girls/udaipur/lal-ghat-road/call-girl-134/ [R=301,L]
+RewriteRule ^udaipur-escorts/pinki-in-udaipole/?$ /call-girls/udaipur/udaipole/call-girl-135/ [R=301,L]
+RewriteRule ^udaipur-escorts/priya-in-naga-nagri/?$ /call-girls/udaipur/naga-nagri/call-girl-136/ [R=301,L]
+RewriteRule ^udaipur-escorts/sahnaz-in-shobhagpura/?$ /call-girls/udaipur/shobhagpura/call-girl-137/ [R=301,L]
+RewriteRule ^udaipur-escorts/shorna-in-lake-badi/?$ /call-girls/udaipur/lake-badi/call-girl-138/ [R=301,L]
+RewriteRule ^udaipur-escorts/urmila-in-balicha/?$ /call-girls/udaipur/balicha/call-girl-139/ [R=301,L]
 
 
-
+#INDORE
 RewriteRule ^indore-escorts/?$ /call-girls/indore/ [R=301,L]
+#PAGES
+RewriteRule ^indore-escorts/arohi-in-nipania/?$ /call-girls/indore/nipania/call-girl-140/ [R=301,L]
+RewriteRule ^indore-escorts/israt-in-bengali-square/?$ /call-girls/indore/bengali-square/call-girl-141/ [R=301,L]
+RewriteRule ^indore-escorts/ivana-in-vijay-nagar/?$ /call-girls/indore/vijay-nagar/call-girl-142/ [R=301,L]
+RewriteRule ^indore-escorts/lamiya-in-sukhlia/?$ /call-girls/indore/sukhlia/call-girl-143/ [R=301,L]
+RewriteRule ^indore-escorts/lisa-in-sudama-nagar/?$ /call-girls/indore/sudama-nagar/call-girl-144/ [R=301,L]
+RewriteRule ^indore-escorts/liza-in-tukoganj/?$ /call-girls/indore/tukoganj/call-girl-145/ [R=301,L]
+RewriteRule ^indore-escorts/mimi-rajendra-nagar/?$ /call-girls/indore/rajendra-nagar/call-girl-146/ [R=301,L]
+RewriteRule ^indore-escorts/nisi-in-ab-road/?$ /call-girls/indore/ab-road/call-girl-147/ [R=301,L]
+RewriteRule ^indore-escorts/raida-in-palasia/?$ /call-girls/indore/palasia/call-girl-148/ [R=301,L]
+RewriteRule ^indore-escorts/rumina-in-kalani-nagar/?$ /call-girls/indore/kalani-nagar/call-girl-149/ [R=301,L]
+
+
+#NOIDA
 RewriteRule ^noida-escorts/?$ /call-girls/noida/ [R=301,L]
+#PAGES
+RewriteRule ^noida-escorts/aditi-sector-61/?$ /call-girls/noida/sector-61/call-girl-150/ [R=301,L]
+RewriteRule ^noida-escorts/akhi-central-metro/?$ /call-girls/noida/central-metro/call-girl-151/ [R=301,L]
+RewriteRule ^noida-escorts/arya-botanical-garden/?$ /call-girls/noida/botanical-garden-metro/call-girl-152/ [R=301,L]
+RewriteRule ^noida-escorts/avni-sector-52/?$ /call-girls/noida/noida-sector-52/call-girl-153/ [R=301,L]
+
+
+
 RewriteRule ^patna-escorts/?$ /call-girls/patna/ [R=301,L]
 RewriteRule ^visakhapatnam-escorts/?$ /call-girls/visakhapatnam/ [R=301,L]
 RewriteRule ^manali-escorts/?$ /call-girls/manali/ [R=301,L]
