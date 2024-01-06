@@ -4,8 +4,12 @@ Options -Indexes
 #RewriteCond %{HTTPS} off
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-
+#DELHI
 RewriteRule ^call-girl-in-delhi/?$ /call-girls/delhi/ [R=301,L]
+#PAGES
+RewriteRule ^call-girl-in-delhi/pooja-in-connaught-place/?$ /call-girls/delhi/connaught-place/call-girl-2/ [R=301,L]
+
+#AGRA
 RewriteRule ^agra-escorts/?$ /call-girls/agra/ [R=301,L]
 RewriteRule ^jaipur-escorts/?$ /call-girls/jaipur/ [R=301,L]
 RewriteRule ^lucknow-escorts/?$ /call-girls/lucknow/ [R=301,L]
