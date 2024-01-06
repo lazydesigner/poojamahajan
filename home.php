@@ -66,7 +66,7 @@
             <li><a href="<?=get_url() ?>">Home</a></li>
                 <li><a href="<?=get_url() ?>contact-us/">Contact Us</a></li>
                 <li><a href="<?=get_url() ?>login/">Login</a></li>
-                <li><a href="<?=get_url() ?>sign-up/">Sign up</a></li>
+                <li><a href="<?=get_url() ?>register/">Sign up</a></li>
             </ul>
             <div style="width: 20%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;">Post Ad</a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>

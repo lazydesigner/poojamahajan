@@ -198,6 +198,7 @@ RewriteRule ^mumbai-escorts/siha-in-chembur/?$ /call-girls/mumbai/chembur/call-g
 RewriteRule ^mumbai-escorts/sruti-in-vashi/?$ /call-girls/mumbai/vashi/call-girl-118/ [R=301,L]
 RewriteRule ^mumbai-escorts/suba-in-ghatkopar/?$ /call-girls/mumbai/ghatkopar/call-girl-119/ [R=301,L]
 
+
 #AJMER
 RewriteRule ^ajmer-escorts/?$ /call-girls/ajmer/ [R=301,L]
 #PAGES
@@ -263,12 +264,47 @@ RewriteRule ^noida-escorts/aditi-sector-61/?$ /call-girls/noida/sector-61/call-g
 RewriteRule ^noida-escorts/akhi-central-metro/?$ /call-girls/noida/central-metro/call-girl-151/ [R=301,L]
 RewriteRule ^noida-escorts/arya-botanical-garden/?$ /call-girls/noida/botanical-garden-metro/call-girl-152/ [R=301,L]
 RewriteRule ^noida-escorts/avni-sector-52/?$ /call-girls/noida/noida-sector-52/call-girl-153/ [R=301,L]
+RewriteRule ^noida-escorts/dipa-sector-145/?$ /call-girls/noida/noida-sector-145/call-girl-154/ [R=301,L]
+RewriteRule ^noida-escorts/diya-sector-34/?$ /call-girls/noida/noida-sector-34/call-girl-155/ [R=301,L]
+RewriteRule ^noida-escorts/ivana-greater-noida/?$ /call-girls/noida/greater-noida/call-girl-156/ [R=301,L]
+RewriteRule ^noida-escorts/lakhsmi-sector-59/?$ /call-girls/noida/sector-59/call-girl-157/ [R=301,L]
+RewriteRule ^noida-escorts/olivia-electronic-city/?$ /call-girls/noida/noida-electronic-city/call-girl-158/ [R=301,L]
+RewriteRule ^noida-escorts/saanvi-sector-147/?$ /call-girls/noida/noida-sector-147/call-girl-159/ [R=301,L]
+RewriteRule ^noida-escorts/sanjana-greater-noida/?$ /call-girls/noida/greater-noida/call-girl-160/ [R=301,L]
+RewriteRule ^noida-escorts/sara-sector-62/?$ /call-girls/noida/sector-62/call-girl-161/ [R=301,L]
 
 
-
+#PATNA
 RewriteRule ^patna-escorts/?$ /call-girls/patna/ [R=301,L]
+#PAGES
+RewriteRule ^patna-escorts/priya-in-kankarbagh/?$ /call-girls/patna/kankarbagh/call-girl-162/ [R=301,L]
+RewriteRule ^patna-escorts/geeta-in-shastri-nagar/?$ /call-girls/patna/shastri-nagar/call-girl-163/ [R=301,L]
+RewriteRule ^patna-escorts/chaitra-in-lodipur/?$ /call-girls/patna/lodipur/call-girl-164/ [R=301,L]
+RewriteRule ^patna-escorts/alina-in-kidwaipuri/?$ /call-girls/patna/kidwaipuri/call-girl-165/ [R=301,L]
+RewriteRule ^patna-escorts/sharmita-in-danapur/?$ /call-girls/patna/danapur/call-girl-166/ [R=301,L]
+RewriteRule ^patna-escorts/sarika-in-adampur/?$ /call-girls/patna/adampur/call-girl-167/ [R=301,L]
+RewriteRule ^patna-escorts/ritika-in-pkauli/?$ /call-girls/patna/pkauli/call-girl-168/ [R=301,L]
+RewriteRule ^patna-escorts/mona-in-anishabad/?$ /call-girls/patna/anishabad/call-girl-169/ [R=301,L]
+
+
+#VISAKHAPATNAM
 RewriteRule ^visakhapatnam-escorts/?$ /call-girls/visakhapatnam/ [R=301,L]
+#PAGES
+RewriteRule ^visakhapatnam-escorts/aarna-in-dabagarden/?$ /call-girls/visakhapatnam/dabagarden/call-girl-170/ [R=301,L]
+RewriteRule ^visakhapatnam-escorts/alina-in-akkayyapalem/?$ /call-girls/visakhapatnam/akkayyapalem/call-girl-171/ [R=301,L]
+RewriteRule ^visakhapatnam-escorts/anupa-in-siripuram/?$ /call-girls/visakhapatnam/siripuram/call-girl-172/ [R=301,L]
+RewriteRule ^visakhapatnam-escorts/elena-maddilapalem/?$ /call-girls/visakhapatnam/maddilapalem/call-girl-173/ [R=301,L]
+RewriteRule ^visakhapatnam-escorts/lisa-gajiwaka/?$ /call-girls/visakhapatnam/gajiwaka/call-girl-174/ [R=301,L]
+
+
+#MANALI
 RewriteRule ^manali-escorts/?$ /call-girls/manali/ [R=301,L]
+#PAGES
+RewriteRule ^post-ad/young-model-in-manali-for-real-meet/?$ /call-girls/manali/aleo/call-girl-186/ [R=301,L]
+RewriteRule ^post-ad/manali-independent-call-girls-for-unlimited-fun/?$ /call-girls/manali/aleo/call-girl-187/ [R=301,L]
+RewriteRule ^post-ad/manali-24-7-escort-service-for-booking/?$ /call-girls/manali/old-manali/call-girl-188/ [R=301,L]
+RewriteRule ^post-ad/genuine-russian-call-girls-in-manali/?$ /call-girls/manali/old-manali/call-girl-189/ [R=301,L]
+RewriteRule ^post-ad/100-genuine-call-girl-in-manali/?$ /call-girls/manali/old-manali/call-girl-190/ [R=301,L]
 
 
 
@@ -294,7 +330,7 @@ ReWriteRule ^faqs([/]?)$ faq.php [NC,L]
 ReWriteRule ^terms-and-conditions([/]?)$ terms-and-condition.php [NC,L]
 ReWriteRule ^disclaimer([/]?)$ privacy.php [NC,L]
 ReWriteRule ^login([/]?)$ login.php [NC,L]
-ReWriteRule ^sign-up([/]?)$ login.php [NC,L]
+ReWriteRule ^register([/]?)$ login.php [NC,L]
 ReWriteRule ^about-us([/]?)$ about-us.php [NC,L]
 ReWriteRule ^search([/]?)$ search.php [NC,L]
 ReWriteRule ^call-girls/([0-9A-Za-z\-]+)([/]?)$ location.php?state=$1 [NC,L]
