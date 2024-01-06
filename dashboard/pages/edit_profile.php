@@ -72,7 +72,7 @@ if (isset($_POST['image5'])) {
 $list_of = json_encode($list_of_images);
 
 
-$sql = "UPDATE `profiles` SET `content`='$content' WHERE id = $pro_id";
+$sql = "UPDATE `profiles` SET `page_h1` = '$page_h1',`content`='$content' WHERE id = $pro_id";
 
 
 $result = mysqli_query($con, $sql);
