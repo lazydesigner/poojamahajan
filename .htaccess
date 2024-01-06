@@ -5,6 +5,9 @@ Options -Indexes
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 
+RewriteRule ^call-girls-delhi/?$ /call-girls/delhi/ [R=301,L]
+RewriteRule ^call-girls-lucknow/?$ /call-girls/delhi/ [R=301,L]
+
 
 
 ReWriteRule ^$ home.php [NC,L]
@@ -38,3 +41,5 @@ ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)
 
 ReWriteRule ^404([/]?)$ 404-page.php [NC,L]
 #ReWriteRule ^([0-9A-Za-z\-]+)([/]?)([/]?)$ home.php?page_id=$1 [NC,L]
+
+
