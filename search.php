@@ -74,7 +74,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/list-of-profile.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
-    <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <meta name="robots" content="index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>Poojamahajan - Search your Escort</title>
     <link rel="canonical" href="<?=$fullURL ?>/" />
 

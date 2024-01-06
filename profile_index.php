@@ -55,7 +55,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="theme-color" content="#ffffff">
 
     <meta name="description" content="Experience some outsanding service by model call girls from <?=$area2 ?> directly to your home. If you want me to come to your room." />
-    <meta name="robots" content="noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <meta name="robots" content="index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?=$area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />

@@ -17,7 +17,7 @@ include './init.php';
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <title>Poojamahajan Escort service - About us</title>
     <meta name="description" content="poojamahajan in is the most prominent and leading web portal to provide you with escort girls." />
-    <meta name="robots" content="noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <meta name="robots" content="index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <link rel="canonical" href="<?= get_url() ?>about-us/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />

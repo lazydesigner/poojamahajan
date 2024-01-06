@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <title>The Best 100s of Escort Services In India | Pooja Mahajan</title>
     <meta name="description" content="IWanna feel heaven? Call me then because I can provide real erotic service in cheap rates. I will open for you the magnificent world" />
-    <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <meta name="robots" content=" index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
     <link rel="canonical" href="https://poojamahajan.com" />
     <meta property="og:locale" content="en_US" />
