@@ -5,6 +5,7 @@ Options -Indexes
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 #DELHI
+RewriteRule ^call-girl-profiles/?$ /call-girls/ [R=301,L]
 RewriteRule ^call-girl-in-delhi/?$ /call-girls/delhi/ [R=301,L]
 #PAGES
 RewriteRule ^call-girl-in-delhi/pooja-in-connaught-place/?$ /call-girls/delhi/connaught-place/call-girl-2/ [R=301,L] 
