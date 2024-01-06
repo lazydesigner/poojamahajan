@@ -23,7 +23,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="The Best 100s Escort Services In India | Pooja Mahajan" />
     <meta name="twitter:description" content="IWanna feel heaven? Call me then because I can provide real erotic service in cheap rates. I will open for you the magnificent world" />
-
+    <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
     <meta name="theme-color" content="#ffffff">

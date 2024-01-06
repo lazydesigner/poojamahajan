@@ -62,7 +62,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="350+ Call girls in <?= $area ?> both incall & outcall 24/7 - Poojamahajan" />
     <meta name="twitter:description" content="Book No. 1 <?= $area ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment." />
-
+    <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
     <meta name="theme-color" content="#ffffff">

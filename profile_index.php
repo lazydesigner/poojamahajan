@@ -70,6 +70,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="twitter:title" content="<?=$area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
     <meta name="twitter:description" content="Experience some outsanding service by model call girls from <?=$area2 ?> directly to your home. If you want me to come to your room." />
     <meta name="twitter:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
+    <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <style>
         @media screen and (max-width:780px) {
             .profile-image-grid {
