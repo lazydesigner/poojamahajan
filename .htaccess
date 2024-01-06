@@ -5,8 +5,29 @@ Options -Indexes
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 
-RewriteRule ^call-girls-delhi/?$ /call-girls/delhi/ [R=301,L]
-RewriteRule ^call-girls-lucknow/?$ /call-girls/delhi/ [R=301,L]
+RewriteRule ^call-girl-in-delhi/?$ /call-girls/delhi/ [R=301,L]
+RewriteRule ^agra-escorts/?$ /call-girls/agra/ [R=301,L]
+RewriteRule ^jaipur-escorts/?$ /call-girls/jaipur/ [R=301,L]
+RewriteRule ^lucknow-escorts/?$ /call-girls/lucknow/ [R=301,L]
+RewriteRule ^guwahati-escorts/?$ /call-girls/guwahati/ [R=301,L]
+RewriteRule ^rishikesh-escorts/?$ /call-girls/rishikesh/ [R=301,L]
+RewriteRule ^goa-escorts/?$ /call-girls/goa/ [R=301,L]
+RewriteRule ^ghaziabad-escorts/?$ /call-girls/ghaziabad/ [R=301,L]
+RewriteRule ^kota-escorts/?$ /call-girls/kota/ [R=301,L]
+RewriteRule ^ahmedabad-escorts/?$ /call-girls/ahmedabad/ [R=301,L]
+RewriteRule ^arunachal-pradesh-escorts/?$ /call-girls/arunachal-pradesh/ [R=301,L]
+RewriteRule ^bhopal-escorts/?$ /call-girls/bhopal/ [R=301,L]
+RewriteRule ^call-girl-in-gurugram/?$ /call-girls/gurugram/ [R=301,L]
+RewriteRule ^mumbai-escorts/?$ /call-girls/mumbai/ [R=301,L]
+RewriteRule ^ajmer-escorts/?$ /call-girls/ajmer/ [R=301,L]
+RewriteRule ^varanasi-escorts/?$ /call-girls/varanasi/ [R=301,L]
+RewriteRule ^dehradun-escorts/?$ /call-girls/dehradun/ [R=301,L]
+RewriteRule ^udaipur-escorts/?$ /call-girls/udaipur/ [R=301,L]
+RewriteRule ^indore-escorts/?$ /call-girls/indore/ [R=301,L]
+RewriteRule ^noida-escorts/?$ /call-girls/noida/ [R=301,L]
+RewriteRule ^patna-escorts/?$ /call-girls/patna/ [R=301,L]
+RewriteRule ^visakhapatnam-escorts/?$ /call-girls/visakhapatnam/ [R=301,L]
+RewriteRule ^manali-escorts/?$ /call-girls/manali/ [R=301,L]
 
 
 
