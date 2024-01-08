@@ -19,7 +19,7 @@ if(localConnection()){
     }
 
 }else{
-    $con = mysqli_connect('localhost','u231955561_mahajan','pooja@1Majan','u231955561_pooja');
+    $con = mysqli_connect('localhost','astrlbbp','Gauty9839107285$','astrlbbp_pooja');
     if(!$con){
         die('Not Connected');
     }
