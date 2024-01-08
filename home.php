@@ -30,6 +30,9 @@
     <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <style>
         .main-content h3{font-size: 1.7rem;}
+        .main-content a{
+            color:#0000ff;
+        }
     </style>
 
     <script type="application/ld+json">
@@ -68,7 +71,7 @@
                 <li><a href="<?=get_url() ?>login/">Login</a></li>
                 <li><a href="<?=get_url() ?>register/">Sign up</a></li>
             </ul>
-            <div style="width: 20%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;">Post Ad</a></div>
+            <div style="width: 23%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option" ><i class="ri-add-box-line"></i></span></a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
@@ -269,7 +272,7 @@
                 decent manner.</p>
             <p>These listed girls, escorts, bhabhies, and ladies are more active on social media. So our visitors can
                 contact us directly through those social channels. Our visitors can find their soul mates or girls for
-                one night stand. <span style="color: #0000ff;"><strong>We request our visitors not to pay any amount in
+                one night stand. <span style="color: blue;"><strong>We request our visitors not to pay any amount in
                         advance without any physical contact.</strong></span></p>
 
             <h3>Versatile services provided by different escorts our client wants</h3>

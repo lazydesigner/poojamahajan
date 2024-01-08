@@ -37,15 +37,15 @@
             <p>&copy; Copyrights 2023. All Rights Reserved</p>
             <ul>
             <li>
-<a href="https://www.dmca.com/Protection/Status.aspx?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82&amp;refurl=https://skokra.com/pm/disclaimer/" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82" width="70px" alt="DMCA.com Protection Status"></a> <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script></li>  
-            <li><a href="https://www.dmca.com/compliance/poojamahajan.com" title="DMCA Compliance information for poojamahajan.com"><img src="https://www.dmca.com/img/dmca-compliant-grayscale.png" alt="DMCA compliant image" width="70px"></a></li>
-                <li><a href="https://www.behance.net/poojamahajan4"><i class="ri-behance-line"></i></a></li>
+<a href="https://www.dmca.com/Protection/Status.aspx?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82&amp;refurl=https://skokra.com/pm/disclaimer/" aria-label="dmca" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82" width="70px" alt="DMCA.com Protection Status"></a> <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script></li>  
+            <li><a href="https://www.dmca.com/compliance/poojamahajan.com" aria-label="dmca" title="DMCA Compliance information for poojamahajan.com"><img src="https://www.dmca.com/img/dmca-compliant-grayscale.png" alt="DMCA compliant image" width="70px"></a></li>
+                <li><a href="https://www.behance.net/poojamahajan4" aria-label="behance"><i class="ri-behance-line"></i></a></li>
                 <!-- <li><a href=""><i class="ri-instagram-line"></i></a></li> -->
-                <li><a href="https://www.flickr.com/photos/195962025@N07/"><i class="ri-flickr-fill"></i></a></li>
-                <li><a href="https://www.tumblr.com/poojamahajan1"><i class="ri-tumblr-fill"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCxJhGcJloIJavPcWub8DEJg"><i class="ri-youtube-fill"></i></a></li>
-                <li><a href="https://soundcloud.com/user-77189773"><i class="ri-soundcloud-fill"></i></a></li>
-                <li><a href="https://www.reddit.com/user/poojamahajan1/comments/x20lqg/pooja_mahajan/?rdt=58757"><i class="ri-reddit-fill"></i></a></li>
+                <li><a href="https://www.flickr.com/photos/195962025@N07/" aria-label="flickr"><i class="ri-flickr-fill"></i></a></li>
+                <li><a href="https://www.tumblr.com/poojamahajan1" aria-label="tumblr"><i class="ri-tumblr-fill"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCxJhGcJloIJavPcWub8DEJg" aria-label="youtube"><i class="ri-youtube-fill"></i></a></li>
+                <li><a href="https://soundcloud.com/user-77189773" aria-label="soundcloud"><i class="ri-soundcloud-fill"></i></a></li>
+                <li><a href="https://www.reddit.com/user/poojamahajan1/comments/x20lqg/pooja_mahajan/?rdt=58757" aria-label="reddit"><i class="ri-reddit-fill"></i></a></li>
             </ul>
         </div>
     </footer>
