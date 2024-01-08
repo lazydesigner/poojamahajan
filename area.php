@@ -125,7 +125,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <li><a href="<?= get_url() ?>login/">Login</a></li>
                 <li><a href="<?= get_url() ?>register/">Sign up</a></li>
             </ul>
-            <div style="width: 23%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option" ><i class="ri-add-box-line"></i></span></a></div>
+            <div style="width: 23%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;" aria-label="post-add"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option" ><i class="ri-add-box-line"></i></span></a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
