@@ -31,7 +31,7 @@
     <style>
         .main-content h3{font-size: 1.7rem;}
         .main-content a{
-            color: #800080;
+            color: orangered;
         }
     </style>
 

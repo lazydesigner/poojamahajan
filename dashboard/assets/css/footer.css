@@ -63,7 +63,7 @@ footer ul li a{
     gap: 2.5%;
 }
 .new-footer-row2 ul li i{
-    font-size: x-large;
+    font-size: xx-large;
     cursor: pointer;
 }
 @media screen and (max-width: 850px){
