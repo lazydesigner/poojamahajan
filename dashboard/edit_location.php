@@ -1,6 +1,12 @@
 <?php include '../routes.php' ?>
 <?php include './connection.php' ?>
+<?php
+session_start();
+if(!isset($_SESSION['email'])){
+    header('Location: '.get_url().'auth-log');
+}
 
+?>
 <?php 
 $id = $_GET['id'];
 
@@ -39,6 +45,7 @@ if(mysqli_num_rows($res)>0){
                 <ul>
                     <li><i class="ri-arrow-right-s-fill"></i><a href="<?= get_url() ?>dashboard/profiles">Profile</a></li>
                     <li><i class="ri-arrow-right-s-fill"></i><a href="<?= get_url() ?>dashboard">City Page</a></li>
+                    <li><i class="ri-arrow-right-s-fill"></i><a href="<?= get_url() ?>logout">Logout</a></li>
                 </ul>
             </div>
             <div class="action-pannel">

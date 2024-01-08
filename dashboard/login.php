@@ -30,16 +30,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Book Premium call girls in Telibagh | Poojamahajan" />
     <meta property="og:description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
-    <meta property="og:url" content="https://poojamahajan.com/<?= $row['profile_name'] ?>-telibagh/" />
+    <meta property="og:url" content="https://poojamahajan.com/auth-log/" />
     <meta property="og:site_name" content="Escort" />
-    <meta property="article:section" content="lucknow-escorts" />
-    <meta property="og:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
-    <meta property="og:image:secure_url" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
-    <meta property="og:image:alt" content="<?= $row['profile_name'] ?> Telibagh" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Book Premium call girls in Telibagh | Poojamahajan" />
-    <meta name="twitter:description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
-    <meta name="twitter:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
+
 </head>
 
 <body>
@@ -60,16 +53,14 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <div class="flex flex-col items-center justify-center h-screen">
   <div class="w-full max-w-md bg-white rounded-lg shadow-md p-6">
     <h2 class="text-2xl font-bold text-gray-900 mb-4">Login</h2>
-    <form action="<?=get_url() ?>" method="post" class="flex flex-col">
-      <input type="email" class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" placeholder="Email address">
-      <input type="password" class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" placeholder="Password">
+    <form action="<?=get_url() ?>auth/" method="post" class="flex flex-col">
+      <input type="email" class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" name="email" placeholder="Email address" required>
+      <input type="password" class="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" name="pass" placeholder="Password" required>
       <div class="flex items-center justify-between flex-wrap">
         <label for="remember-me" class="text-sm text-gray-900 cursor-pointer">
-          <input type="checkbox" id="remember-me" class="mr-2">
-          Remember me
+          <!-- <input type="checkbox" id="remember-me" class="mr-2">
+          Remember me -->
         </label>
-        <a href="#" class="text-sm text-blue-500 hover:underline mb-0.5">Forgot password?</a>
-        <p class="text-gray-900 mt-4"> Don't have an account? <a href="<?=get_url() ?>sign-up/" class="text-sm text-blue-500 -200 hover:underline mt-4">Signup</a></p>
       </div>
       <button type="submit" class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150">Login</button>
     </form>
@@ -79,13 +70,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     </div>
 
     <?php include './footer2.php' ?>
-    <script type="application/ld+json">
-        "@context": "http://schema.org/",
-            "@type": "Organization",
-            "name": "Poojamahajan",
-            "url": "https://poojamahajan.com",
-            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
-        </script>
+    
 </body>
 
 </html>
