@@ -29,16 +29,11 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Book Premium call girls in Telibagh | Poojamahajan" />
     <meta property="og:description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
-    <meta property="og:url" content="https://poojamahajan.com/<?= $row['profile_name'] ?>-telibagh/" />
-    <meta property="og:site_name" content="Escort" />
-    <meta property="article:section" content="lucknow-escorts" />
-    <meta property="og:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
-    <meta property="og:image:secure_url" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
-    <meta property="og:image:alt" content="<?= $row['profile_name'] ?> Telibagh" />
+    
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Book Premium call girls in Telibagh | Poojamahajan" />
     <meta name="twitter:description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
-    <meta name="twitter:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
+    <!-- <meta name="twitter:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" /> -->
 </head>
 
 <body>
