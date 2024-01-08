@@ -16,7 +16,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>    
-    <title>Book Premium call girls in Telibagh | Poojamahajan</title>
+    <title>Login | Poojamahajan</title>
     <meta name="description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
     <meta name="robots" content="noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <link rel="canonical" href="<?=$fullURL ?>/" />

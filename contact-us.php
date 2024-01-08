@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/index.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
-    <title>The Best Escort Services In India | Pooja Mahajan</title>
+    <title>Contact us | Pooja Mahajan</title>
     <meta name="description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
     <link rel="canonical" href="<?=$fullURL ?>/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="The Best Escort Services In India | Pooja Mahajan" />
+    <meta property="og:title" content="Contact us | Pooja Mahajan" />
     <meta property="og:description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
     <meta property="og:url" content="<?= $fullURL ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="The Best Escort Services In India | Pooja Mahajan" />
+    <meta name="twitter:title" content="Contact us | Pooja Mahajan" />
     <meta name="twitter:description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
     <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
