@@ -31,7 +31,7 @@
     <style>
         .main-content h3{font-size: 1.7rem;}
         .main-content a{
-            color:#0000ff;
+            color: #800080;
         }
     </style>
 
@@ -272,7 +272,7 @@
                 decent manner.</p>
             <p>These listed girls, escorts, bhabhies, and ladies are more active on social media. So our visitors can
                 contact us directly through those social channels. Our visitors can find their soul mates or girls for
-                one night stand. <span style="color: blue;"><strong>We request our visitors not to pay any amount in
+                one night stand. <span style="color: #0000ff;"><strong>We request our visitors not to pay any amount in
                         advance without any physical contact.</strong></span></p>
 
             <h3>Versatile services provided by different escorts our client wants</h3>

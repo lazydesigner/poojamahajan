@@ -132,6 +132,7 @@ input[type=number]{
     display: flex;
     /* justify-content: space-evenly; */
 }
+.crumb{color: black!important;}
 .city-name-list-item{flex: 1;}
 .city-name-list-item ul{list-style: none;padding: 0;margin: 0;}
 .city-name-list ul li{font-weight: bold;margin:0 0 10% 0 ;}
