@@ -31,7 +31,8 @@
     <style>
         .main-content h3{font-size: 1.7rem;}
         .main-content a{
-            color: orangered;
+            color: blue;
+            font-weight: bold;
         }
     </style>
 

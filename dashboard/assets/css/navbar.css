@@ -193,7 +193,7 @@ h5{font-size: 1.2rem;}
     .footer-row{flex-wrap: wrap;}
     .footer-col:first-child{width: 100%;}
     .only-18 {width: 150px;}
-    .city-name-list-item {flex: 50%;}
+    .city-name-list-item {flex: 50%;} 
     .new-footer-col:nth-child(2){padding: 5%}
     .new-footer-col:nth-child(3){padding: 5%}
     .main-content{padding: 0 3% 3% 3%;}
