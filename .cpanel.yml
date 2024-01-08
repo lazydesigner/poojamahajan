@@ -1,6 +1,6 @@
 ---
 deployment:
-  :tasks:
+  tasks:
     - export DEPLOYPATH=/home/astrlbbp/public_html/
     - /bin/cp -r * $DEPLOYPATH
     - /bin/rm -rf $DEPLOYPATH/.git
