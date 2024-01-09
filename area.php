@@ -21,9 +21,13 @@ $sql2 = "SELECT * FROM city WHERE `city` = '$city' ";
 
 $result2 = mysqli_query($con, $sql2);
 if (mysqli_num_rows($result2) > 0) {
-    $data2 = mysqli_fetch_assoc($result2);
+    $sql_area = "SELECT * FROM area WHERE `area_value` =  '{$_GET['city']}'";
+    $res_area = mysqli_query($con, $sql_area);
+    if(mysqli_num_rows($res_area) > 0){}else{
+        header('Location: '. get_url().'call-girls/'.$city.'/');
+    }
 } else {
-    die("404 Page Found");
+    header('Location: https://poojamahajan.com/404/');
 }
 
 $res = mysqli_query($con, $sql);
@@ -50,7 +54,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <meta name="robots" content=" index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>350+ Call girls in <?= $area ?> both incall & outcall 24/7 - Poojamahajan</title>
-    <link rel="canonical" href="<?= $fullURL ?>/" />
+    <link rel="canonical" href="<?= $fullURL ?>" />
 
     <meta name="description" content="Book No. 1 <?= $area ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment.">
     <meta property="og:locale" content="en_US" />
@@ -93,9 +97,109 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             padding: 1%;
         }
     </style>
+    
+    <style>
+        .confirm-18 {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
 
-    <script>
-        //     const mySchema2 = {
+        .confirm-18 p {
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .confirm-18-body {
+            width: 50%;
+            /* height: 50%; */
+            transform: translate(50%, 10%);
+            background-color: white;
+            padding: 2%;
+            border-radius: 10px;
+        }
+
+        .btn1 {
+            width: 100px;
+            height: 40px;
+            border: 0;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #9f21e3;
+            border-radius: 2px;
+            color: white;
+        }
+
+        .btn2 {
+            width: 100px;
+            height: 40px;
+            border: 1px solid tomato;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: transparent;
+            border-radius: 2px;
+            color: tomato;
+        }
+
+        @media screen and (max-width:500px) {
+
+            .confirm-18-body {
+                width: 100%;
+                /* height: 50%; */
+                transform: translate(0%, 0%);
+                background-color: white;
+                padding: 2%;
+                border-radius: 0px;
+            }
+
+        }
+    </style>
+
+<script>
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toGMTString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            let user = getCookie("confirm");
+            if (user != "") {
+                var remove_agree_terms = document.getElementById("confirm-18");
+                remove_agree_terms.style.display = 'none';
+            }
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            let user = getCookie("confirm");
+            if (user != "") {
+                var remove_agree_terms = document.getElementById("confirm-18");
+                remove_agree_terms.style.display = 'none';
+            } else {
+                var remove_agree_terms = document.getElementById("confirm-18");
+                remove_agree_terms.style.display = 'block';
+            }
+        }
+        // const mySchema2 = {
         //     "@context": "https://schema.org/",
         //     "@type": "WebSite",
         //     "name": "Poojamahajan",
@@ -116,7 +220,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
 </head>
 
-<body>
+<body onload="checkCookie()">
     <header>
         <nav class="navbar">
             <span class="brand-name"><a href="<?= get_url() ?>">Poojamahajan</a></span>
@@ -233,7 +337,30 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
         </div>
     </div>
+    <div class="confirm-18" id="confirm-18">
+        <div class="confirm-18-body" style="text-align: center;">
+            <p style="font-size: x-large;font-weight:bolder;margin-bottom:2%"><strong>Important Notice: Please Review Before Proceeding</strong></p>
+            <p><b>I hereby confirm that I am 18 years of age or older.</b></p>
+            <p>
 
+                The display of any advertisements claiming to provide sexual services in exchange for money is strictly prohibited.</p>
+            <p>
+
+                Furthermore, the publication of explicit material featuring genital organs is not allowed.</p>
+            <p>
+
+                Any such advertisements will be promptly reported to the appropriate authorities, and the responsible party will be held accountable for any legal consequences.
+            </p>
+            <p>
+                By submitting an advertisement on Poojamahajan, advertisers assert that they possess full rights to the content and acknowledge that they are aged 18 years or older. They also affirm that the advertised content is approved for publication on Poojamahajan.</p>
+            <p>
+
+                By clicking the <b>"Accept"</b> button, users certify that they are over 18 years old and release the service providers, owners, and creators of Poojamahajan.com from any responsibility regarding the content and use of this service.</p>
+            <div style="margin-top: 2%;"><button class="btn1" onclick="setCookie('confirm', 'accepted', 30)">Confirm</button>
+                <a href="<?= get_url() ?>"><button class="btn2">Reject</button></a>
+            </div>
+        </div>
+    </div>
 
     </div>
     <?php include './footer2.php' ?>

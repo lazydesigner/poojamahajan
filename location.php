@@ -11,7 +11,7 @@ $result2 = mysqli_query($con, $sql2);
 if (mysqli_num_rows($result2) > 0) {
     $data2 = mysqli_fetch_assoc($result2);
 } else {
-    die("404 Page Found");
+    header('Location: https://poojamahajan.com/404');
 }
 
 $res = mysqli_query($con, $sql);
@@ -40,7 +40,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="robots" content=" index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>Book Premium call girls in <?= $city ?> | Poojamahajan</title>
 
-    <link rel="canonical" href="<?= $fullURL ?>/" />
+    <link rel="canonical" href="<?= $fullURL ?>" />
     <meta name="description" content="Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.">
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
