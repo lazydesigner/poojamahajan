@@ -198,7 +198,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 })
             </script>
             <script type="application/ld+json">
-                "@context": "http://schema.org/",
+                "@context": "https://schema.org/",
                 "@type": "Organization",
                 "name": "Poojamahajan",
                 "url": "https://poojamahajan.com",

@@ -38,7 +38,7 @@
 
     <script type="application/ld+json">
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "Poojamahajan - Post Free Adult Classifieds Ads",
             "url": "https://poojamahajan.com/",
@@ -55,7 +55,7 @@
 
 <body>
 <script type="application/ld+json">
-        "@context": "http://schema.org/",
+        "@context": "https://schema.org/",
             "@type": "Organization",
             "name": "Poojamahajan",
             "url": "https://poojamahajan.com",
