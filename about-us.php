@@ -35,20 +35,21 @@ include './init.php';
     <meta name="theme-color" content="#ffffff">
     <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <style>
-        .profile-section p{
+        .profile-section p {
             font-size: 1.1rem;
         }
-        .profile-section h2{
+
+        .profile-section h2 {
             font-size: 1.5rem;
         }
     </style>
-        <script>
-
+    <script>
         // const mySchema2 = {
         //     "@context": "https://schema.org/",
         //     "@type": "WebSite",
         //     "name": "Poojamahajan",
-        //     "url": "<?php // $fullURL ?>",
+        //     "url": "<?php // $fullURL 
+                        ?>",
         //     "potentialAction": {
         //         "@type": "SearchAction",
         //         "target": "https://poojamahajan.com/search?{search_term_string}",
@@ -73,53 +74,59 @@ include './init.php';
                 <li><a href="<?= get_url() ?>login/">Login</a></li>
                 <li><a href="<?= get_url() ?>register/">Sign up</a></li>
             </ul>
-            <div style="width: 23%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;" aria-label="post-add"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option" ><i class="ri-add-box-line"></i></span></a></div>
+            <div style="width: 23%;align-self:end"><a href="<?= get_url() ?>login/" style="float: right;" aria-label="post-add"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option"><i class="ri-add-box-line"></i></span></a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
     </header>
     <div class="container" style="width: 75%;padding:2% 0">
         <div class="page-detail-and-information">
-        <div id="breadcrumbs">
-            <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Poojamahajan" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
-                    <meta itemprop="position" content="1">
-                </li>
-                <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="<?= get_url() ?>about-us" title="About Our Poojamahajan Escort Service"><span itemprop="name">About Us</span></a>
-                    <meta itemprop="position" content="2">
-                </li>
-            </ol>
-        </div>
+            <div id="breadcrumbs">
+                <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | Poojamahajan" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li><b><i class="ri-arrow-right-s-line"></i></b></li>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="<?= get_url() ?>about-us" title="About Our Poojamahajan Escort Service"><span itemprop="name">About Us</span></a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                </ol>
+            </div>
             <h1 style="font-size: 2.3rem;">About Our Poojamahajan Escort Service</h1>
         </div>
         <div class="profile-section">
             <h2><b>Know More About Us: A Genuine Escort Agency in India</b></h2><br><br>
-            <p><a href="<?= get_url() ?>" >poojamahajan</a> in is the most prominent and leading web portal to provide you with escort girls. We are the most trusted ad service website where any independent escort or broker can post their services.</p><br><p>
+            <p><a href="<?= get_url() ?>">poojamahajan</a> in is the most prominent and leading web portal to provide you with escort girls. We are the most trusted ad service website where any independent escort or broker can post their services.</p><br>
+            <p>
 
 
-We ensure all the activities are genuine between the client and the host. But we also abduct our clients from making any advance payments. We encourage all to have a face-to-face meeting.</p><br><p>
+                We ensure all the activities are genuine between the client and the host. But we also abduct our clients from making any advance payments. We encourage all to have a face-to-face meeting.</p><br>
+            <p>
 
 
-Poojamahajan.com is not liable for any financial or other losses, as we are just an ad-service website and are not responsible for the direct services.</p><br><p>
+                Poojamahajan.com is not liable for any financial or other losses, as we are just an ad-service website and are not responsible for the direct services.</p><br>
+            <p>
 
 
-Please make sure you are dealing with a genuine person, and don’t pay any amount in advance. Visit our homepage for the most exclusive service we have on our website.</p><br><p>
+                Please make sure you are dealing with a genuine person, and don’t pay any amount in advance. Visit our homepage for the most exclusive service we have on our website.</p><br>
+            <p>
 
 
-Please read our terms of use before initiating any financial step online. You can register your grievances by using our contact form.</p>
+                Please read our terms of use before initiating any financial step online. You can register your grievances by using our contact form.</p>
         </div>
 
     </div>
 
     <?php include './footer2.php' ?>
     <script type="application/ld+json">
-        "@context": "https://schema.org/",
+        {
+            "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Poojamahajan",
             "url": "https://poojamahajan.com",
             "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
-        </script>
+        }
+    </script>
 </body>
 
 </html>

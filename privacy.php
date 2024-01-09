@@ -147,82 +147,84 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <p>The information given by the Service is for general guidance on matters of interest only. Even if the Company takes every precaution to insure that the content of the Service is both current and accurate, errors can occur. Plus, given the changing nature of laws, rules and regulations, there may be delays, omissions or inaccuracies in the information contained on the Service. The Company is not responsible for any errors or omissions, or for the results obtained from the use of this information.</p>
 
             <h2>Fair Use Disclaimer</h2>
-<p>The Company may use copyrighted material which has not always been specifically authorized by the copyright owner. The Company is making such material available for criticism, comment, news reporting, teaching, scholarship, or research. The Company believes this constitutes a fair use of any such copyrighted material as provided for in section 107 of the United States Copyright law. If You wish to use copyrighted material from the Service for your own purposes that go beyond fair use, You must obtain permission from the copyright owner.</p>
+            <p>The Company may use copyrighted material which has not always been specifically authorized by the copyright owner. The Company is making such material available for criticism, comment, news reporting, teaching, scholarship, or research. The Company believes this constitutes a fair use of any such copyrighted material as provided for in section 107 of the United States Copyright law. If You wish to use copyrighted material from the Service for your own purposes that go beyond fair use, You must obtain permission from the copyright owner.</p>
 
-<h2>Views Expressed </h2>
-<p>The Service may contain views and opinions which are those of the authors and do not necessarily reflect the official policy or position of any other author, agency, organization, employer or company, including the Company. Comments published by users are their sole responsibility and the users will take full responsibility, liability and blame for any libel or litigation that results from something written in or as a direct result of something written in a comment. The Company is not liable for any comment published by users and reserves the right to delete any comment for any reason whatsoever.</p>
+            <h2>Views Expressed </h2>
+            <p>The Service may contain views and opinions which are those of the authors and do not necessarily reflect the official policy or position of any other author, agency, organization, employer or company, including the Company. Comments published by users are their sole responsibility and the users will take full responsibility, liability and blame for any libel or litigation that results from something written in or as a direct result of something written in a comment. The Company is not liable for any comment published by users and reserves the right to delete any comment for any reason whatsoever.</p>
 
-<h2>No Responsibility Disclaimer</h2>
-<p>The information on the Service is provided with the understanding that the Company is not herein engaged in rendering legal, accounting, tax, or other professional advice and services. As such, it should not be used as a substitute for consultation with professional accounting, tax, legal or other competent advisers. In no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever arising out of or in connection with your access or use or inability to access or use the Service.</p>
+            <h2>No Responsibility Disclaimer</h2>
+            <p>The information on the Service is provided with the understanding that the Company is not herein engaged in rendering legal, accounting, tax, or other professional advice and services. As such, it should not be used as a substitute for consultation with professional accounting, tax, legal or other competent advisers. In no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever arising out of or in connection with your access or use or inability to access or use the Service.</p>
 
-<h2>Use at Your Own Risk Disclaimer</h2>
-<p>All information in the Service is provided as is, with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied, including, but not limited to warranties of performance, merchantability and fitness for a particular purpose. The Company will not be liable to You or anyone else for any decision made or action taken in reliance on the information given by the Service or for any consequential, special or similar damages, even if advised of the possibility of such damages.</p>
+            <h2>Use at Your Own Risk Disclaimer</h2>
+            <p>All information in the Service is provided as is, with no guarantee of completeness, accuracy, timeliness or of the results obtained from the use of this information, and without warranty of any kind, express or implied, including, but not limited to warranties of performance, merchantability and fitness for a particular purpose. The Company will not be liable to You or anyone else for any decision made or action taken in reliance on the information given by the Service or for any consequential, special or similar damages, even if advised of the possibility of such damages.</p>
 
-<h2>Contact Us</h2>
-<p>If you have any questions about this Disclaimer, You can contact Us: By email: poojamahajan.com@gmail.com</p>
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Disclaimer, You can contact Us: By email: poojamahajan.com@gmail.com</p>
 
         </div>
-        </div>
-            <?php include './footer2.php' ?>
-            <script>
-                document.getElementById('serach-city-input').addEventListener('keyup', (e) => {
-                    if (e.target.value.trim() != '') {
-                        const formdata = new FormData()
-                        formdata.append('search-city', e.target.value)
-                        formdata.append('category', document.getElementById('category').value)
-                        formdata.append('status', 'search-city')
-                        fetch('<?= get_url() ?>dashboard/fetch_data.php', {
-                                method: 'POST',
-                                body: formdata
-                            }).then(res => res.json())
-                            .then(d => {
-                                document.getElementById('list-of-cities').style.display = 'block';
-                                document.getElementById('list-of-cities-id').innerHTML = d['city'];
+    </div>
+    <?php include './footer2.php' ?>
+    <script>
+        document.getElementById('serach-city-input').addEventListener('keyup', (e) => {
+            if (e.target.value.trim() != '') {
+                const formdata = new FormData()
+                formdata.append('search-city', e.target.value)
+                formdata.append('category', document.getElementById('category').value)
+                formdata.append('status', 'search-city')
+                fetch('<?= get_url() ?>dashboard/fetch_data.php', {
+                        method: 'POST',
+                        body: formdata
+                    }).then(res => res.json())
+                    .then(d => {
+                        document.getElementById('list-of-cities').style.display = 'block';
+                        document.getElementById('list-of-cities-id').innerHTML = d['city'];
 
-                            })
+                    })
+            } else {
+                document.getElementById('list-of-cities').style.display = 'none';
+                document.getElementById('list-of-cities-id').innerHTML = '';
+            }
+        })
+        document.addEventListener('click', () => {
+            document.getElementById('list-of-cities').style.display = 'none';
+            document.getElementById('list-of-cities-id').innerHTML = '';
+            document.getElementById('serach-city-input').value = '';
+        })
+
+
+        document.getElementById('search-for-cities-in-row').addEventListener('keyup', (e) => {
+            var searchTerm = e.target.value.toLowerCase()
+
+            var x = document.querySelectorAll('#list-of-cities-row')
+            for (j = 0; j < x.length; j++) {
+                var items = x[j].getElementsByTagName('li');
+                for (i = 0; i < items.length; i++) {
+                    var itemText = items[i].innerText.toLowerCase()
+                    if (itemText.includes(searchTerm)) {
+                        items[i].style.display = 'block';
                     } else {
-                        document.getElementById('list-of-cities').style.display = 'none';
-                        document.getElementById('list-of-cities-id').innerHTML = '';
+                        items[i].style.display = 'none';
                     }
-                })
-                document.addEventListener('click', () => {
-                    document.getElementById('list-of-cities').style.display = 'none';
-                    document.getElementById('list-of-cities-id').innerHTML = '';
-                    document.getElementById('serach-city-input').value = '';
-                })
+                }
+            }
+        })
 
-
-                document.getElementById('search-for-cities-in-row').addEventListener('keyup', (e) => {
-                    var searchTerm = e.target.value.toLowerCase()
-
-                    var x = document.querySelectorAll('#list-of-cities-row')
-                    for (j = 0; j < x.length; j++) {
-                        var items = x[j].getElementsByTagName('li');
-                        for (i = 0; i < items.length; i++) {
-                            var itemText = items[i].innerText.toLowerCase()
-                            if (itemText.includes(searchTerm)) {
-                                items[i].style.display = 'block';
-                            } else {
-                                items[i].style.display = 'none';
-                            }
-                        }
-                    }
-                })
-
-                document.getElementById('menu-option').addEventListener('click', () => {
-                    document.getElementById('nav-ul').classList.toggle('nav-ul-active')
-                })
-                document.getElementById('search-filter-menu').addEventListener('click', () => {
-                    document.getElementById('search-filter').classList.toggle('search-filter-active')
-                })
-            </script>
-            <script type="application/ld+json">
-                "@context": "https://schema.org/",
-                "@type": "Organization",
-                "name": "Poojamahajan",
-                "url": "https://poojamahajan.com",
-                "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
-            </script>
+        document.getElementById('menu-option').addEventListener('click', () => {
+            document.getElementById('nav-ul').classList.toggle('nav-ul-active')
+        })
+        document.getElementById('search-filter-menu').addEventListener('click', () => {
+            document.getElementById('search-filter').classList.toggle('search-filter-active')
+        })
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Poojamahajan",
+            "url": "https://poojamahajan.com",
+            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+        }
+    </script>
 </body>
 
 </html>

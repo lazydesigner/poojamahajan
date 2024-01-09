@@ -1,4 +1,5 @@
-<?php include './init.php'; $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
+<?php include './init.php';
+$fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +19,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="The Best 100s Escort Services In India | Pooja Mahajan" />
     <meta property="og:description" content="IWanna feel heaven? Call me then because I can provide real erotic service in cheap rates. I will open for you the magnificent world" />
-    <meta property="og:url" content="<?=$fullURL ?>/" />
+    <meta property="og:url" content="<?= $fullURL ?>/" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="The Best 100s Escort Services In India | Pooja Mahajan" />
@@ -29,9 +30,10 @@
     <meta name="theme-color" content="#ffffff">
 
     <style>
-        body{
-            height: auto!important;
+        body {
+            height: auto !important;
         }
+
         .profile-image-grid-list {
             width: 100%;
             height: auto;
@@ -80,11 +82,17 @@
             color: #9f21e3;
             text-align: center;
         }
+
         @media screen and (max-width:770px) {
-            .container{width: 90%;}
+            .container {
+                width: 90%;
+            }
         }
+
         @media screen and (max-width:500px) {
-            .container{width: 100%;}
+            .container {
+                width: 100%;
+            }
         }
     </style>
     <!-- <script>
@@ -92,7 +100,8 @@
             "@context": "https://schema.org/",
             "@type": "WebSite",
             "name": "Poojamahajan",
-            "url": "<?php //$fullURL ?>",
+            "url": "<?php //$fullURL 
+                    ?>",
             "potentialAction": {
                 "@type": "SearchAction",
                 "target": "https://poojamahajan.com/search?{search_term_string}",
@@ -115,12 +124,12 @@
         <nav class="navbar">
             <span class="brand-name"><a href="<?= get_url() ?>">Poojamahajan</a></span>
             <ul class="nav-ul" id="nav-ul">
-            <li><a href="<?=get_url() ?>">Home</a></li>
-                <li><a href="<?=get_url() ?>contact-us/">Contact Us</a></li>
-                <li><a href="<?=get_url() ?>login/">Login</a></li>
-                <li><a href="<?=get_url() ?>register/">Sign up</a></li>
+                <li><a href="<?= get_url() ?>">Home</a></li>
+                <li><a href="<?= get_url() ?>contact-us/">Contact Us</a></li>
+                <li><a href="<?= get_url() ?>login/">Login</a></li>
+                <li><a href="<?= get_url() ?>register/">Sign up</a></li>
             </ul>
-            <div style="width: 23%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;" aria-label="post-add"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option" ><i class="ri-add-box-line"></i></span></a></div>
+            <div style="width: 23%;align-self:end"><a href="<?= get_url() ?>login/" style="float: right;" aria-label="post-add"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option"><i class="ri-add-box-line"></i></span></a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
@@ -130,42 +139,42 @@
             <?php include './navbar.php' ?>
         </div>
         <div class="page-detail-and-information">
-        <div id="breadcrumbs">
-            <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
-                    <meta itemprop="position" content="1">
-                </li>
-                <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" title="Poojamahajan Call Girl Page"><span itemprop="name">call girls</span></a>
-                    <meta itemprop="position" content="2">
-                </li>
-            </ol>
-        </div>
+            <div id="breadcrumbs">
+                <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li><b><i class="ri-arrow-right-s-line"></i></b></li>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" title="Poojamahajan Call Girl Page"><span itemprop="name">call girls</span></a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                </ol>
+            </div>
             <h1>Poojamahajan Call Girls</h1>
         </div>
         <div class="page-detail-and-information " style="width: 100%;height:auto">
             <div class="profile-image-grid-list">
-            <?php $query = "SELECT * FROM profiles;";
-            $result = mysqli_query($con, $query);
-            if (mysqli_num_rows($result) > 0) {
-                while ($rows = mysqli_fetch_assoc($result)) {
-                    $ax = json_decode($rows['profile_images'], true); ?>
-                    <div class="sub-profile">
-                        <div class="sub-profile-image">
-                            <img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="">
+                <?php $query = "SELECT * FROM profiles;";
+                $result = mysqli_query($con, $query);
+                if (mysqli_num_rows($result) > 0) {
+                    while ($rows = mysqli_fetch_assoc($result)) {
+                        $ax = json_decode($rows['profile_images'], true); ?>
+                        <div class="sub-profile">
+                            <div class="sub-profile-image">
+                                <img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="">
+                            </div>
+                            <div class="sub-profile-detail">
+                                <a href="<?= get_url() ?><?= $rows['page_url'] ?>" style="color:white">
+                                    <p><?= $rows['page_h1'] ?></p>
+                                </a>
+                            </div>
+                            <div class="sub-profile-information">
+                                <span><?= $rows['state'] ?></span>
+                                <span><?= $rows['profile_age'] ?> Years</span>
+                            </div>
                         </div>
-                        <div class="sub-profile-detail">
-                            <a href="<?= get_url() ?><?= $rows['page_url'] ?>" style="color:white">
-                                <p><?= $rows['page_h1'] ?></p>
-                            </a>
-                        </div>
-                        <div class="sub-profile-information">
-                            <span><?= $rows['state'] ?></span>
-                            <span><?= $rows['profile_age'] ?> Years</span>
-                        </div>
-                    </div>
-            <?php }
-            } ?>
+                <?php }
+                } ?>
             </div>
         </div>
     </div>
@@ -222,13 +231,15 @@
             document.getElementById('search-filter').classList.toggle('search-filter-active')
         })
     </script>
-<script type="application/ld+json">
-        "@context": "https://schema.org/",
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Poojamahajan",
             "url": "https://poojamahajan.com",
             "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
-        </script>
+        }
+    </script>
 </body>
 
 </html>

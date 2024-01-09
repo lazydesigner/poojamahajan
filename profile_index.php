@@ -48,18 +48,18 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <link rel="canonical" href="<?= $fullURL ?>" />
-    <title><?=$area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan</title>
+    <title><?= $area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
     <meta name="theme-color" content="#ffffff">
 
-    <meta name="description" content="Experience some outsanding service by model call girls from <?=$area2 ?> directly to your home. If you want me to come to your room." />
+    <meta name="description" content="Experience some outsanding service by model call girls from <?= $area2 ?> directly to your home. If you want me to come to your room." />
     <meta name="robots" content="index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="<?=$area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
-    <meta property="og:description" content="Experience some outsanding service by model call girls from <?=$area2 ?> directly to your home. If you want me to come to your room." />
+    <meta property="og:title" content="<?= $area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
+    <meta property="og:description" content="Experience some outsanding service by model call girls from <?= $area2 ?> directly to your home. If you want me to come to your room." />
     <meta property="og:url" content="<?= $fullURL ?>/" />
     <meta property="og:site_name" content="Escort" />
     <meta property="article:section" content="lucknow-escorts" />
@@ -67,8 +67,8 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta property="og:image:secure_url" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
     <meta property="og:image:alt" content="<?= $row['profile_name'] ?> Telibagh" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="<?=$area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
-    <meta name="twitter:description" content="Experience some outsanding service by model call girls from <?=$area2 ?> directly to your home. If you want me to come to your room." />
+    <meta name="twitter:title" content="<?= $area2 ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
+    <meta name="twitter:description" content="Experience some outsanding service by model call girls from <?= $area2 ?> directly to your home. If you want me to come to your room." />
     <meta name="twitter:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" />
     <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <style>
@@ -76,9 +76,16 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             .profile-image-grid {
                 grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
             }
-            .sub-profile{margin: auto;}
+
+            .sub-profile {
+                margin: auto;
+            }
         }
-        .container {width: 83%;}
+
+        .container {
+            width: 83%;
+        }
+
         @media screen and (max-width:525px) {
             .profile-image-grid {
                 grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -87,13 +94,18 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             .profile-section {
                 flex-wrap: wrap;
             }
+
             .profile-section-col:last-child {
                 flex: 100%;
             }
+
             .profile-section-col:last-child {
                 margin-top: 10%;
             }
-        .container {width: 98%;}
+
+            .container {
+                width: 98%;
+            }
         }
     </style>
     <script>
@@ -101,7 +113,8 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         //     "@context": "https://schema.org/",
         //     "@type": "WebSite",
         //     "name": "Poojamahajan",
-        //     "url": "<?php // $fullURL ?>",
+        //     "url": "<?php // $fullURL 
+                        ?>",
         //     "potentialAction": {
         //         "@type": "SearchAction",
         //         "target": "https://poojamahajan.com/search?{search_term_string}",
@@ -126,7 +139,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <li><a href="<?= get_url() ?>login/">Login</a></li>
                 <li><a href="<?= get_url() ?>register/">Sign up</a></li>
             </ul>
-            <div style="width: 23%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;" aria-label="post-add"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option" ><i class="ri-add-box-line"></i></span></a></div>
+            <div style="width: 23%;align-self:end"><a href="<?= get_url() ?>login/" style="float: right;" aria-label="post-add"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option"><i class="ri-add-box-line"></i></span></a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
@@ -137,21 +150,21 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         </div>
 
         <div class="page-detail-and-information">
-        <div id="breadcrumbs">
-            <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
-                    <meta itemprop="position" content="1">
-                </li>
-                <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="<?= get_url() ?>call-girls/<?= $city ?>" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $city ?></span></a>
-                    <meta itemprop="position" content="2">
-                </li>
-                <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb"><span itemprop="name"><?= $area2 ?></span></a>
-                    <meta itemprop="position" content="3">
-                </li>
-            </ol>
-        </div>
+            <div id="breadcrumbs">
+                <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li><b><i class="ri-arrow-right-s-line"></i></b></li>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="<?= get_url() ?>call-girls/<?= $city ?>" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $city ?></span></a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    <li><b><i class="ri-arrow-right-s-line"></i></b></li>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb"><span itemprop="name"><?= $area2 ?></span></a>
+                        <meta itemprop="position" content="3">
+                    </li>
+                </ol>
+            </div>
             <h1><?= $row['page_h1'] ?></h1>
         </div>
 
@@ -196,7 +209,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         </tr>
                         <tr>
                             <td> Location:</td>
-                            <td><a href="<?= get_url() ?>call-girls/<?=$city ?>/<?=$area ?>/"><span style="text-transform:capitalize;"><?= $row['profile_location'] ?></span></a></td>
+                            <td><a href="<?= get_url() ?>call-girls/<?= $city ?>/<?= $area ?>/"><span style="text-transform:capitalize;"><?= $row['profile_location'] ?></span></a></td>
                         </tr>
                         <tr>
                             <td> Language:</td>
@@ -315,9 +328,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                     },
                     // when window width is >= 640px
                     640: {
-                        slidesPerView:3
+                        slidesPerView: 3
                     },
-                    780:{
+                    780: {
                         slidesPerView: 5,
                         spaceBetween: 60,
                     }
@@ -417,11 +430,13 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         document.getElementById("defaultOpen").click();
     </script>
     <script type="application/ld+json">
-        "@context": "https://schema.org/",
-        "@type": "Organization",
-        "name": "Poojamahajan",
-        "url": "https://poojamahajan.com",
-        "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Poojamahajan",
+            "url": "https://poojamahajan.com",
+            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+        }
     </script>
 </body>
 

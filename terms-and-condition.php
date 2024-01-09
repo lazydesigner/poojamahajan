@@ -143,67 +143,69 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <p>Should we update, amend or make any changes to this document, those changes will be prominently posted here.</p>
 
         </div>
-        </div>
-            <?php include './footer2.php' ?>
-            <script>
-                document.getElementById('serach-city-input').addEventListener('keyup', (e) => {
-                    if (e.target.value.trim() != '') {
-                        const formdata = new FormData()
-                        formdata.append('search-city', e.target.value)
-                        formdata.append('category', document.getElementById('category').value)
-                        formdata.append('status', 'search-city')
-                        fetch('<?= get_url() ?>dashboard/fetch_data.php', {
-                                method: 'POST',
-                                body: formdata
-                            }).then(res => res.json())
-                            .then(d => {
-                                document.getElementById('list-of-cities').style.display = 'block';
-                                document.getElementById('list-of-cities-id').innerHTML = d['city'];
+    </div>
+    <?php include './footer2.php' ?>
+    <script>
+        document.getElementById('serach-city-input').addEventListener('keyup', (e) => {
+            if (e.target.value.trim() != '') {
+                const formdata = new FormData()
+                formdata.append('search-city', e.target.value)
+                formdata.append('category', document.getElementById('category').value)
+                formdata.append('status', 'search-city')
+                fetch('<?= get_url() ?>dashboard/fetch_data.php', {
+                        method: 'POST',
+                        body: formdata
+                    }).then(res => res.json())
+                    .then(d => {
+                        document.getElementById('list-of-cities').style.display = 'block';
+                        document.getElementById('list-of-cities-id').innerHTML = d['city'];
 
-                            })
+                    })
+            } else {
+                document.getElementById('list-of-cities').style.display = 'none';
+                document.getElementById('list-of-cities-id').innerHTML = '';
+            }
+        })
+        document.addEventListener('click', () => {
+            document.getElementById('list-of-cities').style.display = 'none';
+            document.getElementById('list-of-cities-id').innerHTML = '';
+            document.getElementById('serach-city-input').value = '';
+        })
+
+
+        document.getElementById('search-for-cities-in-row').addEventListener('keyup', (e) => {
+            var searchTerm = e.target.value.toLowerCase()
+
+            var x = document.querySelectorAll('#list-of-cities-row')
+            for (j = 0; j < x.length; j++) {
+                var items = x[j].getElementsByTagName('li');
+                for (i = 0; i < items.length; i++) {
+                    var itemText = items[i].innerText.toLowerCase()
+                    if (itemText.includes(searchTerm)) {
+                        items[i].style.display = 'block';
                     } else {
-                        document.getElementById('list-of-cities').style.display = 'none';
-                        document.getElementById('list-of-cities-id').innerHTML = '';
+                        items[i].style.display = 'none';
                     }
-                })
-                document.addEventListener('click', () => {
-                    document.getElementById('list-of-cities').style.display = 'none';
-                    document.getElementById('list-of-cities-id').innerHTML = '';
-                    document.getElementById('serach-city-input').value = '';
-                })
+                }
+            }
+        })
 
-
-                document.getElementById('search-for-cities-in-row').addEventListener('keyup', (e) => {
-                    var searchTerm = e.target.value.toLowerCase()
-
-                    var x = document.querySelectorAll('#list-of-cities-row')
-                    for (j = 0; j < x.length; j++) {
-                        var items = x[j].getElementsByTagName('li');
-                        for (i = 0; i < items.length; i++) {
-                            var itemText = items[i].innerText.toLowerCase()
-                            if (itemText.includes(searchTerm)) {
-                                items[i].style.display = 'block';
-                            } else {
-                                items[i].style.display = 'none';
-                            }
-                        }
-                    }
-                })
-
-                document.getElementById('menu-option').addEventListener('click', () => {
-                    document.getElementById('nav-ul').classList.toggle('nav-ul-active')
-                })
-                document.getElementById('search-filter-menu').addEventListener('click', () => {
-                    document.getElementById('search-filter').classList.toggle('search-filter-active')
-                })
-            </script>
-            <script type="application/ld+json">
-                "@context": "https://schema.org/",
-                "@type": "Organization",
-                "name": "Poojamahajan",
-                "url": "https://poojamahajan.com",
-                "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
-            </script>
+        document.getElementById('menu-option').addEventListener('click', () => {
+            document.getElementById('nav-ul').classList.toggle('nav-ul-active')
+        })
+        document.getElementById('search-filter-menu').addEventListener('click', () => {
+            document.getElementById('search-filter').classList.toggle('search-filter-active')
+        })
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Organization",
+            "name": "Poojamahajan",
+            "url": "https://poojamahajan.com",
+            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+        }
+    </script>
 </body>
 
 </html>

@@ -133,14 +133,15 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             .profile-section-box-image {
                 width: 50%;
             }
+
             .confirm-18-body {
-            width: 100%;
-            /* height: 50%; */
-            transform: translate(0%, 0%);
-            background-color: white;
-            padding: 2%;
-            border-radius: 0px;
-        }
+                width: 100%;
+                /* height: 50%; */
+                transform: translate(0%, 0%);
+                background-color: white;
+                padding: 2%;
+                border-radius: 0px;
+            }
 
             .profile-section-button-detail button {
                 width: 85px;
@@ -192,7 +193,8 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         //     "@context": "https://schema.org/",
         //     "@type": "WebSite",
         //     "name": "Poojamahajan",
-        //     "url": "<?php // $fullURL ?>",
+        //     "url": "<?php // $fullURL 
+                        ?>",
         //     "potentialAction": {
         //         "@type": "SearchAction",
         //         "target": "https://poojamahajan.com/search?{search_term_string}",
@@ -249,7 +251,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <li><a href="<?= get_url() ?>login/">Login</a></li>
                 <li><a href="<?= get_url() ?>register/">Sign up</a></li>
             </ul>
-            <div style="width: 23%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;" aria-label="post-add"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option" ><i class="ri-add-box-line"></i></span></a></div>
+            <div style="width: 23%;align-self:end"><a href="<?= get_url() ?>login/" style="float: right;" aria-label="post-add"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option"><i class="ri-add-box-line"></i></span></a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
@@ -262,17 +264,17 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
 
         <div class="page-detail-and-information">
-        <div id="breadcrumbs">
-            <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
-                    <meta itemprop="position" content="1">
-                </li>
-                <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $city ?></span></a>
-                    <meta itemprop="position" content="2">
-                </li>
-            </ol>
-        </div>
+            <div id="breadcrumbs">
+                <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li><b><i class="ri-arrow-right-s-line"></i></b></li>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $city ?></span></a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                </ol>
+            </div>
             <h1><?= $data2['page_h1'] ?></h1>
         </div>
 
@@ -313,23 +315,33 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             </div> -->
             <div class="faq-container">
                 <div class="faq-item">
-                    <div class="faq-question"><h4 style="margin: 0;font-size:1.2rem"><span>What is the price of call girls in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
+                    <div class="faq-question">
+                        <h4 style="margin: 0;font-size:1.2rem"><span>What is the price of call girls in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span>
+                    </div>
                     <div class="faq-answer">The price of call girls differs from model to model. Generally, the price starts at Rs. 2000 per shot and Rs. 10,000 per night. Contact the provided number for more details.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><h4 style="margin: 0;font-size:1.2rem"><span>How do I reserve a call girl in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
+                    <div class="faq-question">
+                        <h4 style="margin: 0;font-size:1.2rem"><span>How do I reserve a call girl in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span>
+                    </div>
                     <div class="faq-answer">Anyone can book a call girls by visiting our official website and contacting us at the provided number. As we used to update numbers timely, only contact live numbers on our website.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><h4 style="margin: 0;font-size:1.2rem"><span>Is there any refund policy?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
+                    <div class="faq-question">
+                        <h4 style="margin: 0;font-size:1.2rem"><span>Is there any refund policy?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span>
+                    </div>
                     <div class="faq-answer">If you make an advance booking, we are unable to refund money after 9 p.m. because we have cancelled other bookings for you. Yes, we provide a refund if you are not satisfied on the basis of cooperation and denial of service from our call girl side. </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><h4 style="margin: 0;font-size:1.2rem"><span>What kind of services do these call girls provide in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
+                    <div class="faq-question">
+                        <h4 style="margin: 0;font-size:1.2rem"><span>What kind of services do these call girls provide in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span>
+                    </div>
                     <div class="faq-answer">Our call girls provide various services like body kissing, licking, sex, foreplay, 69, etc. But we don't guarantee anal sex or lip kissing. </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><h4 style="margin: 0;font-size:1.2rem"><span>Is it safe to hire a call girl in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
+                    <div class="faq-question">
+                        <h4 style="margin: 0;font-size:1.2rem"><span>Is it safe to hire a call girl in <?= $city ?>?</span></h4><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span>
+                    </div>
                     <div class="faq-answer">Yes, our service is 100% safe in terms of privacy, handling, and safety. Apart from this, we don't encourage any advance payments, so our services are 100 percent safe.</div>
                 </div>
                 <!-- Add more FAQ items as needed -->
@@ -485,11 +497,13 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         });
     </script>
     <script type="application/ld+json">
-        "@context": "https://schema.org/",
-        "@type": "Organization",
-        "name": "Poojamahajan",
-        "url": "https://poojamahajan.com",
-        "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Poojamahajan",
+            "url": "https://poojamahajan.com",
+            "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
+        }
     </script>
 </body>
 

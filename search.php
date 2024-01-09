@@ -76,7 +76,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <meta name="robots" content="index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>Poojamahajan - Search your Escort</title>
-    <link rel="canonical" href="<?=$fullURL ?>/" />
+    <link rel="canonical" href="<?= $fullURL ?>/" />
     <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
@@ -108,13 +108,15 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             padding: 1%;
         }
     </style>
-<script type="application/ld+json">
-        "@context": "https://schema.org/",
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Poojamahajan",
             "url": "https://poojamahajan.com",
             "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
-        </script>
+        }
+    </script>
 </head>
 
 <body>
@@ -125,9 +127,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <li><a href="<?= get_url() ?>">Home</a></li>
                 <li><a href="<?= get_url() ?>contact-us/">Contact Us</a></li>
                 <li><a href="<?= get_url() ?>login/">Login</a></li>
-                <li><a href="<?=get_url() ?>register/">Sign up</a></li>
+                <li><a href="<?= get_url() ?>register/">Sign up</a></li>
             </ul>
-            <div style="width: 23%;align-self:end"><a href="<?=get_url() ?>login/" style="float: right;" aria-label="post-add"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option" ><i class="ri-add-box-line"></i></span></a></div>
+            <div style="width: 23%;align-self:end"><a href="<?= get_url() ?>login/" style="float: right;" aria-label="post-add"><span class="post-add-txt">Post Ad</span><span class="post-add-icon search-option"><i class="ri-add-box-line"></i></span></a></div>
             <span class="search-option" id="search-filter-menu"><i class="ri-search-2-line"></i></span>
             <span class="menu-option" id="menu-option"><i class="ri-menu-line"></i></span>
         </nav>
@@ -139,23 +141,23 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
 
         <div class="page-detail-and-information">
-        <div id="breadcrumbs">
-            <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
-                    <meta itemprop="position" content="1">
-                </li>
-                <?php if (!empty($city)) { ?>
-                    <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="<?= get_url() ?>call-girls/<?= $city ?>" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $city ?></span></a>
-                        <meta itemprop="position" content="2">
-                    </li><?php } ?>
-                <?php if (!empty($_GET['locality'])) { ?>
-                    <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb"><span itemprop="name"><?= $area ?></span></a>
-                        <meta itemprop="position" content="3">
-                    </li><?php } ?>
-            </ol>
-        </div>
+            <div id="breadcrumbs">
+                <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <?php if (!empty($city)) { ?>
+                        <li><b><i class="ri-arrow-right-s-line"></i></b></li>
+                        <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="<?= get_url() ?>call-girls/<?= $city ?>" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $city ?></span></a>
+                            <meta itemprop="position" content="2">
+                        </li><?php } ?>
+                    <?php if (!empty($_GET['locality'])) { ?>
+                        <li><b><i class="ri-arrow-right-s-line"></i></b></li>
+                        <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb"><span itemprop="name"><?= $area ?></span></a>
+                            <meta itemprop="position" content="3">
+                        </li><?php } ?>
+                </ol>
+            </div>
             <div class="result"><?= $count_result['a'] ?> Results for <?= $cat ?> in <span style="text-transform: capitalize;"><?php if (!empty($city)) {
                                                                                                                                     if (!empty($area)) {
                                                                                                                                         echo $area . ', ' . $city;
@@ -248,7 +250,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <strong>USEFUL LINKS</strong>
                 <ul>
                     <li><a href="<?= get_url() ?>contact-us/">Contact US</a></li>
-                    <li><a href="<?=get_url() ?>login/">Post Your Ad</a></li>
+                    <li><a href="<?= get_url() ?>login/">Post Your Ad</a></li>
                     <li><a href="<?= get_url() ?>call-girls/">Gallery</a></li>
                 </ul>
             </div>
@@ -259,7 +261,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         <div class="new-footer-row2">
             <p>&copy; Copyrights 2023. All Rights Reserved</p>
             <ul>
-                <li><a href="https://www.dmca.com/Protection/Status.aspx?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82&amp;refurl=https://skokra.com/pm/disclaimer/" title="DMCA.com Protection Status" class="dmca-badge" aria-label="poojamahajan"> <img src="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82" width="70px" alt="DMCA.com Protection Status"></a> <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script></li>  
+                <li><a href="https://www.dmca.com/Protection/Status.aspx?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82&amp;refurl=https://skokra.com/pm/disclaimer/" title="DMCA.com Protection Status" class="dmca-badge" aria-label="poojamahajan"> <img src="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82" width="70px" alt="DMCA.com Protection Status"></a>
+                    <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+                </li>
                 <li><a href="https://www.dmca.com/compliance/poojamahajan.com" aria-label="poojamahajan" title="DMCA Compliance information for poojamahajan.com"><img src="https://www.dmca.com/img/dmca-compliant-grayscale.png" alt="DMCA compliant image" width="70px"></a></li>
                 <li><a href="https://www.behance.net/poojamahajan4" aria-label="behance"><i class="ri-behance-line"></i></a></li>
                 <!-- <li><a href=""><i class="ri-instagram-line"></i></a></li> -->
