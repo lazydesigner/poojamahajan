@@ -17,12 +17,12 @@
                     <i class="ri-facebook-box-fill"></i>
                 </div>
                 <div class="dmca-logo">
-                    <img src="<?= get_url() ?>dashboard/assets/images/dmca_protected_16_120.png" alt="">
+                    <img src="<?= get_url() ?>dashboard/assets/images/dmca_protected_16_120.png" loading="lazy" alt="">
                 </div>
             </div>
             <div class="footer-col">
                 <div class="only-18">
-                    <img src="<?= get_url() ?>dashboard/assets/images/18-1.png.webp" width="100%" height="100%" alt="">
+                    <img src="<?= get_url() ?>dashboard/assets/images/18-1.png.webp" width="100%" height="100%" loading="lazy" alt="">
                 </div>
             </div>
             <div class="footer-col">

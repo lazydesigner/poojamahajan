@@ -92,7 +92,7 @@
                 </li>
             </ol>
         </div>
-            <h1>Genuine Escort Service and Call Girls Real Images and Whatsapp Numbers</h1>
+            <h1 style="font-size: 1.2rem;font-weight: 500;">Genuine Escort Service and Call Girls Real Images and Whatsapp Numbers</h1>
         </div>
         <div class="search-the-city">
             <input type="text" name="" id="search-for-cities-in-row" placeholder="Search For Cities or Areas..">

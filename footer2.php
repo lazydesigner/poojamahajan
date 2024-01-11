@@ -2,7 +2,7 @@
         <div class="new-footer-row">
           <div class="new-footer-col">
             <div class="new-footer-logo">
-            <a href="<?= get_url() ?>" aria-label="poojamahajan"><img src="<?= get_url() ?>dashboard/assets/images/POOJA.webp" width="100%" height="100%" class="footer-logo-img" alt="poojamahajan call girl agency"></a>
+            <a href="<?= get_url() ?>" aria-label="poojamahajan"><img src="<?= get_url() ?>dashboard/assets/images/POOJA.webp" width="100%" height="100%" class="footer-logo-img" alt="poojamahajan call girl agency"  loading="lazy"></a>
             </div>
           </div>  
           <div class="new-footer-col">
@@ -37,8 +37,8 @@
             <p>&copy; Copyrights 2023. All Rights Reserved</p>
             <ul>
             <li>
-<a href="https://www.dmca.com/Protection/Status.aspx?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82&amp;refurl=https://skokra.com/pm/disclaimer/" aria-label="dmca" title="DMCA.com Protection Status" class="dmca-badge"><div style="width: 100px;"> <img src="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82" width="100%" height="100%" alt="DMCA.com Protection Status"></div></a> <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script></li>  
-            <li><a href="https://www.dmca.com/compliance/poojamahajan.com" aria-label="dmca" title="DMCA Compliance information for poojamahajan.com"><div style="width: 100px;"><img src="https://www.dmca.com/img/dmca-compliant-grayscale.png" alt="DMCA compliant image" width="100%" height="100%"></div></a></li>
+<a href="https://www.dmca.com/Protection/Status.aspx?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82&amp;refurl=https://skokra.com/pm/disclaimer/" aria-label="dmca" title="DMCA.com Protection Status" class="dmca-badge"><div style="width: 100px;"> <img src="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=16321de9-a9a4-4373-ae9a-691d86e0fd82" width="100%" height="100%" alt="DMCA.com Protection Status" loading="lazy"></div></a> <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script></li>  
+            <li><a href="https://www.dmca.com/compliance/poojamahajan.com" aria-label="dmca" title="DMCA Compliance information for poojamahajan.com"><div style="width: 100px;"><img src="https://www.dmca.com/img/dmca-compliant-grayscale.png" loading="lazy" alt="DMCA compliant image" width="100%" height="100%"></div></a></li>
                 <li><a href="https://www.behance.net/poojamahajan4" aria-label="behance"><i class="ri-behance-line"></i></a></li>
                 <!-- <li><a href=""><i class="ri-instagram-line"></i></a></li> -->
                 <li><a href="https://www.flickr.com/photos/195962025@N07/" aria-label="flickr"><i class="ri-flickr-fill"></i></a></li>
