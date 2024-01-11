@@ -2,7 +2,7 @@
         <div class="new-footer-row">
           <div class="new-footer-col">
             <div class="new-footer-logo">
-            <a href="<?= get_url() ?>" aria-label="poojamahajan"><img src="<?= get_url() ?>dashboard/assets/images/POOJA.webp.png" width="100%" height="100%" class="footer-logo-img" alt="poojamahajan call girl agency"></a>
+            <a href="<?= get_url() ?>" aria-label="poojamahajan"><img src="<?= get_url() ?>dashboard/assets/images/POOJA.webp" width="100%" height="100%" class="footer-logo-img" alt="poojamahajan call girl agency"></a>
             </div>
           </div>  
           <div class="new-footer-col">
