@@ -5,7 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css"  as="style" onload="this.onload=null;this.rel='stylesheet'" async>
+    <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css"  as="style" onload="this.onload=null;this.rel='stylesheet'" async> -->
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/fonts/remixicon.css" async>
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/index.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
@@ -186,7 +187,6 @@
         <div class="search-filter" id="search-filter">
             <?php include './navbar.php' ?>
         </div>
-
         <div class="page-detail-and-information">
         <div id="breadcrumbs">
             <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
