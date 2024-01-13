@@ -70,17 +70,13 @@ footer ul li a{
     .new-footer-row{
         flex-wrap: wrap;
         text-align: center;
-    }.new-footer-row2{
+    }.new-footer-row2 ,.new-footer-row2 ul{
         flex-wrap: wrap;
         text-align: center;
     }
 
 }
 @media screen and (max-width: 350px){
-    .new-footer-row2{
-        flex-wrap: wrap;
-        text-align: center;
-    }
     .new-footer-row2 ul{
         justify-content: space-evenly;
     }
