@@ -121,12 +121,12 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         .btn2 {
             width: 100px;
             height: 40px;
-            border: 1px solid tomato;
+            border: 1px solid red;
             font-weight: bold;
             cursor: pointer;
             background-color: transparent;
             border-radius: 2px;
-            color: tomato;
+            color: red;
         }
 
         @media screen and (max-width:500px) {
@@ -407,7 +407,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 By submitting an advertisement on Poojamahajan, advertisers assert that they possess full rights to the content and acknowledge that they are aged 18 years or older. They also affirm that the advertised content is approved for publication on Poojamahajan.</p>
             <p>
 
-                By clicking the <b>"Accept"</b> button, users certify that they are over 18 years old and release the service providers, owners, and creators of Poojamahajan.com from any responsibility regarding the content and use of this service.</p>
+                By clicking the <b>"Confirm"</b> button, users certify that they are over 18 years old and release the service providers, owners, and creators of Poojamahajan.com from any responsibility regarding the content and use of this service.</p>
             <div style="margin-top: 2%;"><button class="btn1" onclick="setCookie('confirm', 'accepted', 30)">Confirm</button>
                 <a href="<?= get_url() ?>"><button class="btn2">Reject</button></a>
             </div>
