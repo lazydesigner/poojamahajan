@@ -47,7 +47,7 @@ footer ul li a{
 }
 .new-footer-row-2 p{
     font-size: 1.1rem;
-}
+} 
 .new-footer-row2{border-top: 1px solid white;}
 .new-footer-row2, .new-footer-row2 ul{
     width: 100%;
@@ -68,6 +68,9 @@ footer ul li a{
 }
 @media screen and (max-width: 850px){
     .new-footer-row{
+        flex-wrap: wrap;
+        text-align: center;
+    }.new-footer-row2{
         flex-wrap: wrap;
         text-align: center;
     }
