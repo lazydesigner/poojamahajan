@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css"  as="style" onload="this.onload=null;this.rel='stylesheet'" async> -->
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/fonts/remixicon.css" async>
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/index.css">
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/fonts/remixicon.css" defer>
+    <!-- <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/index.css"> -->
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css" async>
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer loading="lazy">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
     <meta name="theme-color" content="#ffffff">
@@ -29,7 +29,9 @@
     <meta name="twitter:title" content="The Best Escort Services In India | Pooja Mahajan" />
     <meta name="twitter:description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
     <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
-    <style>
+    <style>.container{width: 75%;margin: auto;}.search-filter{margin-top: 2%;width: 100%;border-top: 4px solid #9f21e3;height: 150px;background-color: rgb(241, 241, 241);}.search-filter {padding: 2% 3%;}.search-filter form{width: 100%;height: 100%;display: grid;align-items: center;}.form-group{display: flex;}.search-filter .form-group select,.search-filter .form-group input{height: 40px;border-radius: 5px;border: 1px solid lightgrey;margin: auto 8px;outline: 0;width: 220px;}input[type=number]{cursor: auto;}.search-city-inner-div{width: 80%;position: absolute;display: none;}.serach-city-input{width: 10px ;}.search-city-inner-div input{width: 20px;}.search-filter .form-group button{height: 40px;width: 100px;border-radius: 5px;border: 1px solid lightgrey;margin: auto 8px;color: white;font-weight: bold;cursor: pointer;background-color: #9f21e3;}.page-detail-and-information{width: 100%;padding-top:3% ;}.page-detail-and-information h1{font-size: 1.2rem;font-weight: 500;}.page-detail-and-information a{color: gray;}.search-the-city{width: 100%;padding: 2%;background-color: rgb(241, 241, 241);border-top: 4px solid #9f21e3;}.search-the-city input{width: 100%;border: 1px solid lightgray;height: 40px;padding: 2%;}.city-name-list{border-top: 4px solid #9f21e3;margin-top: 2%;width: 100%;padding: 1.5% 3.2%;background-color: rgb(241, 241, 241);}.city-name-list h2{font-size: 1.3rem;font-weight: 500;padding: 0;margin: 0;}.list-of-cities-row{padding:1%;width: 100%;display: flex;}.crumb{color: black;font-weight: bold;}.city-name-list-item{flex: 1;}.city-name-list-item ul{list-style: none;padding: 0;margin: 0;}.city-name-list ul li{font-weight: bold;margin:0 0 10% 0 ;}.city-name-list ul li a{color: #9f21e3}.city-name-list ul li:first-child{font-weight: bold;margin-top:0;}.main-content{padding: 0 2% 3% 2%;border-top: 4px solid #9f21e3;background-color: rgb(241, 241, 241);margin-top: 2%;}.main-content h2{font-size: 2rem;}.main-content p{font-size: 1.2rem;line-height: 25px;}.sticky-bottom-contact-information{width: 97%;height: 90px;border-radius: 10px;margin: 2% auto;border: 1px solid black;background-color: white;position: sticky;bottom: 0;}.sticky-bottom-contact-information-inner{width: 80%;height: 100%;margin: auto;display: flex;justify-content: space-between;align-items: center;}.sticky-bottom-contact-information .box{width: 50px;height: 50px;background-color: grey;border-radius: 5px;}.sticky-bottom-contact-information-inner p{font-size: 1.7rem;}footer{width: 100%;background-color: #9f21e3;color: white;}.follow-up{margin: 3% 0;}.follow-up i{font-size: xx-large;}.only-18{width: 300px;}.footer-row{width: 90%;margin: auto;height: 100%;display: flex;gap: 5%;justify-content: center;}.footer-col:first-child{width: 35%;}.footer-col h3{font-size: 1.8rem;}.footer-col-ul{list-style: none;padding: 0;}.footer-p{font-size: 1.3rem;}.footer-col-ul li a{color: white;font-weight: bold;}
+
+
         .main-content h3{font-size: 1.7rem;}
         .main-content a{
             color: blue;
@@ -77,15 +79,15 @@
         .btn2 {
             width: 100px;
             height: 40px;
-            border: 1px solid red;
+            border: 1px solid black;
             font-weight: bold;
             cursor: pointer;
             background-color: transparent;
             border-radius: 2px;
-            color: red;
+            color: black;
         }
 
-        @media screen and (max-width:500px) {
+        @media screen and (max-width:700px) {
 
             .confirm-18-body {
                 width: 100%;

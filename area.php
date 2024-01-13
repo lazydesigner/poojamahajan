@@ -138,15 +138,15 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         .btn2 {
             width: 100px;
             height: 40px;
-            border: 1px solid red;
+            border: 1px solid black;
             font-weight: bold;
             cursor: pointer;
             background-color: transparent;
             border-radius: 2px;
-            color: red;
+            color: black;
         }
 
-        @media screen and (max-width:500px) {
+        @media screen and (max-width:700px) {
 
             .confirm-18-body {
                 width: 100%;
