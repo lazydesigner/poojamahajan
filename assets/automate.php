@@ -17,7 +17,7 @@ if ($data->event_type !== 'push') {
 // Check if the repository matches your configuration
 // https://github.com/lazydesigner/poojamahajan.git
 $repository = $data->repository->full_name;
-if ($repository !== 'lazydesigner/poojamahajan.git') {
+if ($repository !== 'lazydesigner/poojamahajan') {
   http_response_code(204);
   exit('Repository not supported');
 }
