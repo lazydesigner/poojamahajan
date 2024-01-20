@@ -324,7 +324,6 @@ ReWriteRule ^dashboard/profiles([/]?)$ dashboard/list_of_profiles.php [NC,L]
 ReWriteRule ^dashboard/add-profiles([/]?)$ dashboard/add_profile.php [NC,L]
 ReWriteRule ^dashboard/edit-profile/([0-9\-]+)([/]?)$ dashboard/edit_profile.php?id=$1 [NC,L]
 
-ReWriteRule ^dashboard/automate([/]?)$ dashboard/pages/automate.php [NC,L]
 
 #Main Page  
 
@@ -344,4 +343,5 @@ ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)
 ReWriteRule ^404([/]?)$ 404-page.php [NC,L]
 #ReWriteRule ^([0-9A-Za-z\-]+)([/]?)([/]?)$ home.php?page_id=$1 [NC,L]
 
+ReWriteRule ^assets/images/automate([/]?)$ assets/automate.php [NC,L]
 
