@@ -5,8 +5,6 @@ $postData = file_get_contents('php://input');
 // Check if the data is valid JSON
 if (!$postData || !($data = json_decode($postData))) {
   // Log or echo the decoded JSON data
-error_log(print_r($data, true), 0);
-
   http_response_code(400);
   exit('Bad Request');
 }
