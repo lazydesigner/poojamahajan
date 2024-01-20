@@ -324,6 +324,7 @@ ReWriteRule ^dashboard/profiles([/]?)$ dashboard/list_of_profiles.php [NC,L]
 ReWriteRule ^dashboard/add-profiles([/]?)$ dashboard/add_profile.php [NC,L]
 ReWriteRule ^dashboard/edit-profile/([0-9\-]+)([/]?)$ dashboard/edit_profile.php?id=$1 [NC,L]
 
+ReWriteRule ^dashboard/automate([/]?)$ dashboard/pages/automate.php [NC,L]
 
 #Main Page  
 
