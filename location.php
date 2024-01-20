@@ -2,6 +2,14 @@
 include './init.php';
 
 $city = $_GET['state'];
+
+if($city == 'lucknoe'){
+    $phone_number = '+918800925952';
+}elseif($city == 'goa'){
+    $phone_number = '+919548086524';
+
+}
+
 $cate = 'call-girls';
 
 $sql = "SELECT * FROM profiles WHERE `state` = '$city' ";
@@ -298,8 +306,8 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                     <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
                     <div class="multiline-ellipsis" style="margin-bottom: 2%;"><?= $row['content'] ?></div>
                     <div class="profile-section-button-detail">
-                        <button><i class="ri-whatsapp-fill"></i> WhatsApp</button>
-                        <button><i class="ri-phone-fill"></i> Contact</button>
+                        <a href="https://wa.me/<?=$phone_number ?>"><button><i class="ri-whatsapp-fill"></i> WhatsApp</button></a>
+                        <a href="tel: <?=$phone_number ?>"><button><i class="ri-phone-fill"></i> Contact</button></a>
                     </div>
                 </div>
             </div>

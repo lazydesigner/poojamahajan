@@ -7,7 +7,7 @@ $cate = 'call-girls';
 $a = explode('-', $_GET['city']);
 
 if (isset($a[1])) {
-    if (isset($a[2])) {
+    if (isset($a[2])) { 
         $area = $a[0] . ' ' . $a[1] . ' ' . $a[2];
     } else {
         $area = $a[0] . ' ' . $a[1];
