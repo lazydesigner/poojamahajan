@@ -3,7 +3,7 @@ include './init.php';
 
 $city = $_GET['state'];
 
-if($city == 'lucknoe'){
+if($city == 'lucknow'){
     $phone_number = '+918800925952';
 }elseif($city == 'goa'){
     $phone_number = '+919548086524';
