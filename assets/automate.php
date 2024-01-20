@@ -27,14 +27,23 @@ if ($repository !== 'lazydesigner/poojamahajan') {
 // Clone the repository or pull changes if already exists
 $repoPath = '/home/astrlbbp/poojamahajan.com';
 if (!file_exists($repoPath)) {
-  shell_exec("git clone https://github.com/lazydesigner/poojamahajan.git {$repoPath}");
+  $cloneCommand = "git clone https://github.com/lazydesigner/poojamahajan.git {$repoPath}";
+  $cloneOutput = shell_exec($cloneCommand);
+  error_log("Clone Command: $cloneCommand", 0);
+  error_log("Clone Output: $cloneOutput", 0);
 } else {
-  shell_exec("cd {$repoPath} && git pull");
+  $pullCommand = "cd {$repoPath} && git pull";
+  $pullOutput = shell_exec($pullCommand);
+  error_log("Pull Command: $pullCommand", 0);
+  error_log("Pull Output: $pullOutput", 0);
 }
 
 // Copy the files to your web directory
 $webPath = '/home/astrlbbp/public_html/poojamahajan.com';
-shell_exec("rm -rf {$webPath}/* && cp -r {$repoPath}/* {$webPath}/");
+$copyCommand = "rm -rf {$webPath}/* && cp -r {$repoPath}/* {$webPath}/";
+$copyOutput = shell_exec($copyCommand);
+error_log("Copy Command: $copyCommand", 0);
+error_log("Copy Output: $copyOutput", 0);
 
 // Notify that the deployment was successful
 http_response_code(200);
