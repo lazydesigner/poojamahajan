@@ -12,6 +12,7 @@ if (!$postData || !($data = json_decode($postData))) {
 // Check if the webhook event is "push"
 if ($data->event_type !== 'push') { 
   http_response_code(204);
+  echo 'Pata NAhi';
   exit('Event not supported');
 }
 
@@ -19,6 +20,7 @@ if ($data->event_type !== 'push') {
 $repository = $data->repository->full_name;
 if ($repository !== 'lazydesigner/poojamahajan') {
   http_response_code(204);
+  echo 'Yaha Pe HA';
   exit('Repository not supported');
 }
 
