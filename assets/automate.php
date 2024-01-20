@@ -15,7 +15,6 @@ if ($data->event_type !== 'push') {
 }
 
 // Check if the repository matches your configuration
-// https://github.com/lazydesigner/poojamahajan.git
 $repository = $data->repository->full_name;
 if ($repository !== 'lazydesigner/poojamahajan') {
   http_response_code(204);
@@ -23,7 +22,7 @@ if ($repository !== 'lazydesigner/poojamahajan') {
 }
 
 // Clone the repository or pull changes if already exists
-$repoPath = '/home/astrlbbp/poojamahajan.com ';
+$repoPath = '/home/astrlbbp/poojamahajan.com';
 if (!file_exists($repoPath)) {
   shell_exec("git clone https://github.com/lazydesigner/poojamahajan.git {$repoPath}");
 } else {
@@ -32,14 +31,9 @@ if (!file_exists($repoPath)) {
 
 // Copy the files to your web directory
 $webPath = '/home/astrlbbp/public_html/poojamahajan.com';
-if (file_exists("{$repoPath}/public")) {
-  shell_exec("rm -rf {$webPath}/* && cp -r {$repoPath}/public/* {$webPath}/");
-} else {
-  shell_exec("rm -rf {$webPath}/* && cp -r {$repoPath}/* {$webPath}/");
-}
+shell_exec("rm -rf {$webPath}/* && cp -r {$repoPath}/* {$webPath}/");
 
 // Notify that the deployment was successful
 http_response_code(200);
 echo 'Deployment successful';
 ?>
-
