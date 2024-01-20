@@ -10,7 +10,7 @@ if (!$postData || !($data = json_decode($postData))) {
 }
 
 // Check if the webhook event is "push"
-if ($data->event_type !== 'push') {
+if ($data->event_type !== 'push') { 
   http_response_code(204);
   exit('Event not supported');
 }
