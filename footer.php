@@ -27,9 +27,9 @@
             </div>
             <div class="footer-col">
                 <h3>Quick Links</h3>
-                <ul class="footer-col-ul">
+                <ul class="footer-col-ul"> 
                     <li><a href="">Post Ad</a></li>
-
+<!-- Developer -->
                     <li><a href="">Review</a></li>
                     <li><a href="">Price List</a></li>
                     <li><a href="">Contact Us</a></li>
