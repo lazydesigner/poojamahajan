@@ -24,7 +24,7 @@ if($_POST['status'] == 'city_id'){
                 if($_POST['area'] == $row['area_value']){
                     $output .= "<option selected value='".$row['area_value']."'>".$row['area_name']."</option>";
                     if(isset($_POST['cate'])){
-                        $areas .= '<a href="'.get_url().$cate.'/'.$c.'/'.$row['area_value'].'"><button>'.$row['area_name'].'</button></a>';
+                        $areas .= '<a href="'.get_url().$cate.'/'.$c.'/'.$row['area_value'].'/"><button>'.$row['area_name'].'</button></a>';
                     }
                     $i++;
                 }
@@ -33,7 +33,7 @@ if($_POST['status'] == 'city_id'){
             if($i == 1){$i = 0 ;}else{
                 $output .= "<option value='".$row['area_value']."'>".$row['area_name']."</option>";
                 if(isset($_POST['cate'])){
-                $areas .= '<a href="'.get_url().$cate.'/'.$c.'/'.$row['area_value'].'"><button>'.$row['area_name'].'</button></a>';
+                $areas .= '<a href="'.get_url().$cate.'/'.$c.'/'.$row['area_value'].'/"><button>'.$row['area_name'].'</button></a>';
                 }
             }
 
