@@ -15,7 +15,7 @@ if ($city == 'lucknow') {
 
 $cate = 'call-girls';
 
-$sql = "SELECT * FROM profiles WHERE `state` = '$city' AND `catigory` = '$url_cat' ";
+$sql = "SELECT * FROM profiles WHERE `state` = '$city'";
 $sql2 = "SELECT * FROM city WHERE `city` = '$city' ";
 
 $result2 = mysqli_query($con, $sql2);

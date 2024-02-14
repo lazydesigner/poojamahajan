@@ -20,7 +20,7 @@ if (isset($a[1])) {
     $area = $a[0];
 }
 
-$sql = "SELECT * FROM profiles WHERE `catigory` = '$url_cat' AND `state` = '$city' and `area` = '{$_GET['city']}'";
+$sql = "SELECT * FROM profiles WHERE `state` = '$city' and `area` = '{$_GET['city']}'";
 $sql2 = "SELECT * FROM city WHERE `city` = '$city' ";
 
 $result2 = mysqli_query($con, $sql2);
