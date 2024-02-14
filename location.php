@@ -3,6 +3,9 @@ include './init.php';
 
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
+$new_city_name = '';
+$new_area_name = '';
+
 $url_cat = trim($uri[1]);
 
 $city = $_GET['state'];
@@ -18,11 +21,20 @@ $cate = 'call-girls';
 $sql = "SELECT * FROM profiles WHERE `state` = '$city'";
 $sql2 = "SELECT * FROM city WHERE `city` = '$city' ";
 
+
+$new_city_sql = "SELECT * FROM new_city WHERE `city_value` = '$city'";
+$new_city_result = mysqli_query($con, $new_city_sql);
+
+
 $result2 = mysqli_query($con, $sql2);
 if (mysqli_num_rows($result2) > 0) {
     $data2 = mysqli_fetch_assoc($result2);
 } else {
-    header('Location: https://poojamahajan.com/404');
+    if (mysqli_num_rows($new_city_result) > 0) {
+        $new_city_data = mysqli_fetch_assoc($new_city_result);
+    } else {
+        header('Location: https://poojamahajan.com/404');
+    }
 }
 
 $res = mysqli_query($con, $sql);

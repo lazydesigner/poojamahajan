@@ -23,6 +23,9 @@ if (isset($a[1])) {
 $sql = "SELECT * FROM profiles WHERE `state` = '$city' and `area` = '{$_GET['city']}'";
 $sql2 = "SELECT * FROM city WHERE `city` = '$city' ";
 
+$new_city_sql = "SELECT * FROM new_city WHERE `city_value` = '$city'";
+$new_city_result = mysqli_query($con, $new_city_sql);
+
 $result2 = mysqli_query($con, $sql2);
 if (mysqli_num_rows($result2) > 0) {
     $sql_area = "SELECT * FROM area WHERE `area_value` =  '{$_GET['city']}'";
@@ -31,7 +34,15 @@ if (mysqli_num_rows($result2) > 0) {
         header('Location: '. get_url().'call-girls/'.$city.'/');
     }
 } else {
-    header('Location: https://poojamahajan.com/404/');
+    if (mysqli_num_rows($$new_city_result) > 0) {
+        $sql_area = "SELECT * FROM area WHERE `area_value` =  '{$_GET['city']}'";
+        $res_area = mysqli_query($con, $sql_area);
+        if(mysqli_num_rows($res_area) > 0){}else{
+            header('Location: '. get_url().'call-girls/'.$city.'/');
+        }
+    } else {
+        header('Location: https://poojamahajan.com/404/');
+    }
 }
 
 $res = mysqli_query($con, $sql);
