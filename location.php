@@ -1,18 +1,21 @@
 <?php
 include './init.php';
 
+$uri = explode('/', $_SERVER['REQUEST_URI']);
+
+$url_cat = trim($uri[1]);
+
 $city = $_GET['state'];
 
-if($city == 'lucknow'){
+if ($city == 'lucknow') {
     $phone_number = '+918800925952';
-}elseif($city == 'goa'){
+} elseif ($city == 'goa') {
     $phone_number = '+919548086524';
-
 }
 
 $cate = 'call-girls';
 
-$sql = "SELECT * FROM profiles WHERE `state` = '$city' ";
+$sql = "SELECT * FROM profiles WHERE `state` = '$city' AND `catigory` = '$url_cat' ";
 $sql2 = "SELECT * FROM city WHERE `city` = '$city' ";
 
 $result2 = mysqli_query($con, $sql2);
@@ -48,7 +51,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="robots" content=" index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>Book Premium call girls in <?= $city ?> | Poojamahajan</title>
 
-    <link rel="canonical" href="<?= get_url() ?>call-girls/<?=$city ?>/" />
+    <link rel="canonical" href="<?= get_url() ?>call-girls/<?= $city ?>/" />
     <meta name="description" content="Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.">
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -136,11 +139,15 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             border-radius: 2px;
             color: black;
         }
-        @media screen and (max-width:700px) {.confirm-18-body {
+
+        @media screen and (max-width:700px) {
+            .confirm-18-body {
                 width: 100%;
                 background-color: white;
                 /* height: 50%; */
-                transform: translate(0%, 0%);}}
+                transform: translate(0%, 0%);
+            }
+        }
 
         @media screen and (max-width:500px) {
             .profile-section-box-image {
@@ -297,17 +304,30 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
         <?php while ($row = mysqli_fetch_assoc($res)) {
             $ax = json_decode($row['profile_images'], true);
+            $alt = json_decode($row['image_alt_'], true);
+
+            $s = $ax[0];
+            $w = 'amazonaws.com';
+            if (strpos($s, $w) !== false) {
+            }
         ?>
             <div class="profile-section-box">
                 <div class="profile-section-box-image">
+                    <?php
+
+                    if (strpos($s, $w) !== false) { ?>
                     <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+                    <?php } else { ?>
+                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="http://localhost/dash.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
+                        <?php } ?>
+                        
                 </div>
                 <div class="profile-section-box-detail">
                     <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
                     <div class="multiline-ellipsis" style="margin-bottom: 2%;"><?= $row['content'] ?></div>
                     <div class="profile-section-button-detail">
-                        <a href="https://wa.me/<?=$phone_number ?>"><button><i class="ri-whatsapp-fill"></i> WhatsApp</button></a>
-                        <a href="tel: <?=$phone_number ?>"><button><i class="ri-phone-fill"></i> Contact</button></a>
+                        <a href="https://wa.me/<?= $phone_number ?>"><button><i class="ri-whatsapp-fill"></i> WhatsApp</button></a>
+                        <a href="tel: <?= $phone_number ?>"><button><i class="ri-phone-fill"></i> Contact</button></a>
                     </div>
                 </div>
             </div>

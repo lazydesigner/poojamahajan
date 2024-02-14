@@ -1,6 +1,10 @@
 <?php
 include './init.php';
 
+$uri = explode('/', $_SERVER['REQUEST_URI']);
+
+$url_cat = trim($uri[1 ]);
+
 $city = $_GET['state'];
 $cate = 'call-girls';
 
@@ -16,7 +20,7 @@ if (isset($a[1])) {
     $area = $a[0];
 }
 
-$sql = "SELECT * FROM profiles WHERE `state` = '$city' and `area` = '{$_GET['city']}'";
+$sql = "SELECT * FROM profiles WHERE `catigory` = '$url_cat' AND `state` = '$city' and `area` = '{$_GET['city']}'";
 $sql2 = "SELECT * FROM city WHERE `city` = '$city' ";
 
 $result2 = mysqli_query($con, $sql2);
@@ -273,10 +277,19 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
         <?php while ($row = mysqli_fetch_assoc($res)) {
             $ax = json_decode($row['profile_images'], true);
+            $alt = json_decode($row['image_alt_'], true);
+            $s = $ax[0];
+            $w = 'amazonaws.com';
         ?>
             <div class="profile-section-box">
                 <div class="profile-section-box-image">
-                    <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+                <?php
+
+if (strpos($s, $w) !== false) { ?>
+<a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+<?php } else { ?>
+    <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="http://localhost/dash.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
+    <?php } ?>
                 </div>
                 <div class="profile-section-box-detail">
                     <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>

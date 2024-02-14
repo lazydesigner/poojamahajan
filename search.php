@@ -188,10 +188,22 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
             <?php while ($row = mysqli_fetch_assoc($res)) {
                 $ax = json_decode($row['profile_images'], true);
+                $alt = json_decode($row['image_alt_'], true);
+    
+                $s = $ax[0];
+                $w = 'amazonaws.com';
+                if (strpos($s, $w) !== false) {
+                }
             ?>
                 <div class="profile-section-box">
                     <div class="profile-section-box-image">
+                        <?php
+    
+                        if (strpos($s, $w) !== false) { ?>
                         <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+                        <?php } else { ?>
+                            <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="http://localhost/dash.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
+                            <?php } ?>
                     </div>
                     <div class="profile-section-box-detail">
                         <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>

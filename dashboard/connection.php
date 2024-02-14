@@ -25,4 +25,6 @@ if(localConnection()){
     }
 }
 
+$image_url_cdn = 'http://localhost/dash.poojamahajan.com/profiles/';
+
 ?>

@@ -156,7 +156,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         <meta itemprop="position" content="1">
                     </li>
                     <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="<?= get_url() ?>call-girls/<?= $city ?>" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $city ?></span></a>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="<?= get_url() ?>call-girls/<?= $city ?>/" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $city ?></span></a>
                         <meta itemprop="position" content="2">
                     </li>
                     <li><b><i class="ri-arrow-right-s-line"></i></b></li>
@@ -178,8 +178,22 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
                 <div class="profile-image-grid">
                     <?php $a = json_decode($row['profile_images'], true);
-                    for ($j = 0; $j < count($a); $j++) { ?>
-                        <div class="profile-image-grid-col"><img src="<?= $a[$j] ?>" alt="" width="100%" height="100%"></div>
+                    $alt = json_decode($row['image_alt_'], true);
+                    for ($j = 0; $j < count($a); $j++) { 
+                        $s = $a[$j];
+                        $w = 'amazonaws.com';
+                        if(strpos($s,$w) !== false){
+                            ?>
+                            <div class="profile-image-grid-col"><img src="<?= $a[$j] ?>" alt="" width="100%" height="100%"></div>
+                            <?php
+                        }else{
+                            ?>
+                            <div class="profile-image-grid-col"><img src="<?=$image_url_cdn.$a[$j] ?>" alt="<?=$alt[0] ?>" width="100%" height="100%"></div>
+                            <?php
+                        }
+                        
+                        ?>
+                        
                     <?php } ?>
                 </div>
             </div>
@@ -279,13 +293,21 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <?php while ($rows = mysqli_fetch_assoc($result)) {
-                        $ax = json_decode($rows['profile_images'], true);
+                        $ax = json_decode($rows['profile_images'], true);                        
+                        $s = $ax[0];
+                        $w = 'amazonaws.com';
+                        $alt = json_decode($row['image_alt_'], true);
                     ?>
 
                         <div class="swiper-slide">
                             <div class="sub-profile">
                                 <div class="sub-profile-image">
-                                    <img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="">
+                                    <?php 
+                                    if (strpos($s, $w) !== false) { ?>
+                                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+                                        <?php } else { ?>
+                                            <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?=$image_url_cdn.$ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
+                                            <?php } ?>
                                 </div>
                                 <div class="sub-profile-detail">
                                     <a href="<?= get_url() ?><?= $rows['page_url'] ?>" style="color:white">
