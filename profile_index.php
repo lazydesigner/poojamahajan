@@ -188,7 +188,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                             <?php
                         }else{
                             ?>
-                            <div class="profile-image-grid-col"><img src="<?=$image_url_cdn.$a[$j] ?>" alt="<?=$alt[0] ?>" width="100%" height="100%"></div>
+                            <div class="profile-image-grid-col"><img src="https://cdn.poojamahajan.com/profiles/<?=$a[$j] ?>" alt="<?=$alt[0] ?>" width="100%" height="100%"></div>
                             <?php
                         }
                         
@@ -306,7 +306,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                                     if (strpos($s, $w) !== false) { ?>
                                         <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
                                         <?php } else { ?>
-                                            <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?=$image_url_cdn.$ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
+                                            <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?=$ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
                                             <?php } ?>
                                 </div>
                                 <div class="sub-profile-detail">
