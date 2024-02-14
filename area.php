@@ -34,7 +34,7 @@ if (mysqli_num_rows($result2) > 0) {
         header('Location: '. get_url().'call-girls/'.$city.'/');
     }
 } else {
-    if (mysqli_num_rows($$new_city_result) > 0) {
+    if (mysqli_num_rows($new_city_result) > 0) {
         $sql_area = "SELECT * FROM area WHERE `area_value` =  '{$_GET['city']}'";
         $res_area = mysqli_query($con, $sql_area);
         if(mysqli_num_rows($res_area) > 0){}else{
