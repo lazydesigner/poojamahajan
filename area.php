@@ -3,7 +3,7 @@ include './init.php';
 
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
-$url_cat = trim($uri[1 ]);
+$url_cat = trim($uri[1]);
 
 $city = $_GET['state'];
 $cate = 'call-girls';
@@ -288,7 +288,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 if (strpos($s, $w) !== false) { ?>
 <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
 <?php } else { ?>
-    <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="http://localhost/dash.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
+    <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
     <?php } ?>
                 </div>
                 <div class="profile-section-box-detail">
