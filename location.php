@@ -45,10 +45,9 @@ if (mysqli_num_rows($result2) > 0) {
     if (mysqli_num_rows($new_city_result) > 0) {
         $yes_new_city = 'ok';
         $new_city_data = mysqli_fetch_assoc($new_city_result);
-    } else {
-        // header('Location: https://poojamahajan.com/404');
-
         $data2 = ['page_h1'=>$page_h1,'top_content'=> $top_content,'bottom_content'=> $bottom_content];
+    } else {
+        header('Location: https://poojamahajan.com/404');    
 
     }
 }
