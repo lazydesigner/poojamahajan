@@ -1,4 +1,4 @@
 <?php
 include './routes.php';
-include './dashboard/connection.php'
+include './dashboard/connection.php';
 ?>

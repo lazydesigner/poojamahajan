@@ -4,6 +4,18 @@ include './init.php';
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
 $new_city_name = '';
+$new_city_name_array = explode('-', $_GET['state']);
+for($w=0; $w<count($new_city_name_array); $w++){  
+    if ($w == 1) {
+        $new_city_name .= ucfirst($new_city_name_array[$w]);
+    } else {
+        $new_city_name .= ucwords($new_city_name_array[$w]).' ';
+    }        
+}
+include './new_city_content.php';
+
+
+
 $new_area_name = '';
 
 $url_cat = trim($uri[1]);
@@ -31,9 +43,13 @@ if (mysqli_num_rows($result2) > 0) {
     $data2 = mysqli_fetch_assoc($result2);
 } else {
     if (mysqli_num_rows($new_city_result) > 0) {
+        $yes_new_city = 'ok';
         $new_city_data = mysqli_fetch_assoc($new_city_result);
     } else {
-        header('Location: https://poojamahajan.com/404');
+        // header('Location: https://poojamahajan.com/404');
+
+        $data2 = ['page_h1'=>$page_h1,'top_content'=> $top_content,'bottom_content'=> $bottom_content];
+
     }
 }
 
@@ -61,19 +77,19 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/faq.css?v=1" defer>
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <meta name="robots" content=" index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <title>Book Premium call girls in <?= $city ?> | Poojamahajan</title>
+    <title><?php if(isset($yes_new_city)){ ?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?></title>
 
     <link rel="canonical" href="<?= get_url() ?>call-girls/<?= $city ?>/" />
-    <meta name="description" content="Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.">
+    <meta name="description" content="<?php if(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>">
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Book Premium call girls in <?= $city ?> | Poojamahajan" />
-    <meta property="og:description" content="Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room." />
+    <meta property="og:title" content="<?php if(isset($yes_new_city)){?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?>" />
+    <meta property="og:description" content="<?php if(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>" />
     <meta property="og:url" content="<?= $fullURL ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Book Premium call girls in <?= $city ?> | Poojamahajan" />
-    <meta name="twitter:description" content="Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room." />
+    <meta name="twitter:title" content="<?php if(isset($yes_new_city)){?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?>" />
+    <meta name="twitter:description" content="<?php if(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>" />
     <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
@@ -302,7 +318,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         <meta itemprop="position" content="1">
                     </li>
                     <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $city ?></span></a>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?=$new_city_name ?></span></a>
                         <meta itemprop="position" content="2">
                     </li>
                 </ol>
