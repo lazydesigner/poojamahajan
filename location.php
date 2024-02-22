@@ -6,7 +6,7 @@ $uri = explode('/', $_SERVER['REQUEST_URI']);
 $new_city_name = '';
 $new_city_name_array = explode('-', $_GET['state']);
 for($w=0; $w<count($new_city_name_array); $w++){  
-    if ($w == 1) {
+    if ($w == (count($new_city_name_array) - 1)) {
         $new_city_name .= ucfirst($new_city_name_array[$w]);
     } else {
         $new_city_name .= ucwords($new_city_name_array[$w]).' ';
