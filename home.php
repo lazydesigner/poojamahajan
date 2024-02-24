@@ -9,7 +9,6 @@
     <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css"  as="style" onload="this.onload=null;this.rel='stylesheet'" async> -->
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/fonts/remixicon.css" defer>
     <!-- <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/index.css"> -->
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css" async>
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer loading="lazy">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
@@ -345,6 +344,8 @@
 
         }
     </style>
+    
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css" async>
 
     <script type="application/ld+json">
         {
