@@ -343,6 +343,9 @@
             }
 
         }
+        .main-content{
+            font-weight: bolder;
+        }
     </style>
     
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css" async>

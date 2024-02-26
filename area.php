@@ -111,6 +111,10 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         table tr td {
             padding: 1%;
         }
+        
+        .list-of-profile.ax{
+            font-weight: bolder;
+        }
     </style>
     
     <style>
@@ -276,7 +280,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <h1>Call girls in <?= $area ?> with WhatsApp number</h1>
         </div>
 
-        <div class="list-of-profile" style="background-color: rgb(241, 241, 241);">
+        <div class="list-of-profile ax" style="background-color: rgb(241, 241, 241);">
             <h2>Are you looking for call girls in <?= $area ?> for friendship?</h2>
             <p>On our website, <a href="https://poojamahajan.com">Poojamahajan Escort Portal</a>, you can find multiple ads for <a href="<?= get_url() ?>call-girls/<?= $city ?>/" target="_blank"><?= $city ?> call girls</a> who offer the best erotic services in this locality. If you're tired of searching for reliable call girls here and there, now search poojamahajan.com with <?= $area ?> name and with just a few clicks, you can see gorgeous call girls near you.</p>
             <p>During their visit to the <?= $city ?>, a charming model escort is with our clients. You can book tempting call girls for your personal needs on any occasion. Our escorts are both elite and polite. A sultry figure call girl without a sense of manners or speech will ruin your mood if you reserve one. So we prefer passionate and curvy-calling girls of our plateform with dressing sense.</p>

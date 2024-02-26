@@ -116,6 +116,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             white-space: pre-wrap;
             /* let the text wrap preserving spaces */
         }
+        .list-of-profile.ax{
+            font-weight: bolder;
+        }
     </style>
     <style>
         table {
@@ -337,7 +340,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <h1><?= $data2['page_h1'] ?></h1>
         </div>
 
-        <div class="list-of-profile" style="background-color:  rgb(241, 241, 241);">
+        <div class="list-of-profile ax" style="background-color:  rgb(241, 241, 241);">
             <?= $data2['top_content'] ?>
         </div>
 
@@ -372,7 +375,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             </div>
         <?php } ?>
 
-        <div class="list-of-profile" style="background-color:  rgb(241, 241, 241);">
+        <div class="list-of-profile ax" style="background-color:  rgb(241, 241, 241);">
             <?= $data2['bottom_content'] ?>
         </div>
         <div class="list-of-profile" style="margin: 3% 0;">
