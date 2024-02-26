@@ -80,24 +80,24 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
     <link rel="canonical" href="<?= get_url() ?>call-girls/<?= $city ?>/" />
 
-    <meta name="description" content="<?php if($city == 'lucknow'){ echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.'; }elseif(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>">
+    <meta name="description" content="<?php if($data2['yes_to_desc'] != 'false' ){ echo $data2['page_meta']; }elseif($city == 'lucknow'){ echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.'; }elseif(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>">
 
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php if($city == 'lucknow'){ echo 'Top Call Girls in Lucknow at your Door Step Available 24x7'; }elseif(isset($yes_new_city)){ ?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?>" />
+    <meta property="og:title" content="<?php if($data2['yes_to_title'] != 'false' ){ echo $data2['page_title']; }elseif($city == 'lucknow'){ echo 'Top Call Girls in Lucknow at your Door Step Available 24x7'; }elseif(isset($yes_new_city)){ ?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?>" />
 
 
-    <meta property="og:description" content="<?php if($city == 'lucknow'){ echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.'; }elseif(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>" />
+    <meta property="og:description" content="<?php if($data2['yes_to_desc'] != 'false' ){ echo $data2['page_meta']; }elseif($city == 'lucknow'){ echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.'; }elseif(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>" />
 
 
     <meta property="og:url" content="<?= $fullURL ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="<?php if($city == 'lucknow'){ echo 'Top Call Girls in Lucknow at your Door Step Available 24x7'; }elseif(isset($yes_new_city)){ ?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?>" />
+    <meta name="twitter:title" content="<?php if($data2['yes_to_title'] != 'false' ){ echo $data2['page_title']; }elseif($city == 'lucknow'){ echo 'Top Call Girls in Lucknow at your Door Step Available 24x7'; }elseif(isset($yes_new_city)){ ?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?>" />
 
 
-    <meta name="twitter:description" content="<?php if($city == 'lucknow'){ echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.'; }elseif(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>" />
+    <meta name="twitter:description" content="<?php if($data2['yes_to_desc'] != 'false' ){ echo $data2['page_meta']; }elseif($city == 'lucknow'){ echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.'; }elseif(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>" />
 
 
 
