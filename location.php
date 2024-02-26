@@ -76,7 +76,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/faq.css?v=1" defer>
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <meta name="robots" content=" index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <title><?php if($city == 'lucknow'){ echo 'Top Call Girls in Lucknow at your Door Step Available 24x7'; }elseif(isset($yes_new_city)){ ?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?></title>
+    <title><?php if($data2['yes_to_title'] != 'false' ){ echo $data2['page_title']; }elseif($city == 'lucknow'){ echo 'Top Call Girls in Lucknow at your Door Step Available 24x7'; }elseif(isset($yes_new_city)){ ?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?></title>
 
     <link rel="canonical" href="<?= get_url() ?>call-girls/<?= $city ?>/" />
 
