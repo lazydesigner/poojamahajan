@@ -116,7 +116,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             white-space: pre-wrap;
             /* let the text wrap preserving spaces */
         }
-        .list-of-profile.ax{
+        .list-of-profile.ax a{
             font-weight: bolder;
         }
     </style>

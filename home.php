@@ -343,7 +343,7 @@
             }
 
         }
-        .main-content{
+        .main-content a{
             font-weight: bolder;
         }
     </style>

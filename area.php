@@ -112,7 +112,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             padding: 1%;
         }
         
-        .list-of-profile.ax{
+        .list-of-profile.ax a{
             font-weight: bolder;
         }
     </style>
