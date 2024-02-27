@@ -25,7 +25,7 @@ while ($row = mysqli_fetch_assoc($res)) {
     <?php if (strpos($s, $w) !== false) {
         $output .= '<div class="profile-section-box">
         <div class="profile-section-box-image">
-            <a href="' . get_url() . $row['page_url'] . '"><img src="' . $ax[0] . '" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+            <a href="' . get_url() . $row['page_url'] . '"><img src="' . $ax[0] . '" width="100%" height="100%" style="object-fit: cover;object-position:top" loading="lazy" alt=""></a>
         </div>
         <div class="profile-section-box-detail">
             <h3><a href="' . get_url() . $row['page_url'] . '">' . $row['page_h1'] . '</a></h3>
@@ -39,7 +39,7 @@ while ($row = mysqli_fetch_assoc($res)) {
     } else {
         $output .= '<div class="profile-section-box">
             <div class="profile-section-box-image">
-                <a href="'. get_url().$row['page_url'] .'"><img src="https://cdn.poojamahajan.com/profiles/'. $ax[0] .'" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="'. $alt[0] .'"></a>
+                <a href="'. get_url().$row['page_url'] .'"><img src="https://cdn.poojamahajan.com/profiles/'. $ax[0] .'" width="100%" height="100%" style="object-fit: cover; loading="lazy" object-position:top" alt="'. $alt[0] .'"></a>
             </div>
             <div class="profile-section-box-detail">
                 <h3><a href="'. get_url().$row['page_url'] .'">'.$row['page_h1'] .'</a></h3>
