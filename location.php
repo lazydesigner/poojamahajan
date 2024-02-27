@@ -421,7 +421,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         </div>
 
         <div class="load-more-button">
-            <button id="loadMoreBtn" onclick="FetchAllProfiles()" value="20">Load More <?= $new_city_name ?> call girl</button>
+            <button id="loadMoreBtn" onclick="FetchAllProfiles()" value="20">Load More <?= $new_city_name ?> call girls</button>
         </div>
         <!-- WORKING AREA -->
 
