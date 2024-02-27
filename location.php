@@ -5,12 +5,12 @@ $uri = explode('/', $_SERVER['REQUEST_URI']);
 
 $new_city_name = '';
 $new_city_name_array = explode('-', $_GET['state']);
-for($w=0; $w<count($new_city_name_array); $w++){  
+for ($w = 0; $w < count($new_city_name_array); $w++) {
     if ($w == (count($new_city_name_array) - 1)) {
         $new_city_name .= ucfirst($new_city_name_array[$w]);
     } else {
-        $new_city_name .= ucwords($new_city_name_array[$w]).' ';
-    }        
+        $new_city_name .= ucwords($new_city_name_array[$w]) . ' ';
+    }
 }
 include './new_city_content.php';
 
@@ -22,6 +22,7 @@ $url_cat = trim($uri[1]);
 
 $city = $_GET['state'];
 
+$phone_number = '00000000000';
 if ($city == 'lucknow') {
     $phone_number = '+918800925952';
 } elseif ($city == 'goa') {
@@ -45,14 +46,12 @@ if (mysqli_num_rows($result2) > 0) {
     if (mysqli_num_rows($new_city_result) > 0) {
         $yes_new_city = 'ok';
         $new_city_data = mysqli_fetch_assoc($new_city_result);
-        $data2 = ['page_h1'=>$page_h1,'top_content'=> $top_content,'bottom_content'=> $bottom_content];
+        $data2 = ['page_h1' => $page_h1, 'top_content' => $top_content, 'bottom_content' => $bottom_content];
     } else {
-        header('Location: https://poojamahajan.com/404');    
-
+        header('Location: https://poojamahajan.com/404');
     }
 }
 
-$res = mysqli_query($con, $sql);
 $result = mysqli_query($con, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -76,28 +75,52 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/faq.css?v=1" defer>
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <meta name="robots" content=" index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <title><?php if($data2['yes_to_title'] != 'false' ){ echo $data2['page_title']; }elseif($city == 'lucknow'){ echo 'Top Call Girls in Lucknow at your Door Step Available 24x7'; }elseif(isset($yes_new_city)){ ?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?></title>
+    <title><?php if ($data2['yes_to_title'] != 'false') {
+                echo $data2['page_title'];
+            } elseif ($city == 'lucknow') {
+                echo 'Top Call Girls in Lucknow at your Door Step Available 24x7';
+            } elseif (isset($yes_new_city)) { ?>Call Girls in <?= $new_city_name ?> |100% Verified High class escorts available 24*7<?php } else { ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?></title>
 
     <link rel="canonical" href="<?= get_url() ?>call-girls/<?= $city ?>/" />
 
-    <meta name="description" content="<?php if($data2['yes_to_desc'] != 'false' ){ echo $data2['page_meta']; }elseif($city == 'lucknow'){ echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.'; }elseif(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>">
+    <meta name="description" content="<?php if ($data2['yes_to_desc'] != 'false') {
+                                            echo $data2['page_meta'];
+                                        } elseif ($city == 'lucknow') {
+                                            echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.';
+                                        } elseif (isset($yes_new_city)) { ?>Get the best VIP Independent Model with our <?= $new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?= $new_city_name ?> cheap rate at your room available 24/7.<?php } else { ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>">
 
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php if($data2['yes_to_title'] != 'false' ){ echo $data2['page_title']; }elseif($city == 'lucknow'){ echo 'Top Call Girls in Lucknow at your Door Step Available 24x7'; }elseif(isset($yes_new_city)){ ?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?>" />
+    <meta property="og:title" content="<?php if ($data2['yes_to_title'] != 'false') {
+                                            echo $data2['page_title'];
+                                        } elseif ($city == 'lucknow') {
+                                            echo 'Top Call Girls in Lucknow at your Door Step Available 24x7';
+                                        } elseif (isset($yes_new_city)) { ?>Call Girls in <?= $new_city_name ?> |100% Verified High class escorts available 24*7<?php } else { ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?>" />
 
 
-    <meta property="og:description" content="<?php if($data2['yes_to_desc'] != 'false' ){ echo $data2['page_meta']; }elseif($city == 'lucknow'){ echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.'; }elseif(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>" />
+    <meta property="og:description" content="<?php if ($data2['yes_to_desc'] != 'false') {
+                                                    echo $data2['page_meta'];
+                                                } elseif ($city == 'lucknow') {
+                                                    echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.';
+                                                } elseif (isset($yes_new_city)) { ?>Get the best VIP Independent Model with our <?= $new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?= $new_city_name ?> cheap rate at your room available 24/7.<?php } else { ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>" />
 
 
     <meta property="og:url" content="<?= $fullURL ?>" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="<?php if($data2['yes_to_title'] != 'false' ){ echo $data2['page_title']; }elseif($city == 'lucknow'){ echo 'Top Call Girls in Lucknow at your Door Step Available 24x7'; }elseif(isset($yes_new_city)){ ?>Call Girls in <?=$new_city_name ?> |100% Verified High class escorts available 24*7<?php }else{ ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?>" />
+    <meta name="twitter:title" content="<?php if ($data2['yes_to_title'] != 'false') {
+                                            echo $data2['page_title'];
+                                        } elseif ($city == 'lucknow') {
+                                            echo 'Top Call Girls in Lucknow at your Door Step Available 24x7';
+                                        } elseif (isset($yes_new_city)) { ?>Call Girls in <?= $new_city_name ?> |100% Verified High class escorts available 24*7<?php } else { ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?>" />
 
 
-    <meta name="twitter:description" content="<?php if($data2['yes_to_desc'] != 'false' ){ echo $data2['page_meta']; }elseif($city == 'lucknow'){ echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.'; }elseif(isset($yes_new_city)){?>Get the best VIP Independent Model with our <?=$new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?=$new_city_name ?> cheap rate at your room available 24/7.<?php }else{ ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>" />
+    <meta name="twitter:description" content="<?php if ($data2['yes_to_desc'] != 'false') {
+                                                    echo $data2['page_meta'];
+                                                } elseif ($city == 'lucknow') {
+                                                    echo 'Explore 250 + Genuine Call Girls in Lucknow at your Hotel Room without any advance. Call or Whatsapp to Avail Lucknow Call girl service 24x7.';
+                                                } elseif (isset($yes_new_city)) { ?>Get the best VIP Independent Model with our <?= $new_city_name ?> escorts agency. Call on 9867700727 for sexy call girls in <?= $new_city_name ?> cheap rate at your room available 24/7.<?php } else { ?>Genuine Call girls in <?= $city ?> at your place without any advance payment. Call or WhatsApp us to book <?= $city ?> Escorts with room.<?php } ?>" />
 
 
 
@@ -116,9 +139,114 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             white-space: pre-wrap;
             /* let the text wrap preserving spaces */
         }
-        .list-of-profile.ax a{
+
+        .list-of-profile.ax a {
             font-weight: bolder;
         }
+        .load-more-button{text-align: center;}
+        #loadMoreBtn{
+            padding: 1% 3%;
+            border: 0;
+            background-color: #9f21e3;
+            color:white;
+            cursor: pointer;
+            margin: 2% auto;
+            border-radius: 10px;
+        }
+
+        /*  */
+        .loader {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+  display: none;
+  margin: 3% auto;
+}
+
+.loader div {
+  width: 8%;
+  height: 24%;
+  background: rgb(128, 128, 128);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  opacity: 0;
+  border-radius: 50px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  animation: fade458 1s linear infinite;
+}
+
+@keyframes fade458 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.25;
+  }
+}
+
+.loader .bar1 {
+  transform: rotate(0deg) translate(0, -130%);
+  animation-delay: 0s;
+}
+
+.loader .bar2 {
+  transform: rotate(30deg) translate(0, -130%);
+  animation-delay: -1.1s;
+}
+
+.loader .bar3 {
+  transform: rotate(60deg) translate(0, -130%);
+  animation-delay: -1s;
+}
+
+.loader .bar4 {
+  transform: rotate(90deg) translate(0, -130%);
+  animation-delay: -0.9s;
+}
+
+.loader .bar5 {
+  transform: rotate(120deg) translate(0, -130%);
+  animation-delay: -0.8s;
+}
+
+.loader .bar6 {
+  transform: rotate(150deg) translate(0, -130%);
+  animation-delay: -0.7s;
+}
+
+.loader .bar7 {
+  transform: rotate(180deg) translate(0, -130%);
+  animation-delay: -0.6s;
+}
+
+.loader .bar8 {
+  transform: rotate(210deg) translate(0, -130%);
+  animation-delay: -0.5s;
+}
+
+.loader .bar9 {
+  transform: rotate(240deg) translate(0, -130%);
+  animation-delay: -0.4s;
+}
+
+.loader .bar10 {
+  transform: rotate(270deg) translate(0, -130%);
+  animation-delay: -0.3s;
+}
+
+.loader .bar11 {
+  transform: rotate(300deg) translate(0, -130%);
+  animation-delay: -0.2s;
+}
+
+.loader .bar12 {
+  transform: rotate(330deg) translate(0, -130%);
+  animation-delay: -0.1s;
+}
+
     </style>
     <style>
         table {
@@ -332,7 +460,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         <meta itemprop="position" content="1">
                     </li>
                     <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?=$new_city_name ?></span></a>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $new_city_name ?></span></a>
                         <meta itemprop="position" content="2">
                     </li>
                 </ol>
@@ -343,51 +471,33 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         <div class="list-of-profile ax" style="background-color:  rgb(241, 241, 241);">
             <?= $data2['top_content'] ?>
         </div>
+        <!-- WORKING AREA -->
+        <div id="list-of-all-profiles"></div>
+        <div class="loader">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <div class="bar4"></div>
+    <div class="bar5"></div>
+    <div class="bar6"></div>
+    <div class="bar7"></div>
+    <div class="bar8"></div>
+    <div class="bar9"></div>
+    <div class="bar10"></div>
+    <div class="bar11"></div>
+    <div class="bar12"></div>
+</div>
 
-        <?php while ($row = mysqli_fetch_assoc($res)) {
-            $ax = json_decode($row['profile_images'], true);
-            $alt = json_decode($row['image_alt_'], true);
-
-            $s = $ax[0];
-            $w = 'amazonaws.com';
-            if (strpos($s, $w) !== false) {
-            }
-        ?>
-            <div class="profile-section-box">
-                <div class="profile-section-box-image">
-                    <?php
-
-                    if (strpos($s, $w) !== false) { ?>
-                    <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
-                    <?php } else { ?>
-                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
-                        <?php } ?>
-                        
-                </div>
-                <div class="profile-section-box-detail">
-                    <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
-                    <div class="multiline-ellipsis" style="margin-bottom: 2%;"><?= $row['content'] ?></div>
-                    <div class="profile-section-button-detail">
-                        <a href="https://wa.me/<?= $phone_number ?>"><button><i class="ri-whatsapp-fill"></i> WhatsApp</button></a>
-                        <a href="tel: <?= $phone_number ?>"><button><i class="ri-phone-fill"></i> Contact</button></a>
-                    </div>
-                </div>
-            </div>
-        <?php } ?>
+        <div class="load-more-button">
+            <button id="loadMoreBtn" onclick="FetchAllProfiles()" value="10">Load More</button>
+        </div>
+        <!-- WORKING AREA -->
 
         <div class="list-of-profile ax" style="background-color:  rgb(241, 241, 241);">
             <?= $data2['bottom_content'] ?>
         </div>
         <div class="list-of-profile" style="margin: 3% 0;">
             <h3>FAQS About <?= $city ?> Call Girls Service - Poojamahajan</h3>
-            <!-- <div class="faq-body">
-                <div class="faq-que" id="faq-body"><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</strong><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span><div class="q"></div></div>
-                <div class="faq-ans"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ut consequatur, ab accusantium nesciunt doloribus quod dignissimos perspiciatis maiores quia excepturi dolor modi delectus quos. Illo incidunt obcaecati nulla quasi.</p></div>
-            </div>
-            <div class="faq-body">
-                <div class="faq-que" id="faq-body"><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</strong><span class="arrow-down"><i class="ri-arrow-down-s-fill"></i></span></div>
-                <div class="faq-ans"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ut consequatur, ab accusantium nesciunt doloribus quod dignissimos perspiciatis maiores quia excepturi dolor modi delectus quos. Illo incidunt obcaecati nulla quasi.</p></div>
-            </div> -->
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
@@ -421,9 +531,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 </div>
                 <!-- Add more FAQ items as needed -->
             </div>
-
         </div>
-
         <div class="list-of-profile" style="margin: 3% 0;background-color:  rgb(241, 241, 241);">
             <h3>Top Cities of India</h3>
             <div class="top-cities-of-india">
@@ -489,7 +597,31 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         </div>
     </div>
 
+    <script>
+        FetchAllProfiles()
 
+        function FetchAllProfiles(){
+            document.querySelector('.loader').style.display = 'block'
+            limit = document.getElementById('loadMoreBtn').value;
+            const formdata = new FormData()
+            formdata.append('limit', limit)
+            formdata.append('city', '<?=$city ?>')
+            formdata.append('phone', '<?=$phone_number ?>')
+            fetch('<?= get_url() ?>loadmoreprofile.php',{
+                method : 'POST',
+                body : formdata
+            }).then(res=>res.json())
+            .then(data=>{
+            document.querySelector('.loader').style.display = 'none'
+                document.getElementById('list-of-all-profiles').innerHTML = data['profiles'];
+                document.getElementById('loadMoreBtn').value = 10 + parseInt(data['limit'])
+
+                if( parseInt(data['count']) < parseInt(data['limit']) ){
+                    document.getElementById('loadMoreBtn').style.display = 'none';
+                }
+            })
+        }
+    </script>
 
 
     <!-- JAVASCRIPT -->
