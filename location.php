@@ -32,6 +32,7 @@ if ($city == 'lucknow') {
 $cate = 'call-girls';
 
 $sql = "SELECT * FROM profiles WHERE `state` = '$city'";
+$_sql_ = "SELECT * FROM profiles WHERE `state` = '$city' LIMIT 10";
 $sql2 = "SELECT * FROM city WHERE `city` = '$city' ";
 
 
@@ -52,6 +53,7 @@ if (mysqli_num_rows($result2) > 0) {
     }
 }
 
+$res = mysqli_query($con, $_sql_);
 $result = mysqli_query($con, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -417,7 +419,38 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <?= $data2['top_content'] ?>
         </div>
         <!-- WORKING AREA -->
-        <div id="list-of-all-profiles"></div>
+        <div id="list-of-all-profiles">
+        <?php while ($row = mysqli_fetch_assoc($res)) {
+            $ax = json_decode($row['profile_images'], true);
+            $alt = json_decode($row['image_alt_'], true);
+
+            $s = $ax[0];
+            $w = 'amazonaws.com';
+            if (strpos($s, $w) !== false) {
+            }
+        ?>
+            <div class="profile-section-box">
+                <div class="profile-section-box-image">
+                    <?php
+
+                    if (strpos($s, $w) !== false) { ?>
+                    <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+                    <?php } else { ?>
+                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
+                        <?php } ?>
+                        
+                </div>
+                <div class="profile-section-box-detail">
+                    <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
+                    <div class="multiline-ellipsis" style="margin-bottom: 2%;"><?= $row['content'] ?></div>
+                    <div class="profile-section-button-detail">
+                        <a href="https://wa.me/<?= $phone_number ?>"><button><i class="ri-whatsapp-fill"></i> WhatsApp</button></a>
+                        <a href="tel: <?= $phone_number ?>"><button><i class="ri-phone-fill"></i> Contact</button></a>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+        </div>
 
         <div class="load-more-button">
             <button id="loadMoreBtn" onclick="FetchAllProfiles()" value="10">Load More <?= $new_city_name ?> call girl</button>
