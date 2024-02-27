@@ -54,6 +54,6 @@ while ($row = mysqli_fetch_assoc($res)) {
 
     echo json_encode(['profiles'=>$output, 'limit'=>$limit, 'count'=>$c['i']]);
 
-mysqli_close($con)
+// mysqli_close($con)
 
 ?>
