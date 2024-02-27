@@ -145,22 +145,23 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         .list-of-profile.ax a {
             font-weight: bolder;
         }
-        .load-more-button{text-align: center;}
-        #loadMoreBtn{
+
+        .load-more-button {
+            text-align: center;
+        }
+
+        #loadMoreBtn {
             width: 100%;
             height: 50px;
             /* padding: 1% 3%; */
             border: 0;
             background-color: #9f21e3;
-            color:white;
+            color: white;
             cursor: pointer;
             margin: 2% auto;
             border-radius: 2px;
             font-weight: bold;
         }
-
-
-
     </style>
     <style>
         table {
@@ -343,39 +344,6 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         script3.text = JSON.stringify(mySchema3);
         document.head.appendChild(script3);
     </script>
-        <script>
-        FetchAllProfiles()
-
-        function FetchAllProfiles(){
-            limits = document.getElementById('loadMoreBtn');
-
-            if(limits !== null ){
-                limit = limits.value
-            }else{
-                limit = '';
-            }
-
-            if(limit == 0 || limit == null || limit.trim().length == 0 ){
-                limit = 10 ;
-            }
-            const formdata = new FormData()
-            formdata.append('limit', limit)
-            formdata.append('city', '<?=$city ?>')
-            formdata.append('phone', '<?=$phone_number ?>')
-            fetch('<?= get_url() ?>loadmoreprofile.php',{
-                method : 'POST',
-                body : formdata
-            }).then(res=>res.json())
-            .then(data=>{
-                document.getElementById('list-of-all-profiles').innerHTML = data['profiles'];
-                document.getElementById('loadMoreBtn').value = 10 + parseInt(data['limit'])
-
-                if( parseInt(data['count']) < parseInt(data['limit']) ){
-                    document.getElementById('loadMoreBtn').style.display = 'none';
-                }
-            })
-        }
-    </script>
 </head>
 
 <body onload="checkCookie()">
@@ -420,40 +388,40 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         </div>
         <!-- WORKING AREA -->
         <div id="list-of-all-profiles">
-        <?php while ($row = mysqli_fetch_assoc($res)) {
-            $ax = json_decode($row['profile_images'], true);
-            $alt = json_decode($row['image_alt_'], true);
+            <?php while ($row = mysqli_fetch_assoc($res)) {
+                $ax = json_decode($row['profile_images'], true);
+                $alt = json_decode($row['image_alt_'], true);
 
-            $s = $ax[0];
-            $w = 'amazonaws.com';
-            if (strpos($s, $w) !== false) {
-            }
-        ?>
-            <div class="profile-section-box">
-                <div class="profile-section-box-image">
-                    <?php
+                $s = $ax[0];
+                $w = 'amazonaws.com';
+                if (strpos($s, $w) !== false) {
+                }
+            ?>
+                <div class="profile-section-box">
+                    <div class="profile-section-box-image">
+                        <?php
 
-                    if (strpos($s, $w) !== false) { ?>
-                    <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
-                    <?php } else { ?>
-                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
+                        if (strpos($s, $w) !== false) { ?>
+                            <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+                        <?php } else { ?>
+                            <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?= $alt[0] ?>"></a>
                         <?php } ?>
-                        
-                </div>
-                <div class="profile-section-box-detail">
-                    <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
-                    <div class="multiline-ellipsis" style="margin-bottom: 2%;"><?= $row['content'] ?></div>
-                    <div class="profile-section-button-detail">
-                        <a href="https://wa.me/<?= $phone_number ?>"><button><i class="ri-whatsapp-fill"></i> WhatsApp</button></a>
-                        <a href="tel: <?= $phone_number ?>"><button><i class="ri-phone-fill"></i> Contact</button></a>
+
+                    </div>
+                    <div class="profile-section-box-detail">
+                        <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
+                        <div class="multiline-ellipsis" style="margin-bottom: 2%;"><?= $row['content'] ?></div>
+                        <div class="profile-section-button-detail">
+                            <a href="https://wa.me/<?= $phone_number ?>"><button><i class="ri-whatsapp-fill"></i> WhatsApp</button></a>
+                            <a href="tel: <?= $phone_number ?>"><button><i class="ri-phone-fill"></i> Contact</button></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <?php } ?>
+            <?php } ?>
         </div>
 
         <div class="load-more-button">
-            <button id="loadMoreBtn" onclick="FetchAllProfiles()" value="10">Load More <?= $new_city_name ?> call girl</button>
+            <button id="loadMoreBtn" onclick="FetchAllProfiles()" value="20">Load More <?= $new_city_name ?> call girl</button>
         </div>
         <!-- WORKING AREA -->
 
@@ -563,6 +531,32 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
 
     <!-- JAVASCRIPT -->
+    
+    <script>
+        function FetchAllProfiles() {
+            limit = document.getElementById('loadMoreBtn').value;
+
+            if (limit == 0 || limit == null || limit.trim().length == 0) {
+                limit = 10;
+            }
+            const formdata = new FormData()
+            formdata.append('limit', limit)
+            formdata.append('city', '<?= $city ?>')
+            formdata.append('phone', '<?= $phone_number ?>')
+            fetch('<?= get_url() ?>loadmoreprofile.php', {
+                    method: 'POST',
+                    body: formdata
+                }).then(res => res.json())
+                .then(data => {
+                    document.getElementById('list-of-all-profiles').innerHTML = data['profiles'];
+                    document.getElementById('loadMoreBtn').value = 10 + parseInt(data['limit'])
+
+                    if (parseInt(data['count']) < parseInt(data['limit'])) {
+                        document.getElementById('loadMoreBtn').style.display = 'none';
+                    }
+                })
+        }
+    </script>
     <script>
         document.getElementById('serach-city-input').addEventListener('keyup', (e) => {
             if (e.target.value.trim() != '') {
