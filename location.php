@@ -145,107 +145,19 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         }
         .load-more-button{text-align: center;}
         #loadMoreBtn{
-            padding: 1% 3%;
+            width: 100%;
+            height: 50px;
+            /* padding: 1% 3%; */
             border: 0;
             background-color: #9f21e3;
             color:white;
             cursor: pointer;
             margin: 2% auto;
-            border-radius: 10px;
+            border-radius: 2px;
+            font-weight: bold;
         }
 
-        /*  */
-        .loader {
-  position: relative;
-  width: 54px;
-  height: 54px;
-  border-radius: 10px;
-  display: none;
-  margin: 3% auto;
-}
 
-.loader div {
-  width: 8%;
-  height: 24%;
-  background: rgb(128, 128, 128);
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  opacity: 0;
-  border-radius: 50px;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  animation: fade458 1s linear infinite;
-}
-
-@keyframes fade458 {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0.25;
-  }
-}
-
-.loader .bar1 {
-  transform: rotate(0deg) translate(0, -130%);
-  animation-delay: 0s;
-}
-
-.loader .bar2 {
-  transform: rotate(30deg) translate(0, -130%);
-  animation-delay: -1.1s;
-}
-
-.loader .bar3 {
-  transform: rotate(60deg) translate(0, -130%);
-  animation-delay: -1s;
-}
-
-.loader .bar4 {
-  transform: rotate(90deg) translate(0, -130%);
-  animation-delay: -0.9s;
-}
-
-.loader .bar5 {
-  transform: rotate(120deg) translate(0, -130%);
-  animation-delay: -0.8s;
-}
-
-.loader .bar6 {
-  transform: rotate(150deg) translate(0, -130%);
-  animation-delay: -0.7s;
-}
-
-.loader .bar7 {
-  transform: rotate(180deg) translate(0, -130%);
-  animation-delay: -0.6s;
-}
-
-.loader .bar8 {
-  transform: rotate(210deg) translate(0, -130%);
-  animation-delay: -0.5s;
-}
-
-.loader .bar9 {
-  transform: rotate(240deg) translate(0, -130%);
-  animation-delay: -0.4s;
-}
-
-.loader .bar10 {
-  transform: rotate(270deg) translate(0, -130%);
-  animation-delay: -0.3s;
-}
-
-.loader .bar11 {
-  transform: rotate(300deg) translate(0, -130%);
-  animation-delay: -0.2s;
-}
-
-.loader .bar12 {
-  transform: rotate(330deg) translate(0, -130%);
-  animation-delay: -0.1s;
-}
 
     </style>
     <style>
@@ -429,6 +341,39 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         script3.text = JSON.stringify(mySchema3);
         document.head.appendChild(script3);
     </script>
+        <script>
+        FetchAllProfiles()
+
+        function FetchAllProfiles(){
+            limits = document.getElementById('loadMoreBtn');
+
+            if(limits !== null ){
+                limit = limits.value
+            }else{
+                limit = '';
+            }
+
+            if(limit == 0 || limit == null || limit.trim().length == 0 ){
+                limit = 10 ;
+            }
+            const formdata = new FormData()
+            formdata.append('limit', limit)
+            formdata.append('city', '<?=$city ?>')
+            formdata.append('phone', '<?=$phone_number ?>')
+            fetch('<?= get_url() ?>loadmoreprofile.php',{
+                method : 'POST',
+                body : formdata
+            }).then(res=>res.json())
+            .then(data=>{
+                document.getElementById('list-of-all-profiles').innerHTML = data['profiles'];
+                document.getElementById('loadMoreBtn').value = 10 + parseInt(data['limit'])
+
+                if( parseInt(data['count']) < parseInt(data['limit']) ){
+                    document.getElementById('loadMoreBtn').style.display = 'none';
+                }
+            })
+        }
+    </script>
 </head>
 
 <body onload="checkCookie()">
@@ -473,23 +418,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         </div>
         <!-- WORKING AREA -->
         <div id="list-of-all-profiles"></div>
-        <div class="loader">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-    <div class="bar4"></div>
-    <div class="bar5"></div>
-    <div class="bar6"></div>
-    <div class="bar7"></div>
-    <div class="bar8"></div>
-    <div class="bar9"></div>
-    <div class="bar10"></div>
-    <div class="bar11"></div>
-    <div class="bar12"></div>
-</div>
 
         <div class="load-more-button">
-            <button id="loadMoreBtn" onclick="FetchAllProfiles()" value="10">Load More</button>
+            <button id="loadMoreBtn" onclick="FetchAllProfiles()" value="10">Load More <?= $new_city_name ?> call girl</button>
         </div>
         <!-- WORKING AREA -->
 
@@ -597,35 +528,8 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         </div>
     </div>
 
-    <script>
-        FetchAllProfiles()
-
-        function FetchAllProfiles(){
-            document.querySelector('.loader').style.display = 'block'
-            limit = document.getElementById('loadMoreBtn').value;
-            const formdata = new FormData()
-            formdata.append('limit', limit)
-            formdata.append('city', '<?=$city ?>')
-            formdata.append('phone', '<?=$phone_number ?>')
-            fetch('<?= get_url() ?>loadmoreprofile.php',{
-                method : 'POST',
-                body : formdata
-            }).then(res=>res.json())
-            .then(data=>{
-            document.querySelector('.loader').style.display = 'none'
-                document.getElementById('list-of-all-profiles').innerHTML = data['profiles'];
-                document.getElementById('loadMoreBtn').value = 10 + parseInt(data['limit'])
-
-                if( parseInt(data['count']) < parseInt(data['limit']) ){
-                    document.getElementById('loadMoreBtn').style.display = 'none';
-                }
-            })
-        }
-    </script>
-
 
     <!-- JAVASCRIPT -->
-
     <script>
         document.getElementById('serach-city-input').addEventListener('keyup', (e) => {
             if (e.target.value.trim() != '') {
