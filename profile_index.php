@@ -19,7 +19,11 @@ if (isset($a[1])) {
 }
 $new_phone_number = '0000000000';
 if($city == 'lucknow'){
+    $new_phone_number = '8800925952';
+}elseif($city == 'agra'){
     $new_phone_number = '9690131390';
+}elseif ($city == 'goa') {
+    $new_phone_number = '+919548086524';
 }
 
 $sql = "SELECT * FROM `profiles` WHERE `state` = '$city' && `area` = '$area' && `profile_id` = '$id'";
