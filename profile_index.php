@@ -17,7 +17,10 @@ if (isset($a[1])) {
 } else {
     $area2 = $a[0];
 }
-
+$new_phone_number = '0000000000';
+if($city == 'lucknow'){
+    $new_phone_number = '9690131390';
+}
 
 $sql = "SELECT * FROM `profiles` WHERE `state` = '$city' && `area` = '$area' && `profile_id` = '$id'";
 $sql2 = "SELECT * FROM `profiles` WHERE `state` = '$city' && `profile_id` != '$id' ";
@@ -426,7 +429,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     </script>
     <script>
         document.getElementById('change-to-number').addEventListener('click', (e) => {
-            document.getElementById('change-to-number').innerText = "+91 8800925952"
+            document.getElementById('change-to-number').innerText = "<?=$new_phone_number ?>"
         })
 
         function openCity(evt, tabName) {

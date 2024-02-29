@@ -24,7 +24,7 @@ $city = $_GET['state'];
 
 $phone_number = '00000000000';
 if ($city == 'lucknow') {
-    $phone_number = '+918800925952';
+    $phone_number = '+919690131390';
 } elseif ($city == 'goa') {
     $phone_number = '+919548086524';
 }
