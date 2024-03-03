@@ -49,8 +49,8 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.min.css" integrity="sha512-pI8MMQ9fC050RkbUOr8cJ75T5bYJpT1PAiML/7QZM6Fr74Ef6csO2/Cl92q+Qpxidm7WonXr6f+DbyxNHPGH8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/fonts/remixicon.css" defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" defer />
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/profile.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
@@ -191,11 +191,11 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         $w = 'amazonaws.com';
                         if(strpos($s,$w) !== false){
                             ?>
-                            <div class="profile-image-grid-col"><img src="<?= $a[$j] ?>" alt="" width="100%" height="100%"></div>
+                            <div class="profile-image-grid-col"><img src="<?= $a[$j] ?>" alt="call girls <?= $city ?>" width="100%" height="100%" loading="lazy"></div>
                             <?php
                         }else{
                             ?>
-                            <div class="profile-image-grid-col"><img src="https://cdn.poojamahajan.com/profiles/<?=$a[$j] ?>" alt="<?=$alt[0] ?>" width="100%" height="100%"></div>
+                            <div class="profile-image-grid-col"><img src="https://cdn.poojamahajan.com/profiles/<?=$a[$j] ?>" alt="<?=$alt[0] ?>" width="100%" height="100%" loading="lazy"></div>
                             <?php
                         }
                         
@@ -311,9 +311,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                                 <div class="sub-profile-image">
                                     <?php 
                                     if (strpos($s, $w) !== false) { ?>
-                                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+                                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" loading="lazy" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="call girls in <?= $city ?> with genuine photos"></a>
                                         <?php } else { ?>
-                                            <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?=$ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
+                                            <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?=$ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top"  loading="lazy" alt="<?=$alt[0] ?>"></a>
                                             <?php } ?>
                                 </div>
                                 <div class="sub-profile-detail">
