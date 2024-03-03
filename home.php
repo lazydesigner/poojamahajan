@@ -1011,8 +1011,8 @@
                 relations. You can have passionate nights however you both likes.</p>
             <h2>Payment guidelines in Red light area</h2>
             <p>You can visit any red light area of you city or famous red light areas of India like Sonagachi in
-                Kolkata, Kamathipura near <a href="<?= get_url() ?>call-girls/mumbai" target="_blank">Mumbai</a>, GB Road in <a href="<?= get_url() ?>call-girls/delhi" target="_blank">Delhi</a>, Meergunj in Prayagraj, Budhwar peth near Pune,
-                Chaturbhujsthan near Muzaffarpur, Itwari in Nagpur, Shivdapur in <a href="<?= get_url() ?>call-girls/varanasi" target="_blank">Varanasi</a>, Kalyanpur in Kanpur, etc.</p>
+                Kolkata, Kamathipura near <a href="<?= get_url() ?>call-girls/mumbai/" target="_blank">Mumbai</a>, GB Road in <a href="<?= get_url() ?>call-girls/delhi/" target="_blank">Delhi</a>, Meergunj in Prayagraj, Budhwar peth near Pune,
+                Chaturbhujsthan near Muzaffarpur, Itwari in Nagpur, Shivdapur in <a href="<?= get_url() ?>call-girls/varanasi/" target="_blank">Varanasi</a>, Kalyanpur in Kanpur, etc.</p>
             <p>But visiting these places may be awful or sometimes quite risky. So our website play the great role here.
                 We work as a communication channel between clients and independent escort through
                 advertisement. As per Indian Law, our advertisement is not show in public places but only available for
