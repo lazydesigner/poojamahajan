@@ -123,7 +123,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, .5);
-            display: none;
+            display: block;
             position: fixed;
             top: 0;
             left: 0;
