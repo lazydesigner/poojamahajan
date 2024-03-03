@@ -4,7 +4,7 @@ $page_h1 = 'Elite Call Girls in '.$new_city_name.'with Genuine Photos and WhatsA
 
 $top_content = '<h2>VIP Independent Call Girls in '.$new_city_name .' </h2>
 <p>Are you seeking a touch of exotic fun in the city of Dreams? Look no further Contact <a
-        href="<?= get_url() ?>"><strong>Poojamahajan '.$new_city_name .' Escort Service</strong></a>, where luxury meets companionship to create
+        href="'.get_url().'"><strong>Poojamahajan '.$new_city_name .' Escort Service</strong></a>, where luxury meets companionship to create
     unforgettable experiences. Imagine your self in Arms of our elegant, charming, and well mannered <strong>call
         girls in '.$new_city_name .'</strong>, offering a gateway to a realm of pleasure and inner sexual urge.</p>
 <p>
@@ -13,9 +13,9 @@ $top_content = '<h2>VIP Independent Call Girls in '.$new_city_name .' </h2>
         '.$new_city_name .'</strong> who redefine the meaning of pure enjoyment. Whether you are college going student or big
     business man, our <strong>'.$new_city_name .' escorts</strong> promises to fulfill your every need, leaving you craving for
     more.</p>
-<p>Join us in unwinding the secrets of the best <a href="<?= get_url() ?>call-girls/<?= $city ?>/"><strong>escort service in '.$new_city_name .'</strong></a>, and explore the diversity
+<p>Join us in unwinding the secrets of the best <a href="'.get_url().'call-girls/'.$city.'/"><strong>escort service in '.$new_city_name .'</strong></a>, and explore the diversity
     of call girls in '.$new_city_name .'. From high-class companions to Affordable beauties, Our agency offerings cater to your
-    wildest dreams, ensuring a first-class experience with our <a href="<?= get_url() ?>call-girls/<?= $city ?>/"><strong>'.$new_city_name .' call girls</strong></a>. So, dive into the
+    wildest dreams, ensuring a first-class experience with our <a href="'.get_url().'call-girls/'.$city.'/"><strong>'.$new_city_name .' call girls</strong></a>. So, dive into the
     world of luxury and elevate your moments with our <strong>VIP independent call girls in '.$new_city_name .'</strong>.</p>';
 
 $bottom_content = '<h3>Introduction to Poojamahajan '.$new_city_name .' Escorts</h3>
@@ -69,7 +69,7 @@ $bottom_content = '<h3>Introduction to Poojamahajan '.$new_city_name .' Escorts<
 <strong>1. Cost-Effective Choice</strong><br>
 <p>Opting for a low-rate call girl allows you to enjoy an intimate and pleasurable experience without extending your budget. These escorts provide exceptional services at affordable prices, ensuring that you can indulge in your desires without breaking the bank.</p>
 <strong>2. Quality Service</strong><br>
-<p>Despite being budget-friendly, our low-rate <a href="<?= get_url() ?>call-girls/<?= $city ?>/"><strong>call girls in '.$new_city_name .'</strong></a> a high standard of service. They are well-trained and experienced to provide professionalism, discretion, and satisfaction during the sessions.</p>
+<p>Despite being budget-friendly, our low-rate <a href="'.get_url().'call-girls/'.$city.'/"><strong>call girls in '.$new_city_name .'</strong></a> a high standard of service. They are well-trained and experienced to provide professionalism, discretion, and satisfaction during the sessions.</p>
 <strong>3. Variety of Options</strong><br>
 <p>Our agency offers a wide choice of low-rate call girls in '.$new_city_name .'. You can browse through the profiles and descriptions of our '.$new_city_name .' call girls to find the perfect fit for yourself.</p><p>
     In conclusion, choosing a low-rate <strong>call girl in '.$new_city_name .'</strong> offers an excellent opportunity to meet your desires within your budget. So, why wait? Book a low-rate call girl in '.$new_city_name .' today and indulge in a memorable sexual encounter.</p>
