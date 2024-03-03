@@ -12,6 +12,10 @@ for ($w = 0; $w < count($new_city_name_array); $w++) {
         $new_city_name .= ucwords($new_city_name_array[$w]) . ' ';
     }
 }
+
+
+$city = $_GET['state'];
+
 include './new_city_content.php';
 
 
@@ -19,8 +23,6 @@ include './new_city_content.php';
 $new_area_name = '';
 
 $url_cat = trim($uri[1]);
-
-$city = $_GET['state'];
 
 $phone_number = '00000000000';
 if ($city == 'lucknow') {
