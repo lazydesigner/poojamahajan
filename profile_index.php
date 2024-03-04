@@ -292,7 +292,12 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <button id="change-to-number">CONTACT</button>
 
                 <div class="profile-image-grid">
-                    <?php $a = json_decode($row['profile_images'], true);
+                    <?php 
+                    
+                    if(($row['profile_images'] == null) || $row['profile_images'] == '' ){
+                       echo '';
+                    }else{                    
+                    $a = json_decode($row['profile_images'], true);
                     $alt = json_decode($row['image_alt_'], true);
                     for ($j = 0; $j < count($a); $j++) { 
                         $s = $a[$j];
@@ -305,7 +310,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                             ?>
                             <div class="profile-image-grid-col"><img src="https://cdn.poojamahajan.com/profiles/<?=$a[$j] ?>" alt="<?=$alt[0] ?>" width="100%" height="100%" loading="lazy"></div>
                             <?php
-                        }
+                        }}
                         
                         ?>
                         
