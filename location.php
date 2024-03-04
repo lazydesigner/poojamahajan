@@ -393,18 +393,15 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         <!-- WORKING AREA -->
         <div id="list-of-all-profiles">
             <?php while ($row = mysqli_fetch_assoc($res)) {
+                $ax = json_decode($row['profile_images'], true);
+                $alt = json_decode($row['image_alt_'], true);
+
+                $s = $ax[0];
+                $w = 'amazonaws.com';
+                if (strpos($s, $w) !== false) {
+                }
             ?>
                 <div class="profile-section-box">
-                <?php 
-                if(($row['profile_images'] == null) || $row['profile_images'] == '' ){
-                    echo '';
-                 }else{ 
-                    $ax = json_decode($row['profile_images'], true);
-                    $alt = json_decode($row['image_alt_'], true);
-    
-                    $s = $ax[0];
-                    $w = 'amazonaws.com'; ?>
-
                     <div class="profile-section-box-image">
                         <?php
 
@@ -424,7 +421,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         </div>
                     </div>
                 </div>
-            <?php } }?>
+            <?php } ?>
         </div>
 
         <div class="load-more-button">
