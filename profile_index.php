@@ -294,7 +294,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <div class="profile-image-grid">
                     <?php 
                     
-                    if(($row['profile_images'] == null) || $row['profile_images'] == '' ){
+                    if($row['profile_images'] == null){
                        echo '';
                     }else{                    
                     $a = json_decode($row['profile_images'], true);
