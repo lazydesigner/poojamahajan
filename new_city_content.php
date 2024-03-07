@@ -1,6 +1,6 @@
 <?php 
 
-$page_h1 = 'Elite Call Girls in '.$new_city_name.'with Genuine Photos and WhatsApp Number';
+$page_h1 = 'Elite Call Girls in '.$new_city_name.' with Genuine Photos and WhatsApp Number';
 
 $top_content = '<h2>VIP Independent Call Girls in '.$new_city_name .' </h2>
 <p>Are you seeking a touch of exotic fun in the city of Dreams? Look no further Contact <a
