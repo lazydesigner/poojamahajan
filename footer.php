@@ -28,12 +28,13 @@
             <div class="footer-col">
                 <h3>Quick Links</h3>
                 <ul class="footer-col-ul"> 
-                    <li><a href="">Post Ad</a></li>
+                    <li><a href="<?=get_url()?>register/">Post Ad</a></li>
 <!-- Developer -->
-                    <li><a href="">Review</a></li>
-                    <li><a href="">Price List</a></li>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="<?=get_url() ?>">Review</a></li>
+                    <li><a href="<?=get_url() ?>">Price List</a></li>
+                    <li><a href="<?=get_url() ?>contact-us">Contact Us</a></li>
+                    <li><a href="<?=get_url()?>terms-and-conditions/">Terms & Conditions</a></li>
+                    <li><a href="<?=get_url() ?>">Poojamahajan Network</a></li>
                 </ul>
                 <div class="dmca-logo">
                     <img src="./assets/images/dmca-compliant-grayscale.png" alt="">
