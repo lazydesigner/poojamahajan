@@ -393,6 +393,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         <!-- WORKING AREA -->
         <div id="list-of-all-profiles">
             <?php while ($row = mysqli_fetch_assoc($res)) {
+                if($row['index_page'] != 'noindex'){
                 $ax = json_decode($row['profile_images'], true);
                 $alt = json_decode($row['image_alt_'], true);
 
@@ -421,7 +422,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         </div>
                     </div>
                 </div>
-            <?php } ?>
+            <?php }} ?>
         </div>
 
         <div class="load-more-button">

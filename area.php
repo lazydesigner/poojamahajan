@@ -11,7 +11,7 @@ $cate = 'call-girls';
 $a = explode('-', $_GET['city']);
 
 if (isset($a[1])) {
-    if (isset($a[2])) { 
+    if (isset($a[2])) {
         $area = $a[0] . ' ' . $a[1] . ' ' . $a[2];
     } else {
         $area = $a[0] . ' ' . $a[1];
@@ -30,15 +30,17 @@ $result2 = mysqli_query($con, $sql2);
 if (mysqli_num_rows($result2) > 0) {
     $sql_area = "SELECT * FROM area WHERE `area_value` =  '{$_GET['city']}'";
     $res_area = mysqli_query($con, $sql_area);
-    if(mysqli_num_rows($res_area) > 0){}else{
-        header('Location: '. get_url().'call-girls/'.$city.'/');
+    if (mysqli_num_rows($res_area) > 0) {
+    } else {
+        header('Location: ' . get_url() . 'call-girls/' . $city . '/');
     }
 } else {
     if (mysqli_num_rows($new_city_result) > 0) {
         $sql_area = "SELECT * FROM area WHERE `area_value` =  '{$_GET['city']}'";
         $res_area = mysqli_query($con, $sql_area);
-        if(mysqli_num_rows($res_area) > 0){}else{
-            header('Location: '. get_url().'call-girls/'.$city.'/');
+        if (mysqli_num_rows($res_area) > 0) {
+        } else {
+            header('Location: ' . get_url() . 'call-girls/' . $city . '/');
         }
     } else {
         header('Location: https://poojamahajan.com/404/');
@@ -111,12 +113,12 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         table tr td {
             padding: 1%;
         }
-        
-        .list-of-profile.ax a{
+
+        .list-of-profile.ax a {
             font-weight: bolder;
         }
     </style>
-    
+
     <style>
         .confirm-18 {
             width: 100%;
@@ -179,7 +181,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         }
     </style>
 
-<script>
+    <script>
         function setCookie(cname, cvalue, exdays) {
             const d = new Date();
             d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -291,6 +293,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         </div>
 
         <?php while ($row = mysqli_fetch_assoc($res)) {
+            if($row['index_page'] != 'noindex'){
             $ax = json_decode($row['profile_images'], true);
             $alt = json_decode($row['image_alt_'], true);
             $s = $ax[0];
@@ -298,13 +301,13 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         ?>
             <div class="profile-section-box">
                 <div class="profile-section-box-image">
-                <?php
+                    <?php
 
-if (strpos($s, $w) !== false) { ?>
-<a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
-<?php } else { ?>
-    <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?=$alt[0] ?>"></a>
-    <?php } ?>
+                    if (strpos($s, $w) !== false) { ?>
+                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+                    <?php } else { ?>
+                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?= $alt[0] ?>"></a>
+                    <?php } ?>
                 </div>
                 <div class="profile-section-box-detail">
                     <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
@@ -315,7 +318,7 @@ if (strpos($s, $w) !== false) { ?>
                     </div>
                 </div>
             </div>
-        <?php } ?>
+        <?php }} ?>
 
         <div class="list-of-profile" style="background-color: rgb(241, 241, 241);">
             <h2>FAQ</h2>
