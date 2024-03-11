@@ -4,6 +4,10 @@ Options -Indexes
 #RewriteCond %{HTTPS} off
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+
+RewriteCond %{HTTP_HOST} ^www.poojamahajan.com [NC]
+RewriteRule ^(.*)$ https://poojamahajan.com/$1 [L,R=301]
+
 #DELHI
 RewriteRule ^call-girl-profiles/?$ /call-girls/ [R=301,L]
 RewriteRule ^call-girl-in-delhi/?$ /call-girls/delhi/ [R=301,L]
