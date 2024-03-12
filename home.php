@@ -453,7 +453,7 @@
         </div>
 
         <div class="city-name-list">
-            <h2>Indian Call Girls(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls';
+            <h2>Indian Call Girls(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && index_page = 'index';
 ";
                                     $res = mysqli_query($con, $sql);
                                     $row = mysqli_fetch_array($res);
@@ -461,27 +461,27 @@
             <div class="list-of-cities-row" id="list-of-cities-row">
                 <div class="city-name-list-item">
                     <ul>
-                        <li><a href="<?= get_url() ?>call-girls/delhi/">Delhi(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'delhi';
+                        <li><a href="<?= get_url() ?>call-girls/delhi/">Delhi(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'delhi' && index_page = 'index';
 ";
                                                                                 $res = mysqli_query($con, $sql);
                                                                                 $row = mysqli_fetch_array($res);
                                                                                 echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/agra/">Agra(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'agra';
+                        <li><a href="<?= get_url() ?>call-girls/agra/">Agra(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'agra' && index_page = 'index';
 ";
                                                                             $res = mysqli_query($con, $sql);
                                                                             $row = mysqli_fetch_array($res);
                                                                             echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/jaipur/">Jaipur(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'jaipur';
+                        <li><a href="<?= get_url() ?>call-girls/jaipur/">Jaipur(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'jaipur' && index_page = 'index';
 ";
                                                                                 $res = mysqli_query($con, $sql);
                                                                                 $row = mysqli_fetch_array($res);
                                                                                 echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/lucknow">Lucknow(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'lucknow';
+                        <li><a href="<?= get_url() ?>call-girls/lucknow">Lucknow(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'lucknow' && index_page = 'index';
 ";
                                                                                     $res = mysqli_query($con, $sql);
                                                                                     $row = mysqli_fetch_array($res);
                                                                                     echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/guwahati/">Guwahati(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'guwahati';
+                        <li><a href="<?= get_url() ?>call-girls/guwahati/">Guwahati(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'guwahati' && index_page = 'index';
 ";
                                                                                     $res = mysqli_query($con, $sql);
                                                                                     $row = mysqli_fetch_array($res);
@@ -495,32 +495,32 @@
                 </div>
                 <div class="city-name-list-item">
                     <ul>
-                        <li><a href="<?= get_url() ?>call-girls/goa/">Goa(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'goa';
+                        <li><a href="<?= get_url() ?>call-girls/goa/">Goa(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'goa' && index_page = 'index';
 ";
                                                                             $res = mysqli_query($con, $sql);
                                                                             $row = mysqli_fetch_array($res);
                                                                             echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/ghaziabad/">Ghaziabad(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'ghaziabad';
+                        <li><a href="<?= get_url() ?>call-girls/ghaziabad/">Ghaziabad(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'ghaziabad' && index_page = 'index';
 ";
                                                                                         $res = mysqli_query($con, $sql);
                                                                                         $row = mysqli_fetch_array($res);
                                                                                         echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/kota/">Kota(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'kota';
+                        <li><a href="<?= get_url() ?>call-girls/kota/">Kota(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'kota' && index_page = 'index';
 ";
                                                                             $res = mysqli_query($con, $sql);
                                                                             $row = mysqli_fetch_array($res);
                                                                             echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/ahmedabad/">Ahmedabad(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'ahmedabad';
+                        <li><a href="<?= get_url() ?>call-girls/ahmedabad/">Ahmedabad(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'ahmedabad' && index_page = 'index';
 ";
                                                                                         $res = mysqli_query($con, $sql);
                                                                                         $row = mysqli_fetch_array($res);
                                                                                         echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/arunachal-pradesh/">Arunachal-Pradesh(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'arunachal-pradesh';
+                        <li><a href="<?= get_url() ?>call-girls/arunachal-pradesh/">Arunachal-Pradesh(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'arunachal-pradesh' && index_page = 'index';
 ";
                                                                                                         $res = mysqli_query($con, $sql);
                                                                                                         $row = mysqli_fetch_array($res);
                                                                                                         echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/bhopal/">Bhopal(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'bhopal';
+                        <li><a href="<?= get_url() ?>call-girls/bhopal/">Bhopal(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'bhopal' && index_page = 'index';
 ";
                                                                                 $res = mysqli_query($con, $sql);
                                                                                 $row = mysqli_fetch_array($res);
@@ -529,32 +529,32 @@
                 </div>
                 <div class="city-name-list-item">
                     <ul>
-                        <li><a href="<?= get_url() ?>call-girls/gurugram/">Gurugram(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'gurugram';
+                        <li><a href="<?= get_url() ?>call-girls/gurugram/">Gurugram(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'gurugram' && index_page = 'index';
 ";
                                                                                     $res = mysqli_query($con, $sql);
                                                                                     $row = mysqli_fetch_array($res);
                                                                                     echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/faridabad/">Faridabad(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'faridabad';
+                        <li><a href="<?= get_url() ?>call-girls/faridabad/">Faridabad(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'faridabad' && index_page = 'index';
 ";
                                                                                         $res = mysqli_query($con, $sql);
                                                                                         $row = mysqli_fetch_array($res);
                                                                                         echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/mumbai/">Mumbai(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'mumbai';
+                        <li><a href="<?= get_url() ?>call-girls/mumbai/">Mumbai(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'mumbai' && index_page = 'index';
 ";
                                                                                 $res = mysqli_query($con, $sql);
                                                                                 $row = mysqli_fetch_array($res);
                                                                                 echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/ajmer/">Ajmer(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'ajmer';
+                        <li><a href="<?= get_url() ?>call-girls/ajmer/">Ajmer(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'ajmer' && index_page = 'index';
 ";
                                                                                 $res = mysqli_query($con, $sql);
                                                                                 $row = mysqli_fetch_array($res);
                                                                                 echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/varanasi/">Varanasi(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'varanasi' ;
+                        <li><a href="<?= get_url() ?>call-girls/varanasi/">Varanasi(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'varanasi' && index_page = 'index';
 ";
                                                                                     $res = mysqli_query($con, $sql);
                                                                                     $row = mysqli_fetch_array($res);
                                                                                     echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/dehradun/">Dehradun(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'dehradun';
+                        <li><a href="<?= get_url() ?>call-girls/dehradun/">Dehradun(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'dehradun' && index_page = 'index';
 ";
                                                                                     $res = mysqli_query($con, $sql);
                                                                                     $row = mysqli_fetch_array($res);
@@ -563,32 +563,32 @@
                 </div>
                 <div class="city-name-list-item">
                     <ul>
-                        <li><a href="<?= get_url() ?>call-girls/udaipur/">Udaipur(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'udaipur';
+                        <li><a href="<?= get_url() ?>call-girls/udaipur/">Udaipur(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'udaipur' && index_page = 'index';
 ";
                                                                                     $res = mysqli_query($con, $sql);
                                                                                     $row = mysqli_fetch_array($res);
                                                                                     echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/indore/">Indore(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'indore';
+                        <li><a href="<?= get_url() ?>call-girls/indore/">Indore(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'indore' && index_page = 'index';
 ";
                                                                                 $res = mysqli_query($con, $sql);
                                                                                 $row = mysqli_fetch_array($res);
                                                                                 echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/noida/">Noida(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'noida';
+                        <li><a href="<?= get_url() ?>call-girls/noida/">Noida(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'noida' && index_page = 'index';
 ";
                                                                                 $res = mysqli_query($con, $sql);
                                                                                 $row = mysqli_fetch_array($res);
                                                                                 echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/patna/">Patna(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'patna';
+                        <li><a href="<?= get_url() ?>call-girls/patna/">Patna(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'patna' && index_page = 'index';
 ";
                                                                                 $res = mysqli_query($con, $sql);
                                                                                 $row = mysqli_fetch_array($res);
                                                                                 echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/visakhapatnam/">Visakhapatnam(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'visakhapatnam';
+                        <li><a href="<?= get_url() ?>call-girls/visakhapatnam/">Visakhapatnam(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'visakhapatnam' && index_page = 'index';
 ";
                                                                                                 $res = mysqli_query($con, $sql);
                                                                                                 $row = mysqli_fetch_array($res);
                                                                                                 echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/manali/">Manali(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'manali';
+                        <li><a href="<?= get_url() ?>call-girls/manali/">Manali(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'manali' && index_page = 'index';
 ";
                                                                                 $res = mysqli_query($con, $sql);
                                                                                 $row = mysqli_fetch_array($res);
