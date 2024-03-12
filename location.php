@@ -36,7 +36,7 @@ if ($city == 'lucknow') {
 $cate = 'call-girls';
 
 $sql = "SELECT * FROM profiles WHERE `state` = '$city'";
-$_sql_ = "SELECT * FROM profiles WHERE `state` = '$city' LIMIT 10";
+$_sql_ = "SELECT * FROM profiles WHERE `state` = '$city' && index_page = 'index' LIMIT 10";
 $sql2 = "SELECT * FROM city WHERE `city` = '$city' ";
 
 
