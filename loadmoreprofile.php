@@ -6,7 +6,7 @@ include './init.php';
 $limit = $_POST['limit'] ; // Offset for fetching additional items
 $city = $_POST['city'] ; // Offset for fetching additional items
 $phone_number = $_POST['phone'] ; // Offset for fetching additional items
-$query = "SELECT * FROM profiles WHERE `state` = '$city' LIMIT $limit";
+$query = "SELECT * FROM profiles WHERE `state` = '$city' && index_page = 'index' LIMIT $limit";
 $query2 = "SELECT count(*) as i FROM profiles WHERE `state` = '$city'";
 $res = mysqli_query($con, $query);
 $res2 = mysqli_query($con, $query2);
