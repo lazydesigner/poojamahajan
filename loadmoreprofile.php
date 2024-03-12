@@ -13,9 +13,10 @@ $res2 = mysqli_query($con, $query2);
 
 $c = mysqli_fetch_assoc($res2);
 
-$output = '';
+$output = ''; 
 
 while ($row = mysqli_fetch_assoc($res)) {
+    if($row['index_page'] != 'noindex'){
     $ax = json_decode($row['profile_images'], true);
     $alt = json_decode($row['image_alt_'], true);
     $s = $ax[0];
@@ -50,7 +51,7 @@ while ($row = mysqli_fetch_assoc($res)) {
                 </div>
             </div>
         </div>';
-    }  } 
+    }  } }
 
     echo json_encode(['profiles'=>$output, 'limit'=>$limit, 'count'=>$c['i']]);
 
