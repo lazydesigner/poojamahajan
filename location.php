@@ -501,6 +501,30 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
             <h3>Areas of <span style="text-transform: capitalize;"><?= $city ?></span></h3>
             <div class="top-cities-of-india" id="area-near">
+                <?php  
+                    $query_area_near_by = "SELECT * FROM area WHERE city_id = '$city' ";
+                    $c_area_near_by = $city;
+                    if(isset($cate )){
+                        $cate = $cate ;
+                    }
+                    
+                    $result_area_near_by = mysqli_query($con, $query_area_near_by);
+                    $areas = '';
+                    $i = 0;
+                    if(mysqli_num_rows($result_area_near_by) > 0){
+                        while($row_area_near_by = mysqli_fetch_assoc($result_area_near_by)){
+                            
+                            if($i == 1){$i = 0 ;}else{
+                                if(isset($cate)){
+                                $areas .= '<a href="'.get_url().$cate.'/'.$c_area_near_by.'/'.$row_area_near_by['area_value'].'/"><button>'.$row_area_near_by['area_name'].'</button></a>';
+                                }
+                            }
+                
+                        };
+                    }
+                
+                    echo $areas
+                ?>
             </div>
 
         </div>
@@ -602,7 +626,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 }).then(res => res.json())
                 .then(d => {
                     document.getElementById('area-locality').innerHTML = d['output']
-                    document.getElementById('area-near').innerHTML += d['area']
+                    // document.getElementById('area-near').innerHTML += d['area']
                 })
         }
 
