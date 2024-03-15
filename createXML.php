@@ -29,8 +29,14 @@ $xml .= "\t\t<priority>1.00</priority>\n";
 $xml .= "\t</url>\n";
 
 foreach($pagess as $page){
+
+    if($page == 'profiles'){
+        $query = "SELECT * FROM  $page WHERE `index_page` = 'index'";
+    }else{
+        $query = "SELECT * FROM  $page";
+    }
     
-    $query = "SELECT * FROM  $page";
+    
 
     $result =  mysqli_query($con,$query);
     // Create the sitemap XML
