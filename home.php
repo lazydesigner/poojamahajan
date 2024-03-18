@@ -598,7 +598,7 @@
             </div>
         </div>
 
-        <div class="city-name-list">
+        <!-- <div class="city-name-list">
             <h2>Maharathra</h2>
             <div class="list-of-cities-row" id="list-of-cities-row">
                 <div class="city-name-list-item">
@@ -958,9 +958,9 @@
                                                                                 $row = mysqli_fetch_array($res);
                                                                                 echo $row['a'] ?>)</a></li>
                     </ul></div>
-                    <div class="city-name-list-item"></div> -->
+                    <div class="city-name-list-item"></div>
             </div>
-        </div>
+        </div> -->
 
         <div class="main-content">
             <h2>Genuine Escort Service and call girls real images and Whatsapp numbers</h2>
