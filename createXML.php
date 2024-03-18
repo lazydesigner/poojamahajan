@@ -14,7 +14,7 @@ if (!$con) {
 // Retrieve the list of pages from the database
 
 $pagess = array(
-    'new_city',
+    'city',
     'area',
     'profiles'
 );
@@ -42,8 +42,8 @@ foreach($pagess as $page){
     // Create the sitemap XML
     if(mysqli_num_rows($result)>0){
         while ($row = mysqli_fetch_assoc($result)) {
-            if($page == 'new_city'){
-                $url = htmlspecialchars('https://poojamahajan.com/call-girls/'.strtolower($row['city_value']).'/');
+            if($page == 'city'){
+                $url = htmlspecialchars('https://poojamahajan.com/call-girls/'.strtolower($row['city']).'/');
                 $xml .= "\t<url>\n";
                 $xml .= "\t\t<loc>$url</loc>\n";
                 $xml .= "\t\t<lastmod>2024-01-04T13:23:31+05:30</lastmod>\n";
