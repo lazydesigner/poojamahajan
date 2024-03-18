@@ -20,7 +20,7 @@ if (isset($a[1])) {
     $area = $a[0];
 }
 
-$sql = "SELECT * FROM profiles WHERE `state` = '$city' and `area` = '{$_GET['city']}'";
+$sql = "SELECT * FROM profiles WHERE `state` = '$city' and `area` = '{$_GET['city']}' and index_page = 'index'";
 $sql2 = "SELECT * FROM city WHERE `city` = '$city' ";
 
 $new_city_sql = "SELECT * FROM new_city WHERE `city_value` = '$city'";

@@ -154,7 +154,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         </div>
         <div class="page-detail-and-information " style="width: 100%;height:auto">
             <div class="profile-image-grid-list">
-                <?php $query = "SELECT * FROM profiles;";
+                <?php $query = "SELECT * FROM profiles WHERE index_page = 'index'";
                 $result = mysqli_query($con, $query);
                 if (mysqli_num_rows($result) > 0) {
                     while ($rows = mysqli_fetch_assoc($result)) {
