@@ -514,13 +514,15 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                     $i = 0;
                     if(mysqli_num_rows($result_area_near_by) > 0){
                         while($row_area_near_by = mysqli_fetch_assoc($result_area_near_by)){
-                            
-                            if($i == 1){$i = 0 ;}else{
+
+                            $filterquery = "SELECT * FROM profiles WHERE area = '{$row_area_near_by['area_value']}' && index_page = 'index'";
+                            $filterres = mysqli_query($con, $filterquery);
+                            if(mysqli_num_rows($filterres) > 0){
                                 if(isset($cate)){
-                                $areas .= '<a href="'.get_url().$cate.'/'.$c_area_near_by.'/'.$row_area_near_by['area_value'].'/"><button>'.$row_area_near_by['area_name'].'</button></a>';
-                                }
-                            }
-                
+                                    $areas .= '<a href="'.get_url().$cate.'/'.$c_area_near_by.'/'.$row_area_near_by['area_value'].'/"><button>'.$row_area_near_by['area_name'].'</button></a>';
+                                    }   
+                            }   
+                                             
                         };
                     }
                 
