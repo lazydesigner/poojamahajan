@@ -364,7 +364,33 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             </div>
 
             <h3>Areas of <span style="text-transform: capitalize;"><?= $city ?></span></h3>
-            <div class="top-cities-of-india" id="area-near">
+            <div class="top-cities-of-india">
+            <?php  
+                    $query_area_near_by = "SELECT * FROM area WHERE city_id = '$city' ";
+                    $c_area_near_by = $city;
+                    if(isset($cate )){
+                        $cate = $cate ;
+                    }
+                    
+                    $result_area_near_by = mysqli_query($con, $query_area_near_by);
+                    $areas = '';
+                    $i = 0;
+                    if(mysqli_num_rows($result_area_near_by) > 0){
+                        while($row_area_near_by = mysqli_fetch_assoc($result_area_near_by)){
+
+                            $filterquery = "SELECT * FROM profiles WHERE area = '{$row_area_near_by['area_value']}' && index_page = 'index'";
+                            $filterres = mysqli_query($con, $filterquery);
+                            if(mysqli_num_rows($filterres) > 0){
+                                if(isset($cate)){
+                                    $areas .= '<a href="'.get_url().$cate.'/'.$c_area_near_by.'/'.$row_area_near_by['area_value'].'/"><button>'.$row_area_near_by['area_name'].'</button></a>';
+                                    }   
+                            }   
+                                             
+                        };
+                    }
+                
+                    echo $areas
+                ?>
             </div>
 
         </div>
