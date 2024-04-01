@@ -754,7 +754,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="list-of-cities-row" id="list-of-cities-row">
+            <!-- <div class="list-of-cities-row" id="list-of-cities-row">
                 <div class="city-name-list-item">
                     <ul>
                         <li><a href="<?= get_url() ?>call-girls/pimple-nilakh/">Pimple Nilakh(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'pimple-nilakh';
@@ -959,7 +959,7 @@
                 </div>
                 <div class="city-name-list-item"></div>
                 <div class="city-name-list-item"></div>
-            </div>
+            </div> -->
         </div>
 
         <div class="main-content">
