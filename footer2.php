@@ -49,7 +49,7 @@
                 <li><a href="https://www.reddit.com/user/poojamahajan1/comments/x20lqg/pooja_mahajan/?rdt=58757" aria-label="reddit"><i class="ri-reddit-fill"></i></a></li>
             </ul>
         </div>
-        <a href="<?=get_url() ?>"><div class="our-network" style="width: auto;padding: .8% 2%;position: absolute;bottom: 0;left: 50%;background-color: #fff;border-radius: 15px 15px 0 0;transform: translateX(-50%);">🌍 Poojamahajan Network</div></a>
+        <a href="<?=get_url() ?>"><div class="our-network" style="width: auto;padding: .8% 2%;position: absolute;bottom: 0;left: 50%;background-color: #fff;border-radius: 15px 15px 0 0;transform: translateX(-50%);z-index:1">🌍 Poojamahajan Network</div></a>
     </footer>
     <script>
         if (!window.location.href.endsWith('/')) {
