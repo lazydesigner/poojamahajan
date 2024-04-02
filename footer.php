@@ -34,7 +34,7 @@
                     <li><a href="<?=get_url() ?>">Price List</a></li>
                     <li><a href="<?=get_url() ?>contact-us">Contact Us</a></li>
                     <li><a href="<?=get_url()?>terms-and-conditions/">Terms & Conditions</a></li>
-                    <li><a href="<?=get_url() ?>">Poojamahajan Network</a></li>
+                    <!-- <li><a href="<?=get_url() ?>">Poojamahajan Network</a></li> -->
                 </ul>
                 <div class="dmca-logo">
                     <img src="./assets/images/dmca-compliant-grayscale.png" alt="">
