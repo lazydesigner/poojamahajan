@@ -53,7 +53,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" defer />
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/profile.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css?v=1" defer>
     <link rel="canonical" href="<?= $fullURL ?>" />
     <title><?= ucwords($area2) ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan</title>
 

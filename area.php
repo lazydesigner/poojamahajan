@@ -69,7 +69,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/list-of-profile.css?v=1">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css?v=1" defer>
     <meta name="robots" content=" index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>350+ Call girls in <?= $area ?> both incall & outcall 24/7 - Poojamahajan</title>
     <link rel="canonical" href="<?= get_url() ?>call-girls/<?= $city.'/'.$_GET['city'] ?>/" />

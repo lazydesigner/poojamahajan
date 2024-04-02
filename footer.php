@@ -43,7 +43,7 @@
         </div>
 
         
-        <a href="<?=get_url() ?>"><div class="our-network" style="width: auto;padding: .8% 2%;position: absolute;bottom: 0;left: 50%;background-color: #fff;border-radius: 15px 15px 0 0;transform: translateX(-50%);z-index:1">🌍 Poojamahajan Network</div></a>
+        <a href="<?=get_url() ?>"><div class="our-network">🌍 Poojamahajan Network</div></a>
        
     </footer>
     <script>
