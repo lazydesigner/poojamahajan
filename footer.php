@@ -41,6 +41,10 @@
                 </div>
             </div>
         </div>
+
+        
+        <a href="<?=get_url() ?>"><div class="our-network">🌍 Poojamahajan Network</div></a>
+       
     </footer>
     <script>
     if (!window.location.href.endsWith('/')) {
