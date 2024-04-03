@@ -49,10 +49,10 @@ if (mysqli_num_rows($result2) > 0) {
     $data2 = mysqli_fetch_assoc($result2);
 } else {
     if (mysqli_num_rows($new_city_result) > 0) {
-        header('Location: https://poojamahajan.com/404');
-        // $yes_new_city = 'ok';
-        // $new_city_data = mysqli_fetch_assoc($new_city_result);
-        // $data2 = ['page_h1' => $page_h1, 'top_content' => $top_content, 'bottom_content' => $bottom_content, 'yes_to_title' => 'false', 'yes_to_desc'=>'false'];
+        // header('Location: https://poojamahajan.com/404');
+        $yes_new_city = 'ok';
+        $new_city_data = mysqli_fetch_assoc($new_city_result);
+        $data2 = ['page_h1' => $page_h1, 'top_content' => $top_content, 'bottom_content' => $bottom_content, 'yes_to_title' => 'false', 'yes_to_desc'=>'false'];
     } else {
         header('Location: https://poojamahajan.com/404');
     }
