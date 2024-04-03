@@ -597,6 +597,17 @@
                     </ul>
                 </div>
             </div>
+            <div class="list-of-cities-row" id="list-of-cities-row">
+                <div class="city-name-list-item">
+                    <ul>
+                        <li><a href="<?= get_url() ?>call-girls/kanpur/">Kanpur(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'kanpur' && index_page = 'index';
+";
+                                                                                $res = mysqli_query($con, $sql);
+                                                                                $row = mysqli_fetch_array($res);
+                                                                                echo $row['a'] ?>)</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="city-name-list">
