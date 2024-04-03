@@ -36,7 +36,7 @@ if ($city == 'lucknow') {
 $cate = 'call-girls';
 
 $sql = "SELECT * FROM profiles WHERE `state` = '$city'";
-$_sql_ = "SELECT * FROM profiles WHERE `state` = '$city' && index_page = 'index' LIMIT 10";
+$_sql_ = "SELECT * FROM profiles WHERE `state` = '$city' && index_page = 'index'";
 $sql2 = "SELECT * FROM city WHERE `city` = '$city' ";
 
 
@@ -426,9 +426,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <?php }} ?>
         </div>
 
-        <div class="load-more-button">
+        <!-- <div class="load-more-button">
             <button id="loadMoreBtn" onclick="FetchAllProfiles()" value="20">Load More <?= $new_city_name ?> call girls</button>
-        </div>
+        </div> -->
         <!-- WORKING AREA -->
 
         <div class="list-of-profile ax" style="background-color:  rgb(241, 241, 241);">
