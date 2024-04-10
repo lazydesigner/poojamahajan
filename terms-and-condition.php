@@ -11,9 +11,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css" defer>
     <title>Terms & Conditions</title>
-    <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <meta name="robots" content=" noindex, nofollow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
-    <link rel="canonical" href="<?= $fullURL ?>/" />
+    <link rel="canonical" href="https://poojamahajan.com/terms-and-conditions/" />
 
 
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">

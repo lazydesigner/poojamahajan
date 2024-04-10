@@ -19,7 +19,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <title>Login | Poojamahajan</title>
     <meta name="description" content="Genuine Call girls in Telibagh at your place without any advance payment. Call or WhatsApp us to book Telibagh Escorts with room." />
     <meta name="robots" content="noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <link rel="canonical" href="<?=$fullURL ?>/" />
+    <link rel="canonical" href="https://poojamahajan.com/login/" />
     <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
