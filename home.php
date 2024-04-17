@@ -164,7 +164,7 @@
 
         .city-name-list ul li {
             font-weight: bold;
-            margin: 0 0 10% 0;
+            margin: 0 0 15px 0;
         }
 
         .city-name-list ul li a {
