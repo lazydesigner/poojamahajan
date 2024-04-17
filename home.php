@@ -605,6 +605,11 @@
                                                                                 $res = mysqli_query($con, $sql);
                                                                                 $row = mysqli_fetch_array($res);
                                                                                 echo $row['a'] ?>)</a></li>
+                        <li><a href="<?= get_url() ?>call-girls/jabalpur/">Jabalpur(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'jabalpur';
+";
+                                                                                                $res = mysqli_query($con, $sql);
+                                                                                                $row = mysqli_fetch_array($res);
+                                                                                                echo $row['a'] ?>)</a></li>
                     </ul>
                 </div>
             </div>
@@ -769,11 +774,11 @@
                                                                                                     $res = mysqli_query($con, $sql);
                                                                                                     $row = mysqli_fetch_array($res);
                                                                                                     echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/jabalpur/">Jabalpur(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'jabalpur';
+                        <!-- <li><a href="<?= get_url() ?>call-girls/jabalpur/">Jabalpur(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'jabalpur';
 ";
                                                                                                 $res = mysqli_query($con, $sql);
                                                                                                 $row = mysqli_fetch_array($res);
-                                                                                                echo $row['a'] ?>)</a></li>
+                                                                                                echo $row['a'] ?>)</a></li> -->
                         <!--<li><a href="<?= get_url() ?>call-girls/dhanori/">Dhanori(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'dhanori';
 ";
                                                                                     $res = mysqli_query($con, $sql);
