@@ -350,9 +350,7 @@ ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)
 # ReWriteRule ^category/lucknow-call-girls([/]?)$ category/category-index.php [NC,L] 
 
 
-
 ReWriteRule ^404([/]?)$ 404-page.php [NC,L]
 #ReWriteRule ^([0-9A-Za-z\-]+)([/]?)([/]?)$ home.php?page_id=$1 [NC,L]
 
 ReWriteRule ^assets/images/automate([/]?)$ assets/automate.php [NC,L]
-
