@@ -344,6 +344,13 @@ ReWriteRule ^call-girls/([0-9A-Za-z\-]+)([/]?)$ location.php?state=$1 [NC,L]
 ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ area.php?state=$1&city=$2 [NC,L]
 ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ profile_index.php?state=$1&city=$2&id=$3 [NC,L]
 
+
+#CATEGORY
+
+# ReWriteRule ^category/lucknow-call-girls([/]?)$ category/category-index.php [NC,L] 
+
+
+
 ReWriteRule ^404([/]?)$ 404-page.php [NC,L]
 #ReWriteRule ^([0-9A-Za-z\-]+)([/]?)([/]?)$ home.php?page_id=$1 [NC,L]
 
