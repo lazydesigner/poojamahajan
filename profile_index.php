@@ -18,11 +18,11 @@ if (isset($a[1])) {
     $area2 = $a[0];
 }
 $new_phone_number = '0000000000';
-if($city == 'lucknow'){
+if ($city == 'lucknow') {
     $new_phone_number = '8800925952';
-}elseif($city == 'agra'){
+} elseif ($city == 'agra') {
     $new_phone_number = '9690131390';
-}elseif ($city == 'goa') {
+} elseif ($city == 'goa') {
     $new_phone_number = '+919548086524';
 }
 
@@ -55,18 +55,42 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css?v=1" defer>
     <link rel="canonical" href="<?= $fullURL ?>" />
-    <title><?= ucwords($area2) ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan</title>
+
+    <?php if (empty($row['meta_title'])) { ?>
+        <title><?= ucwords($area2) ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan</title>
+    <?php } else { ?>
+        <title><?=$row['meta_title'] ?></title>
+    <?php } ?>
 
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
     <meta name="theme-color" content="#ffffff">
 
-    <meta name="description" content="Experience some outsanding service by model call girls from <?=ucwords( $area2) ?> directly to your home. If you want me to come to your room." />
-    <meta name="robots" content="<?=$row['index_page'] ?>, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    
+
+    <?php if (empty($row['meta_description'])) { ?>
+        <meta name="description" content="Experience some outsanding service by model call girls from <?= ucwords($area2) ?> directly to your home. If you want me to come to your room." />
+    <?php } else { ?>
+        <meta name="description" content="<?=$row['meta_description'] ?>" />
+    <?php } ?>
+
+    <meta name="robots" content="<?= $row['index_page'] ?>, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="<?= ucwords($area2) ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
-    <meta property="og:description" content="Experience some outsanding service by model call girls from <?= ucwords($area2) ?> directly to your home. If you want me to come to your room." />
+    <?php if (empty($row['meta_title'])) { ?>
+        <meta property="og:title" content="<?= ucwords($area2) ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
+    <?php } else { ?>
+        <meta property="og:title" content="<?=$row['meta_title'] ?>">
+    <?php } ?>
+    
+    
+
+    <?php if (empty($row['meta_description'])) { ?>
+        <meta property="og:description" content="Experience some outsanding service by model call girls from <?= ucwords($area2) ?> directly to your home. If you want me to come to your room." />
+    <?php } else { ?>
+        <meta property="og:description" content="<?=$row['meta_description'] ?>" />
+    <?php } ?>
+
     <meta property="og:url" content="<?= $fullURL ?>/" />
     <meta property="og:site_name" content="Escort" />
     <meta property="article:section" content="lucknow-escorts" />
@@ -74,8 +98,18 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <!-- <meta property="og:image:secure_url" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" /> -->
     <meta property="og:image:alt" content="<?= $row['profile_name'] ?> in <?= $area2 ?>" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="<?= ucwords($area2) ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
-    <meta name="twitter:description" content="Experience some outsanding service by model call girls from <?= ucwords($area2) ?> directly to your home. If you want me to come to your room." />
+    <?php if (empty($row['meta_title'])) { ?>
+        <meta name="twitter:title" content="<?= ucwords($area2) ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
+    <?php } else { ?>
+        <meta name="twitter:title" content="<?= $row['meta_title'] ?>" />
+    <?php } ?>
+     
+    <?php if (empty($row['meta_description'])) { ?>
+        <meta name="twitter:description" content="Experience some outsanding service by model call girls from <?= ucwords($area2) ?> directly to your home. If you want me to come to your room." />
+    <?php } else { ?>
+        <meta name="twitter:description" content="<?=$row['meta_description'] ?>" />
+    <?php } ?>
+    
     <!-- <meta name="twitter:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" /> -->
     <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <style>
@@ -119,6 +153,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         .only-18 {
             width: 300px;
         }
+
         .confirm-18 {
             width: 100%;
             height: 100%;
@@ -178,7 +213,8 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             }
 
         }
-        .main-content a{
+
+        .main-content a {
             font-weight: bolder;
         }
     </style>
@@ -201,7 +237,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         // script2.text = JSON.stringify(mySchema2);
         // document.head.appendChild(script2);
     </script>
- <script>
+    <script>
         function setCookie(cname, cvalue, exdays) {
             const d = new Date();
             d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -292,28 +328,29 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 <button id="change-to-number">CONTACT</button>
 
                 <div class="profile-image-grid">
-                    <?php 
-                    
-                    if(($row['profile_images'] == null) OR ($row['profile_images'] == 'null') ){
-                       echo '';
-                    }else{
-                    $a = json_decode($row['profile_images'], true);
-                    $alt = json_decode($row['image_alt_'], true);
-                    for ($j = 0; $j < count($a); $j++) { 
-                        $s = $a[$j];
-                        $w = 'amazonaws.com';
-                        if(strpos($s,$w) !== false){
-                            ?>
-                            <div class="profile-image-grid-col"><img src="<?= $a[$j] ?>" alt="call girls <?= $city ?>" width="100%" height="100%" loading="lazy"></div>
+                    <?php
+
+                    if (($row['profile_images'] == null) or ($row['profile_images'] == 'null')) {
+                        echo '';
+                    } else {
+                        $a = json_decode($row['profile_images'], true);
+                        $alt = json_decode($row['image_alt_'], true);
+                        for ($j = 0; $j < count($a); $j++) {
+                            $s = $a[$j];
+                            $w = 'amazonaws.com';
+                            if (strpos($s, $w) !== false) {
+                    ?>
+                                <div class="profile-image-grid-col"><img src="<?= $a[$j] ?>" alt="call girls <?= $city ?>" width="100%" height="100%" loading="lazy"></div>
                             <?php
-                        }else{
+                            } else {
                             ?>
-                            <div class="profile-image-grid-col"><img src="https://cdn.poojamahajan.com/profiles/<?=$a[$j] ?>" alt="<?=$alt[0] ?>" width="100%" height="100%" loading="lazy"></div>
-                            <?php
-                        }}
-                        
+                                <div class="profile-image-grid-col"><img src="https://cdn.poojamahajan.com/profiles/<?= $a[$j] ?>" alt="<?= $alt[0] ?>" width="100%" height="100%" loading="lazy"></div>
+                        <?php
+                            }
+                        }
+
                         ?>
-                        
+
                     <?php } ?>
                 </div>
             </div>
@@ -413,7 +450,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <?php while ($rows = mysqli_fetch_assoc($result)) {
-                        $ax = json_decode($rows['profile_images'], true);                        
+                        $ax = json_decode($rows['profile_images'], true);
                         $s = $ax[0];
                         $w = 'amazonaws.com';
                         $alt = json_decode($row['image_alt_'], true);
@@ -422,12 +459,12 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         <div class="swiper-slide">
                             <div class="sub-profile">
                                 <div class="sub-profile-image">
-                                    <?php 
+                                    <?php
                                     if (strpos($s, $w) !== false) { ?>
                                         <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" loading="lazy" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="call girls in <?= $city ?> with genuine photos"></a>
-                                        <?php } else { ?>
-                                            <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?=$ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top"  loading="lazy" alt="<?=$alt[0] ?>"></a>
-                                            <?php } ?>
+                                    <?php } else { ?>
+                                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" loading="lazy" alt="<?= $alt[0] ?>"></a>
+                                    <?php } ?>
                                 </div>
                                 <div class="sub-profile-detail">
                                     <a href="<?= get_url() ?><?= $rows['page_url'] ?>" style="color:white">
@@ -449,29 +486,29 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         </div>
 
         <div class="confirm-18" id="confirm-18">
-        <div class="confirm-18-body" style="text-align: center;">
-            <p style="font-size: x-large;font-weight:bolder;margin-bottom:2%"><strong>Important Notice: Please Review Before Proceeding</strong></p>
-            <p><b>I hereby confirm that I am 18 years of age or older.</b></p>
-            <p>
+            <div class="confirm-18-body" style="text-align: center;">
+                <p style="font-size: x-large;font-weight:bolder;margin-bottom:2%"><strong>Important Notice: Please Review Before Proceeding</strong></p>
+                <p><b>I hereby confirm that I am 18 years of age or older.</b></p>
+                <p>
 
-                The display of any advertisements claiming to provide sexual services in exchange for money is strictly prohibited.</p>
-            <p>
+                    The display of any advertisements claiming to provide sexual services in exchange for money is strictly prohibited.</p>
+                <p>
 
-                Furthermore, the publication of explicit material featuring genital organs is not allowed.</p>
-            <p>
+                    Furthermore, the publication of explicit material featuring genital organs is not allowed.</p>
+                <p>
 
-                Any such advertisements will be promptly reported to the appropriate authorities, and the responsible party will be held accountable for any legal consequences.
-            </p>
-            <p>
-                By submitting an advertisement on Poojamahajan, advertisers assert that they possess full rights to the content and acknowledge that they are aged 18 years or older. They also affirm that the advertised content is approved for publication on Poojamahajan.</p>
-            <p>
+                    Any such advertisements will be promptly reported to the appropriate authorities, and the responsible party will be held accountable for any legal consequences.
+                </p>
+                <p>
+                    By submitting an advertisement on Poojamahajan, advertisers assert that they possess full rights to the content and acknowledge that they are aged 18 years or older. They also affirm that the advertised content is approved for publication on Poojamahajan.</p>
+                <p>
 
-                By clicking the <b>"confirm"</b> button, users certify that they are over 18 years old and release the service providers, owners, and creators of Poojamahajan.com from any responsibility regarding the content and use of this service.</p>
-            <div style="margin-top: 2%;"><button class="btn1" onclick="setCookie('confirm', 'accepted', 30)">Confirm</button>
-                <a href="<?= get_url() ?>"><button class="btn2">Reject</button></a>
+                    By clicking the <b>"confirm"</b> button, users certify that they are over 18 years old and release the service providers, owners, and creators of Poojamahajan.com from any responsibility regarding the content and use of this service.</p>
+                <div style="margin-top: 2%;"><button class="btn1" onclick="setCookie('confirm', 'accepted', 30)">Confirm</button>
+                    <a href="<?= get_url() ?>"><button class="btn2">Reject</button></a>
+                </div>
             </div>
         </div>
-    </div>
 
         <!-- Swiper JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -571,7 +608,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     </script>
     <script>
         document.getElementById('change-to-number').addEventListener('click', (e) => {
-            document.getElementById('change-to-number').innerText = "<?=$new_phone_number ?>"
+            document.getElementById('change-to-number').innerText = "<?= $new_phone_number ?>"
         })
 
         function openCity(evt, tabName) {
