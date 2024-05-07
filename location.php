@@ -238,6 +238,20 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 transform: translate(0%, 0%);
             }
         }
+        @media screen and (max-width:530px) {
+            .profile-section-box-detail h3 {
+                padding: 0;
+                margin: 0;
+                font-size: 1rem;
+                line-height: 20px;
+            }
+            :where(.list-of-profile,.profile-section-box-detail) p {
+                font-weight: 400;
+                font-size: small;
+                line-height: 17px;
+                margin: 4% 0;
+            }
+        }
 
         @media screen and (max-width:500px) {
             .profile-section-box-image {

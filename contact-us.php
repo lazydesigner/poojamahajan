@@ -14,12 +14,12 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
     <meta name="robots" content=" noindex, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
 
-    <link rel="canonical" href="<?= $fullURL ?>/" />
+    <link rel="canonical" href="https://poojamahajan.com/contact-us/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Contact us | Pooja Mahajan" />
     <meta property="og:description" content="If you are looking for a call girl who can give you a satisfying service, Pooja Mahajan is one of the top escort platforms that can provide you with many call girls." />
-    <meta property="og:url" content="<?= $fullURL ?>" />
+    <meta property="og:url" content="https://poojamahajan.com/contact-us/" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Contact us | Pooja Mahajan" />

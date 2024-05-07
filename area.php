@@ -8,6 +8,16 @@ $url_cat = trim($uri[1]);
 $city = $_GET['state'];
 $cate = 'call-girls';
 
+
+$phone_number = '00000000000';
+if ($city == 'lucknow') {
+    $phone_number = '+918800925952';
+} elseif ($city == 'goa') {
+    $phone_number = '+919548086524';
+} elseif ($city == 'agra') {
+    $phone_number = '+919690131390';
+}
+
 $a = explode('-', $_GET['city']);
 
 if (isset($a[1])) {
@@ -180,6 +190,20 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             }
 
         }
+        @media screen and (max-width:530px) {
+            .profile-section-box-detail h3 {
+                padding: 0;
+                margin: 0;
+                font-size: 1rem;
+                line-height: 20px;
+            }
+            :where(.list-of-profile,.profile-section-box-detail) p {
+                font-weight: 400;
+                font-size: small;
+                line-height: 17px;
+                margin: 4% 0;
+            }
+        }
     </style>
 
     <script>
@@ -322,7 +346,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         <?php }} ?>
 
         <div class="list-of-profile" style="background-color: rgb(241, 241, 241);">
-            <h2>FAQ</h2>
+            <h3>FAQ</h3>
             <h3>What things do I need to take care of while booking a call girl in <?= $area ?>?</h3>
             <p>You need to look into following things while booking a call girls in area: -</p>
             <ol>

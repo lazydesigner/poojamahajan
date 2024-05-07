@@ -1,3 +1,9 @@
+
+<?php if(isset($phone_number)){ ?>
+  <a href="https://wa.me/<?= $phone_number ?>" aria-label="whatsapp"><div style="width: 80px;height:80px;background:green;color:white;border-radius:50%;position:fixed;bottom:2%;right:3%;display:grid;place-items:center;font-size:3rem;z-index:10"><i class="ri-whatsapp-fill"></i></div></a>
+  <a href="tel: <?= $phone_number ?>" aria-label="contact us"><div style="width: 80px;height:80px;background:#9f21e3;color:white;border-radius:50%;position:fixed;bottom:2%;left:3%;display:grid;place-items:center;font-size:3rem;z-index:10"><i class="ri-phone-fill"></i></div></a>
+<?php } ?>
+
 <footer>
         <div class="new-footer-row">
           <div class="new-footer-col">
@@ -42,7 +48,7 @@
             <li><a href="https://www.dmca.com/compliance/poojamahajan.com" aria-label="dmca" title="DMCA Compliance information for poojamahajan.com"><div style="width: 100px;"><img src="https://www.dmca.com/img/dmca-compliant-grayscale.png" loading="lazy" alt="DMCA compliant image" width="100%" height="100%"></div></a></li>
                 <li><a href="https://www.behance.net/poojamahajan4" aria-label="behance"><i class="ri-behance-line"></i></a></li>
                 <!-- <li><a href=""><i class="ri-instagram-line"></i></a></li> -->
-                <li><a href="https://www.flickr.com/photos/195962025@N07/" aria-label="flickr"><i class="ri-flickr-fill"></i></a></li>
+                <!-- <li><a href="https://www.flickr.com/photos/195962025@N07/" aria-label="flickr"><i class="ri-flickr-fill"></i></a></li> -->
                 <li><a href="https://www.tumblr.com/poojamahajan1" aria-label="tumblr"><i class="ri-tumblr-fill"></i></a></li>
                 <li><a href="https://www.youtube.com/channel/UCxJhGcJloIJavPcWub8DEJg" aria-label="youtube"><i class="ri-youtube-fill"></i></a></li>
                 <li><a href="https://soundcloud.com/user-77189773" aria-label="soundcloud"><i class="ri-soundcloud-fill"></i></a></li>
