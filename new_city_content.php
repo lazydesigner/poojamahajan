@@ -9,7 +9,7 @@ where luxury meets companionship to create unforgettable experiences. Can you
 imagine yourself wrapped in the arms of our graceful, charming and well-behaved
 <strong>'.ucwords($new_city_name).' call girls</strong></a>, who will transport you into realms of inner sexual pleasures?
 Embark on a journey whenever your wildest fantasies come true with a wide
-range of <a href="'.get_url().'call-girls/'.$city.'"><strong>call girls in '.ucwords($new_city_name).'</strong></a>.</p>
+range of <a href="'.get_url().'call-girls/'.$city.'/"><strong>call girls in '.ucwords($new_city_name).'</strong></a>.</p>
 <p>Discover the art of seduction and intimacy with <strong>Independent escort girls in
 '.ucwords($new_city_name).'</strong> who redefine pure enjoyment. No matter whether you are a college
 student or businessman, our <strong>escort girls from '.ucwords($new_city_name).'</strong> guarantee that all your
@@ -19,14 +19,14 @@ desires will be satisfied, leaving you wanting more.</p>
 $bottom_content = '<h4>100% Cash payment available with hotel room facility</h4>	
 <p>Let us unveil the secrets behind the leading escort girl service providers found in
 '.ucwords($new_city_name).'. From high-profile female companions to affordable beautiful girls, our
-classified website offerings cater for your wildest dreams assuring you with firstclass experience with our <a href="'.get_url().'call-girls/'.$city.'"><strong>call girls at '.ucwords($new_city_name).'</strong></a>.</p>
+classified website offerings cater for your wildest dreams assuring you with firstclass experience with our <a href="'.get_url().'call-girls/'.$city.'/"><strong>call girls at '.ucwords($new_city_name).'</strong></a>.</p>
 <h3>Introduction to our '.ucwords($new_city_name).' call girl service platform</h3>	
 <p>The very idea behind our classified escort web portal is to let every individual
 enjoy ravishing genuine '.ucwords($new_city_name).' call girls, without being cheated by other other
 local agencies or fraud brokers or imposters. Poojamahajan <strong>'.ucwords($new_city_name).' Call girl web
 portal</strong> displays highly trained and educated girls. These girls can provide a
 delightful combination of physical and friendly encounters. With enchanting Looks
-and captivating personalities, our <a href="'.get_url().'call-girls/'.$city.'"><strong>call girls in '.ucwords($new_city_name).'</strong></a> cater to a diverse range of
+and captivating personalities, our <a href="'.get_url().'call-girls/'.$city.'/"><strong>call girls in '.ucwords($new_city_name).'</strong></a> cater to a diverse range of
 clients. Whether you are seeking a sexual companion for Private parties, romantic
 dinners, a Travel companion or even just a private intimate sexual partner, our
 female escort administration can adapt to various situations and ensure your
@@ -90,7 +90,7 @@ WhatsApp too! Make use of these simple steps while booking an ideal
 prostitute who will accompany you on this amazing journey.</p>
 <h4>Step 1: Explore available options either via our website or
 WhatsApp</h4>
-<p>You will find many elite <a href="'.get_url().'call-girls/'.$city.'">'.ucwords($new_city_name).' call girls</a> when visiting
+<p>You will find many elite <a href="'.get_url().'call-girls/'.$city.'/">'.ucwords($new_city_name).' call girls</a> when visiting
 Poojamahajan’s official website for female sex workers; take an intense
 look at their profiles and descriptions before selecting one through the
 WhatsApp number given.</p>
