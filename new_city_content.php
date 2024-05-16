@@ -90,7 +90,7 @@ WhatsApp too! Make use of these simple steps while booking an ideal
 prostitute who will accompany you on this amazing journey.</p>
 <h4>Step 1: Explore available options either via our website or
 WhatsApp</h4>
-<p>You will find many elite <a href="'.get_url().'call-girls/'.$new_city_name.'">'.ucwords($new_city_name).' call girls</a> when visiting
+<p>You will find many elite <a href="'.get_url().'call-girls/'.$city.'">'.ucwords($new_city_name).' call girls</a> when visiting
 Poojamahajan’s official website for female sex workers; take an intense
 look at their profiles and descriptions before selecting one through the
 WhatsApp number given.</p>
