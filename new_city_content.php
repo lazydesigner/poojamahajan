@@ -9,7 +9,7 @@ where luxury meets companionship to create unforgettable experiences. Can you
 imagine yourself wrapped in the arms of our graceful, charming and well-behaved
 <strong>'.ucwords($new_city_name).' call girls</strong></a>, who will transport you into realms of inner sexual pleasures?
 Embark on a journey whenever your wildest fantasies come true with a wide
-range of <a href="'.get_url().'call-girls/'.$new_city_name.'"><strong>call girls in '.ucwords($new_city_name).'</strong></a>.</p>
+range of <a href="'.get_url().'call-girls/'.$city.'"><strong>call girls in '.ucwords($new_city_name).'</strong></a>.</p>
 <p>Discover the art of seduction and intimacy with <strong>Independent escort girls in
 '.ucwords($new_city_name).'</strong> who redefine pure enjoyment. No matter whether you are a college
 student or businessman, our <strong>escort girls from '.ucwords($new_city_name).'</strong> guarantee that all your
