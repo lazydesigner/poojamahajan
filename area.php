@@ -82,7 +82,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css?v=1" defer>
     <meta name="robots" content=" index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <title>350+ Call girls in <?= $area ?> both incall & outcall 24/7 - Poojamahajan</title>
-    <link rel="canonical" href="<?= get_url() ?>call-girls/<?= $city.'/'.$_GET['city'] ?>/" />
+    <link rel="canonical" href="<?= get_url() ?>call-girls/<?= strtolower($city).'/'.strtolower($_GET['city']) ?>/" />
 
     <meta name="description" content="Book No. 1 <?= $area ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment.">
     <meta property="og:locale" content="en_US" />

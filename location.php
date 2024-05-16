@@ -88,7 +88,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 echo 'Top Call Girls in Lucknow at your Door Step Available 24x7';
             } elseif ($yes_new_city == 'ok') { ?>Call Girls in <?= $new_city_name ?> |100% Verified High class escorts available 24*7<?php } else { ?>Book Premium call girls in <?= $city ?> | Poojamahajan<?php } ?></title>
 
-    <link rel="canonical" href="<?= get_url() ?>call-girls/<?= $city ?>/" />
+    <link rel="canonical" href="<?= get_url() ?>call-girls/<?= strtolower($city) ?>/" />
 
     <meta name="description" content="<?php if ($data2['yes_to_desc'] != 'false') {
                                             echo $data2['page_meta'];
