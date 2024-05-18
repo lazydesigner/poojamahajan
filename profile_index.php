@@ -68,10 +68,10 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
     
 
-    <?php if (empty($row['page_description'])) { ?>
+    <?php if (empty($row['page_meta_description'])) { ?>
         <meta name="description" content="Experience some outsanding service by model call girls from <?= ucwords($area2) ?> directly to your home. If you want me to come to your room." />
     <?php } else { ?>
-        <meta name="description" content="<?=$row['page_description'] ?>" />
+        <meta name="description" content="<?=$row['page_meta_description'] ?>" />
     <?php } ?>
 
     <meta name="robots" content="<?= $row['index_page'] ?>, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
@@ -85,10 +85,10 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     
     
 
-    <?php if (empty($row['page_description'])) { ?>
+    <?php if (empty($row['page_meta_description'])) { ?>
         <meta property="og:description" content="Experience some outsanding service by model call girls from <?= ucwords($area2) ?> directly to your home. If you want me to come to your room." />
     <?php } else { ?>
-        <meta property="og:description" content="<?=$row['page_description'] ?>" />
+        <meta property="og:description" content="<?=$row['page_meta_description'] ?>" />
     <?php } ?>
 
     <meta property="og:url" content="<?= $fullURL ?>/" />
@@ -104,10 +104,10 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         <meta name="twitter:title" content="<?= $row['meta_title'] ?>" />
     <?php } ?>
      
-    <?php if (empty($row['page_description'])) { ?>
+    <?php if (empty($row['page_meta_description'])) { ?>
         <meta name="twitter:description" content="Experience some outsanding service by model call girls from <?= ucwords($area2) ?> directly to your home. If you want me to come to your room." />
     <?php } else { ?>
-        <meta name="twitter:description" content="<?=$row['page_description'] ?>" />
+        <meta name="twitter:description" content="<?=$row['page_meta_description'] ?>" />
     <?php } ?>
     
     <!-- <meta name="twitter:image" content="https://s3.ap-south-1.amazonaws.com/poojamahajan.com/lucknow+escorts/<?= $row['profile_name'] ?>+1.png" /> -->
