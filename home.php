@@ -477,7 +477,7 @@
                                                                                 $res = mysqli_query($con, $sql);
                                                                                 $row = mysqli_fetch_array($res);
                                                                                 echo $row['a'] ?>)</a></li>
-                        <li><a href="<?= get_url() ?>call-girls/lucknow">Lucknow(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'lucknow' && index_page = 'index';
+                        <li><a href="<?= get_url() ?>call-girls/lucknow/">Lucknow(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'lucknow' && index_page = 'index';
 ";
                                                                                     $res = mysqli_query($con, $sql);
                                                                                     $row = mysqli_fetch_array($res);
