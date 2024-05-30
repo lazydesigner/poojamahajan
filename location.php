@@ -488,7 +488,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <h3>Top Cities of India</h3>
             <div class="top-cities-of-india">
                 <a href="<?= get_url() ?><?= $cate ?>/delhi/"><button>Delhi</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/<?=ucwords($new_city_name) ?>/"><button><?=ucwords($new_city_name) ?></button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/agra/"><button>Agra</button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/guwahati/"><button>Guwahati</button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/rishikesh/"><button>Rishikesh</button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/ghaziabad/"><button>Ghaziabad</button></a>
