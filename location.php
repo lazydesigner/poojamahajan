@@ -29,7 +29,7 @@ if ($city == 'lucknow') {
     $phone_number = '+918800925952';
 } elseif ($city == 'goa') {
     $phone_number = '+919548086524';
-} elseif ($city == 'agra') {
+} elseif ($city == '<?=ucwords($new_city_name) ?>') {
     $phone_number = '+919690131390';
 }
 
@@ -52,7 +52,7 @@ if (mysqli_num_rows($result2) > 0) {
         // header('Location: https://poojamahajan.com/404');
         $yes_new_city = 'ok';
         $new_city_data = mysqli_fetch_assoc($new_city_result);
-        $data2 = ['page_h1' => $page_h1, 'top_content' => $top_content, 'bottom_content' => $bottom_content, 'yes_to_title' => 'false', 'yes_to_desc'=>'false'];
+        $data2 = ['page_h1' => $page_h1, 'bottom_content' => $bottom_content, 'yes_to_title' => 'false', 'yes_to_desc'=>'false'];
     } else {
         header('Location: https://poojamahajan.com/404');
     }
@@ -403,7 +403,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         </div>
 
         <div class="list-of-profile ax" style="background-color:  rgb(241, 241, 241);">
-            <?= $data2['top_content'] ?>
+           <p>Booking and enjoying adult services by girls is now safer and easier than you think. On <a href="<?= get_url() ?>" >Poojamahajan.com</a>, you will find multiple effortless ways to connect with top sexual partners near <?=ucwords($new_city_name) ?>. Booking an <b><?=ucwords($new_city_name) ?> call girl</b> is no longer a hassle, especially when we are here to help you. A wide range of call girls like Independent, college, desi bhabhi, and Russians are available on our website for booking. Our executives ensure that all the profiles are genuine, but sometimes they could also make mistakes. <b>Do not pay in advance; we will not be responsible for fraud</b>. Do let us know if you come across any spammy profiles or misleading content on our platform. We remove all unauthorized profiles or images if reported multiple times. <a href="<?= get_url().'call-girls/'.$city ?>" ><?=ucwords($new_city_name) ?> call girls</a> are proficient in satisfying their customers and getting good ratings from various clients. <b><?=ucwords($new_city_name) ?> Call girls</b> are very sexy and know how to seduce their clients with their talent and experience. For us, our customers' privacy and satisfaction are top concerns. <b>Our website is open to all above 18 years old and looking for Independent call girls in <?=ucwords($new_city_name) ?>.</b></p>
         </div>
         <!-- WORKING AREA -->
         <div id="list-of-all-profiles">
@@ -488,7 +488,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             <h3>Top Cities of India</h3>
             <div class="top-cities-of-india">
                 <a href="<?= get_url() ?><?= $cate ?>/delhi/"><button>Delhi</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/agra/"><button>Agra</button></a>
+                <a href="<?= get_url() ?><?= $cate ?>/<?=ucwords($new_city_name) ?>/"><button><?=ucwords($new_city_name) ?></button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/guwahati/"><button>Guwahati</button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/rishikesh/"><button>Rishikesh</button></a>
                 <a href="<?= get_url() ?><?= $cate ?>/ghaziabad/"><button>Ghaziabad</button></a>

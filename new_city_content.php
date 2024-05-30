@@ -2,7 +2,7 @@
 
 $page_h1 = 'Elite Call Girls in '.ucwords($new_city_name).' with Genuine Photos and WhatsApp Number';
 
-$top_content = '<h2>Independent VIP Call Girls in '.ucwords($new_city_name).'</h2>	
+$bottom_content = '<h2>Independent VIP Call Girls in '.ucwords($new_city_name).'</h2>	
 <p>Do you want to experience exotic pleasure in '.ucwords($new_city_name).', the city which is full of
 dreams? Look no more just contact Pooja Mahajan <strong>'.ucwords($new_city_name).' Call girl service</strong>
 where luxury meets companionship to create unforgettable experiences. Can you
@@ -14,9 +14,9 @@ range of <a href="'.get_url().'call-girls/'.$city.'/"><strong>call girls in '.uc
 '.ucwords($new_city_name).'</strong> who redefine pure enjoyment. No matter whether you are a college
 student or businessman, our <strong>escort girls from '.ucwords($new_city_name).'</strong> guarantee that all your
 desires will be satisfied, leaving you wanting more.</p>
-<h3>Latest profiles posted by Independent Call Girls in '.ucwords($new_city_name).'</h3>';
+<h3>Latest profiles posted by Independent Call Girls in '.ucwords($new_city_name).'</h3>
 
-$bottom_content = '<h4>100% Cash payment available with hotel room facility</h4>	
+<h4>100% Cash payment available with hotel room facility</h4>	
 <p>Let us unveil the secrets behind the leading escort girl service providers found in
 '.ucwords($new_city_name).'. From high-profile female companions to affordable beautiful girls, our
 classified website offerings cater for your wildest dreams assuring you with firstclass experience with our <a href="'.get_url().'call-girls/'.$city.'/"><strong>call girls at '.ucwords($new_city_name).'</strong></a>.</p>
