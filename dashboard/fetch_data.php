@@ -22,7 +22,14 @@ if($_POST['status'] == 'city_id'){
 
             if(isset($_POST['area'])){
                 if($_POST['area'] == $row['area_value']){
-                    $output .= "<option selected value='".$row['area_value']."'>".$row['area_name']."</option>";
+                    $sqlcount = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = '{$_POST['city_id']}' && area = '{$row['area_value']}' ;
+";
+                                                                                $rescount = mysqli_query($con, $sqlcount);
+                                                                                $rowcount = mysqli_fetch_array($rescount);
+                                                                                if($rowcount['a'] > 0){
+                                                                                    $output .= "<option selected value='".$row['area_value']."'>".$row['area_name']."</option>";
+                                                                                }
+                    
                     if(isset($_POST['cate'])){
                         $areas .= '<a href="'.get_url().$cate.'/'.$c.'/'.$row['area_value'].'/"><button>'.$row['area_name'].'</button></a>';
                     }
@@ -31,7 +38,14 @@ if($_POST['status'] == 'city_id'){
             }
 
             if($i == 1){$i = 0 ;}else{
-                $output .= "<option value='".$row['area_value']."'>".$row['area_name']."</option>";
+                $sqlcount = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = '{$_POST['city_id']}' && area = '{$row['area_value']}' ;
+";
+                                                                                $rescount = mysqli_query($con, $sqlcount);
+                                                                                $rowcount = mysqli_fetch_array($rescount);
+                                                                                if($rowcount['a'] > 0){
+                                                                                    $output .= "<option value='".$row['area_value']."'>".$row['area_name']."</option>";
+                                                                                }
+                
                 if(isset($_POST['cate'])){
                 $areas .= '<a href="'.get_url().$cate.'/'.$c.'/'.$row['area_value'].'/"><button>'.$row['area_name'].'</button></a>';
                 }

@@ -57,7 +57,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="canonical" href="<?= $fullURL ?>" />
 
     <?php if (empty($row['meta_title'])) { ?>
-        <title><?= ucwords($area2) ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan</title>
+        <title>Enjoy premium call girls in <?= $city ?> with free hotel room near <?= $area2 ?></title>
     <?php } else { ?>
         <title><?=$row['meta_title'] ?></title>
     <?php } ?>
@@ -69,7 +69,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     
 
     <?php if (empty($row['page_meta_description'])) { ?>
-        <meta name="description" content="Experience some outsanding service by model call girls from <?= ucwords($area2) ?> directly to your home. If you want me to come to your room." />
+        <meta name="description" content="Book Hot <?= ucwords($area2) ?> girls  for late-night sessions  and enjoy in-call or out-call service by sexy and busty call girls in <?= ucwords($city) ?>" />
     <?php } else { ?>
         <meta name="description" content="<?=$row['page_meta_description'] ?>" />
     <?php } ?>
@@ -78,7 +78,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <?php if (empty($row['meta_title'])) { ?>
-        <meta property="og:title" content="<?= ucwords($area2) ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
+        <meta property="og:title" content="Enjoy premium call girls in <?= $city ?> with free hotel room near <?= $area2 ?>" />
     <?php } else { ?>
         <meta property="og:title" content="<?=$row['meta_title'] ?>">
     <?php } ?>
@@ -86,7 +86,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     
 
     <?php if (empty($row['page_meta_description'])) { ?>
-        <meta property="og:description" content="Experience some outsanding service by model call girls from <?= ucwords($area2) ?> directly to your home. If you want me to come to your room." />
+        <meta property="og:description" content="Book Hot <?= ucwords($area2) ?> girls  for late-night sessions  and enjoy in-call or out-call service by sexy and busty call girls in <?= ucwords($city) ?>" />
     <?php } else { ?>
         <meta property="og:description" content="<?=$row['page_meta_description'] ?>" />
     <?php } ?>
@@ -99,13 +99,13 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta property="og:image:alt" content="<?= $row['profile_name'] ?> in <?= $area2 ?>" />
     <meta name="twitter:card" content="summary_large_image" />
     <?php if (empty($row['meta_title'])) { ?>
-        <meta name="twitter:title" content="<?= ucwords($area2) ?> call girl Service With Big Boobs And curvy Ass Ready For Fuck | Poojamahajan" />
+        <meta name="twitter:title" content="Enjoy premium call girls in <?= $city ?> with free hotel room near <?= $area2 ?>" />
     <?php } else { ?>
         <meta name="twitter:title" content="<?= $row['meta_title'] ?>" />
     <?php } ?>
      
     <?php if (empty($row['page_meta_description'])) { ?>
-        <meta name="twitter:description" content="Experience some outsanding service by model call girls from <?= ucwords($area2) ?> directly to your home. If you want me to come to your room." />
+        <meta name="twitter:description" content="Book Hot <?= ucwords($area2) ?> girls  for late-night sessions  and enjoy in-call or out-call service by sexy and busty call girls in <?= ucwords($city) ?>" />
     <?php } else { ?>
         <meta name="twitter:description" content="<?=$row['page_meta_description'] ?>" />
     <?php } ?>

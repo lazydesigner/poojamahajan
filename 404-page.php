@@ -1,4 +1,4 @@
-<?php include './init.php'; ?>
+<?php  http_response_code(404); include './init.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 

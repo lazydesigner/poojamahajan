@@ -422,9 +422,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         <?php
 
                         if (strpos($s, $w) !== false) { ?>
-                            <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="call girls in <?= $new_city_name ?> at your Door Step" loading="lazy"></a>
+                            <a href="<?= get_url() ?><?= $row['page_url'] ?>" title="call girls service in <?=$city ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="call girls in <?= $new_city_name ?> at your Door Step" loading="lazy"></a>
                         <?php } else { ?>
-                            <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?= $alt[0] ?>" loading="lazy"></a>
+                            <a href="<?= get_url() ?><?= $row['page_url'] ?>" title="call girls service in <?=$city ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?= $alt[0] ?>" loading="lazy"></a>
                         <?php } ?>
 
                     </div>
@@ -532,9 +532,14 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                             $filterquery = "SELECT * FROM profiles WHERE area = '{$row_area_near_by['area_value']}' && index_page = 'index'";
                             $filterres = mysqli_query($con, $filterquery);
                             if(mysqli_num_rows($filterres) > 0){
+                                $sqlcount = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = '$city' && area = '{$row_area_near_by['area_value']}' ;
+";
+                                                                                $rescount = mysqli_query($con, $sqlcount);
+                                                                                $rowcount = mysqli_fetch_array($rescount);
+                                                                                if($rowcount['a'] > 0){
                                 if(isset($cate)){
                                     $areas .= '<a href="'.get_url().$cate.'/'.$c_area_near_by.'/'.$row_area_near_by['area_value'].'/"><button>'.$row_area_near_by['area_name'].'</button></a>';
-                                    }   
+                                    }   }  
                             }   
                                              
                         };

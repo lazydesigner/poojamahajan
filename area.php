@@ -81,19 +81,19 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css?v=1" defer>
     <meta name="robots" content=" index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <title>350+ Call girls in <?= $area ?> both incall & outcall 24/7 - Poojamahajan</title>
+    <title><?= $city ?> call girls available 24/7 near <?= $area ?> with in-call and out-cal services</title>
     <link rel="canonical" href="<?= get_url() ?>call-girls/<?= strtolower($city).'/'.strtolower($_GET['city']) ?>/" />
 
-    <meta name="description" content="Book No. 1 <?= $area ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment.">
+    <meta name="description" content="Book No. 1 <?= $city ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment.">
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="350+ Call girls in <?= $area ?> both incall & outcall 24/7 - Poojamahajan" />
-    <meta property="og:description" content="Book No. 1 <?= $area ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment." />
+    <meta property="og:title" content="<?= $city ?> call girls available 24/7 near <?= $area ?> with in-call and out-cal services" />
+    <meta property="og:description" content="Book No. 1 <?= $city ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment." />
     <meta property="og:url" content="<?= get_url() ?>call-girls/<?= $city.'/'.$_GET['city'] ?>/" />
     <meta property="og:site_name" content="Escort" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="350+ Call girls in <?= $area ?> both incall & outcall 24/7 - Poojamahajan" />
-    <meta name="twitter:description" content="Book No. 1 <?= $area ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment." />
+    <meta name="twitter:title" content="<?= $city ?> call girls available 24/7 near <?= $area ?> with in-call and out-cal services" />
+    <meta name="twitter:description" content="Book No. 1 <?= $city ?> call girls online classified ads. Find high profile call girls in <?= $area ?> and enjoy girlfriend experience in Cash payment." />
     <meta name="google-site-verification" content="P46c2_y0XxT5hj7E7btNolCjHlwZRtbH12YS_wy_2pc">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_url() ?>dashboard/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_url() ?>dashboard/assets/images/favicon-16x16.png">
@@ -309,12 +309,20 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
         <div class="list-of-profile ax" style="background-color: rgb(241, 241, 241);">
             <h2>Are you looking for call girls in <?= $area ?> for friendship?</h2>
-            <p>On our website, <a href="https://poojamahajan.com">Poojamahajan Escort Portal</a>, you can find multiple ads for <a href="<?= get_url() ?>call-girls/<?= $city ?>/" target="_blank"><?= $city ?> call girls</a> who offer the best erotic services in this locality. If you're tired of searching for reliable call girls here and there, now search poojamahajan.com with <?= $area ?> name and with just a few clicks, you can see gorgeous call girls near you.</p>
-            <p>During their visit to the <?= $city ?>, a charming model escort is with our clients. You can book tempting call girls for your personal needs on any occasion. Our escorts are both elite and polite. A sultry figure call girl without a sense of manners or speech will ruin your mood if you reserve one. So we prefer passionate and curvy-calling girls of our plateform with dressing sense.</p>
-            <p>Our <a href="<?= get_url() ?>call-girls/<?= $city.'/'.$_GET['city'] ?>/" target="_blank">escort service in <?= $area ?></a> chooses all our escorts wisely so they will not spoil your mood. We guarantee that if our <?= $area ?> call girls do not compromise and behave well, we will try to refund the full amount. Contact these models now and get a luxurious girlfriend experience at any private party or celebration. You can easily find online girls with numbers and see their real pictures, which helps save time. Poojamahajan also offers other different types of <?= $area ?> call girls, on the basis of age, color, body type, etc., who offer 24/7 services with no travel charges for nearby hotels or private property bunglows or rooms.</p>
+
+            <p>On our website, <a href="https://poojamahajan.com">Poojamahajan Call Girls Portal</a>, you can find multiple ads for <a href="<?= get_url() ?>call-girls/<?= $city ?>/" target="_blank"><?= $city ?> call girls</a> who offer the best erotic services in this locality. If you're tired of searching for reliable girls here and there, now search girls near <?= $area ?> at poojamahajan.com and with just a few clicks, you can see gorgeous call girls near you</p>
+
+            <p>During their visit to the <?= $city ?>, a charming model girl is with our clients. You can book tempting <b>call girl in <?= $city ?></b> for your personal needs on any occasion. Our Independent girls are elite as well as polite. A sultry figure of <b>prostitutes in <?= $area ?></b> without a sense of manners or speech will ruin your mood if you reserve one. So we prefer passionate and curvy-calling girls on our platform with dressing sense.</p>
+
+
+            <p>Our <a href="<?= get_url() ?>call-girls/<?= $city.'/'.$_GET['city'] ?>/" target="_blank">call girl service in <?= $area ?></a> chooses all our female staff wisely so they will not spoil your mood. We guarantee that if our <?= $area ?> call girls do not compromise and behave well, we will try to refund the full amount. Contact these models now and get a luxurious girlfriend experience at any private party or celebration. You can easily find online girls with numbers and see their real pictures, which helps save time. Poojamahajan also offers other different types of call girls, on the basis of age, color, body type, etc., who offer 24/7 services with no travel charges for nearby hotels or private property bungalows or rooms.</p>
+
+
             <p>We do not interfere between the ad publisher and clients. You can negotiate the price and discuss the payment mode. You will easily find high-profile and cheap call girls for short-term or long-term relationships with contact details.</p>
-            <h3>Mature escorts and housewife call girls near me in <?= $area ?></h3>
-            <p>How would you find a juicy and genuine mature bursty housewives call girls near you in <?= $area ?>? The answer to this statement is Poojamahajan.com, which allows you to navigate thousands of high-profile married escorts or divorced housewives to select the one that suits you best as per your taste. You can book any partner at any time near you in <?= $area ?> of the listed models on our web portal for various sexual or emotional needs. Your reach is not limited to housewife escorts; you can also browse thousands of other profiles of Models call girls, Air hostess call girls, Actress call girls, Facebook call girls, Instagram celebrities, punjabi call girls, and Russian call girls on your single visit to our Poojamahajan.com</p>
+
+
+            <h3>Mature Bhabhies and hot housewife call girls near me in <?= $area ?></h3>
+            <p>How would you find a juicy and genuine mature busty housewives call girls near you in <?= $area ?>? The answer to this statement is Poojamahajan.com, which allows you to navigate thousands of high-profile married bhabhies or divorced housewives to select the one that suits you best as per your taste. You can book any partner at any time near you in <?= $area ?> of the listed models on our web portal for various sexual or emotional needs. Your reach is not limited to housewifes; you can also browse thousands of other profiles of Models call girls, Air hostess call girls, Actress call girls, Facebook call girls, Instagram celebrities, punjabi call girls, and Russian call girls on your single visit to our Poojamahajan.com</p>
         </div>
 
         <?php while ($row = mysqli_fetch_assoc($res)) {
@@ -329,9 +337,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                     <?php
 
                     if (strpos($s, $w) !== false) { ?>
-                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
+                        <a href="<?= get_url() ?><?= $row['page_url'] ?>" title="call girls service in <?=$city ?>" ><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""></a>
                     <?php } else { ?>
-                        <a href="<?= get_url() ?><?= $row['page_url'] ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?= $alt[0] ?>"></a>
+                        <a href="<?= get_url() ?><?= $row['page_url'] ?>" title="call girls service in <?=$city ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?= $alt[0] ?>"></a>
                     <?php } ?>
                 </div>
                 <div class="profile-section-box-detail">
@@ -405,9 +413,14 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                             $filterquery = "SELECT * FROM profiles WHERE area = '{$row_area_near_by['area_value']}' && index_page = 'index'";
                             $filterres = mysqli_query($con, $filterquery);
                             if(mysqli_num_rows($filterres) > 0){
+                                $sqlcount = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'nashik';
+";
+                                                                                $rescount = mysqli_query($con, $sqlcount);
+                                                                                $rowcount = mysqli_fetch_array($rescount);
+                                                                                if($rowcount['a'] > 0){
                                 if(isset($cate)){
                                     $areas .= '<a href="'.get_url().$cate.'/'.$c_area_near_by.'/'.$row_area_near_by['area_value'].'/"><button>'.$row_area_near_by['area_name'].'</button></a>';
-                                    }   
+                                    }   } 
                             }   
                                              
                         };
