@@ -422,9 +422,9 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                         <?php
 
                         if (strpos($s, $w) !== false) { ?>
-                            <a href="<?= get_url() ?><?= $row['page_url'] ?>" title="call girls service in <?=$city ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="call girls in <?= $new_city_name ?> at your Door Step" loading="lazy"></a>
+                            <a href="<?= get_url() ?><?= $row['page_url'] ?>" aria-label="call girls service in <?=$city ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="call girls in <?= $new_city_name ?> at your Door Step" loading="lazy"><span style="display:none">call girls in <?=$city ?></span></a>
                         <?php } else { ?>
-                            <a href="<?= get_url() ?><?= $row['page_url'] ?>" title="call girls service in <?=$city ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?= $alt[0] ?>" loading="lazy"></a>
+                            <a href="<?= get_url() ?><?= $row['page_url'] ?>" aria-label="call girls service in <?=$city ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?= $alt[0] ?>" loading="lazy"><span style="display:none">call girls in <?=$city ?></span></a>
                         <?php } ?>
 
                     </div>
