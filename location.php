@@ -419,7 +419,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                 if (strpos($s, $w) !== false) {
                     $path_of_img = $ax[0];
                 }else{
-                    $path_of_img = $ax[0];
+                    $path_of_img = 'https://cdn.poojamahajan.com/profiles/'.$ax[0];
                 }
                 $imageData = @getimagesize($path_of_img);
                 if ($imageData !== false) {
