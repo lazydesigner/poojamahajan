@@ -339,14 +339,18 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                             $s = $a[$j];
                             $w = 'amazonaws.com';
                             if (strpos($s, $w) !== false) {
-                    ?>
+                                $imageData = @getimagesize($a[$j]);
+                                if ($imageData !== false) {                    ?>
                                 <div class="profile-image-grid-col"><img src="<?= $a[$j] ?>" alt="call girls <?= $city ?>" width="100%" height="100%" loading="lazy"></div>
                             <?php
-                            } else {
+                            }} else {
+                                $ib = 'https://cdn.poojamahajan.com/profiles/'.$a[$j];
+                                $imageData = @getimagesize($ib);
+                                if ($imageData !== false) { 
                             ?>
                                 <div class="profile-image-grid-col"><img src="https://cdn.poojamahajan.com/profiles/<?= $a[$j] ?>" alt="<?= $alt[0] ?>" width="100%" height="100%" loading="lazy"></div>
                         <?php
-                            }
+                            }}
                         }
 
                         ?>
