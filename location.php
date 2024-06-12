@@ -487,31 +487,17 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         <div class="list-of-profile" style="margin: 3% 0;background-color:  rgb(241, 241, 241);">
             <h3>Top Cities of India</h3>
             <div class="top-cities-of-india">
-                <a href="<?= get_url() ?><?= $cate ?>/delhi/"><button>Delhi</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/agra/"><button>Agra</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/guwahati/"><button>Guwahati</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/rishikesh/"><button>Rishikesh</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/ghaziabad/"><button>Ghaziabad</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/kota/"><button>Kota</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/arunachal-pradesh/"><button>Arunachal Pradesh</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/bhopal/"><button>Bhopal</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/gurugram/"><button>Gurugram</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/faridabad/"><button>Faridabad</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/mumbai/"><button>Mumbai</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/ajmer/"><button>Ajmer</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/varanasi/"><button>Varanasi</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/dehradun/"><button>Dehradun</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/ahmedabad/"><button>Ahmedabad</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/lucknow/"><button>Lucknow</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/noida/"><button>Noida</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/goa/"><button>Goa</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/jaipur/"><button>Jaipur</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/dehradun/"><button>Dehradun</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/udaipur/"><button>Udaipur</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/indore/"><button>Indore</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/patna/"><button>Patna</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/visakhapatnam/"><button>Visakhapatnam</button></a>
-                <a href="<?= get_url() ?><?= $cate ?>/manali/"><button>Manali</button></a>
+            <?php 
+                
+                foreach($combination_cities as $cxs => $com){
+                    if(strtolower($cxs) == strtolower($city)){
+                        foreach($com as $xxs){
+                           echo '<a href="'.get_url().$cate.'/'.strtolower($xxs).'/"><button>'.ucwords($xxs).'</button></a>';
+                        }
+                    }
+                }
+                
+                ?>
             </div>
 
             <h3>Areas of <span style="text-transform: capitalize;"><?= $city ?></span></h3>
