@@ -327,22 +327,39 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
 
         <?php while ($row = mysqli_fetch_assoc($res)) {
             if($row['index_page'] != 'noindex'){
-            $ax = json_decode($row['profile_images'], true);
-            $alt = json_decode($row['image_alt_'], true);
-            $s = $ax[0];
-            $w = 'amazonaws.com';
+                $ax = json_decode($row['profile_images'], true);
+                $alt = json_decode($row['image_alt_'], true);
+                if(empty($ax[0])){ $w100 = 'style="width:100%"'; 
+                    $w0 = 'style="width:0%"'; }else{
+
+                $s = $ax[0];
+                $w = 'amazonaws.com';
+                if (strpos($s, $w) !== false) {
+                    $path_of_img = $ax[0];
+                }else{
+                    $path_of_img = $ax[0];
+                }
+                $imageData = @getimagesize($path_of_img);
+                if ($imageData !== false) {
+                    $w100 = ' '; 
+                    $w0 = ' '; 
+                }else{
+                    $w100 = 'style="width:100%"'; 
+                    $w0 = 'style="width:0%"'; 
+                }}
         ?>
             <div class="profile-section-box">
-                <div class="profile-section-box-image">
+                <div class="profile-section-box-image" <?=$w0 ?> >
                     <?php
 
+                    if(!empty($ax[0])){
                     if (strpos($s, $w) !== false) { ?>
                         <a href="<?= get_url() ?><?= $row['page_url'] ?>" aria-label="call girls service in <?=$city ?>" ><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt=""><span style="display:none">call girls in <?=$city ?></span></a>
                     <?php } else { ?>
                         <a href="<?= get_url() ?><?= $row['page_url'] ?>" aria-label="call girls service in <?=$city ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?= $alt[0] ?>"><span style="display:none">call girls in <?=$city ?></span></a>
-                    <?php } ?>
+                    <?php }} ?>
                 </div>
-                <div class="profile-section-box-detail">
+                <div class="profile-section-box-detail" <?=$w100 ?> >
                     <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
                     <div class="multiline-ellipsis" style="margin-bottom: 2%;"><?php if(!empty($row['page_description'])){ echo $row['page_description'];}else{echo $row['content']; } ?></div>
                     <div class="profile-section-button-detail">

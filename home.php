@@ -819,6 +819,16 @@
                                                                                         $res = mysqli_query($con, $sql);
                                                                                         $row = mysqli_fetch_array($res);
                                                                                         echo $row['a'] ?>)</a></li>
+                            <li><a href="<?= get_url() ?>call-girls/moradabad/">Moradabad(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'moradabad';
+";
+                                                                                        $res = mysqli_query($con, $sql);
+                                                                                        $row = mysqli_fetch_array($res);
+                                                                                        echo $row['a'] ?>)</a></li>
+                            <li><a href="<?= get_url() ?>call-girls/mathura/">Mathura(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'mathura';
+";
+                                                                                        $res = mysqli_query($con, $sql);
+                                                                                        $row = mysqli_fetch_array($res);
+                                                                                        echo $row['a'] ?>)</a></li>
                         </ul>
                     </div>
                 </div>
@@ -842,6 +852,20 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="city-name-list">
+                <h2>West Bangal</h2>
+                <div class="list-of-cities-row" id="list-of-cities-row">
+                    <div class="city-name-list-item">
+                        <ul>
+                            <li><a href="<?= get_url() ?>call-girls/kolkata/">Kolkata(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'kolkata';
+";
+                                                                                            $res = mysqli_query($con, $sql);
+                                                                                            $row = mysqli_fetch_array($res);
+                                                                                            echo $row['a'] ?>)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
             <div class="city-name-list">
                 <h2>Maharashtra</h2>
                 <div class="list-of-cities-row" id="list-of-cities-row">
