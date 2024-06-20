@@ -1,6 +1,38 @@
 <?php
 include './init.php';
 
+// Get the current request URI
+$requestUri = $_SERVER['REQUEST_URI'];
+
+// Initialize a variable to track if a redirect is needed
+$needsRedirect = false;
+
+// Check if the URI contains any uppercase letters and convert to lowercase
+if (preg_match('/[A-Z]/', $requestUri)) {
+    $requestUri = strtolower($requestUri);
+    $needsRedirect = true;
+}
+
+// Check if the URI contains multiple slashes at the end
+if (preg_match('/\/{2,}$/', $requestUri)) {
+    // Remove multiple slashes at the end
+    $requestUri = preg_replace('/\/{2,}$/', '/', $requestUri);
+    $needsRedirect = true;
+}
+
+// If a redirect is needed, construct the full URL and redirect
+if ($needsRedirect) {
+    // Get the current host
+    $host = $_SERVER['HTTP_HOST'];
+    
+    // Construct the full URL
+    $redirectUrl = "http://$host$requestUri";
+    
+    // Perform the redirect
+    header("Location: $redirectUrl", true, 301);
+    exit();
+}
+
 $uri = explode('/', $_SERVER['REQUEST_URI']);
 
 $url_cat = trim($uri[1]);

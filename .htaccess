@@ -401,9 +401,9 @@ ReWriteRule ^login([/]?)$ login.php [NC,L]
 ReWriteRule ^register([/]?)$ login.php [NC,L]
 ReWriteRule ^about-us([/]?)$ about-us.php [NC,L]
 ReWriteRule ^search([/]?)$ search.php [NC,L]
-ReWriteRule ^call-girls/([0-9A-Za-z\-]+)([/]?)$ location.php?state=$1 [NC,L]
-ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ area.php?state=$1&city=$2 [NC,L]
-ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)$ profile_index.php?state=$1&city=$2&id=$3 [NC,L]
+ReWriteRule ^call-girls/([0-9a-z\-]+)([/]?)$ location.php?state=$1 [NC,L]
+ReWriteRule ^call-girls/([0-9a-z\-]+)/([0-9a-z\-]+)([/]?)$ area.php?state=$1&city=$2 [NC,L]
+ReWriteRule ^call-girls/([0-9a-z\-]+)/([0-9a-z\-]+)/([0-9a-z\-]+)([/]?)$ profile_index.php?state=$1&city=$2&id=$3 [NC,L]
 
 
 #CATEGORY
@@ -412,6 +412,6 @@ ReWriteRule ^call-girls/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)/([0-9A-Za-z\-]+)([/]?)
 
 
 ReWriteRule ^404([/]?)$ 404-page.php [NC,L]
-#ReWriteRule ^([0-9A-Za-z\-]+)([/]?)([/]?)$ home.php?page_id=$1 [NC,L]
+#ReWriteRule ^([0-9a-z\-]+)([/]?)([/]?)$ home.php?page_id=$1 [NC,L]
 
 ReWriteRule ^assets/images/automate([/]?)$ assets/automate.php [NC,L]
