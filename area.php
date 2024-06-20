@@ -358,7 +358,6 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         </div>
 
         <?php while ($row = mysqli_fetch_assoc($res)) {
-            if($row['index_page'] != 'noindex'){
                 $ax = json_decode($row['profile_images'], true);
                 $alt = json_decode($row['image_alt_'], true);
                 if(empty($ax[0])){ $w100 = 'style="width:100%"'; 
@@ -400,7 +399,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                     </div>
                 </div>
             </div>
-        <?php }} ?>
+        <?php } ?>
 
         <div class="list-of-profile" style="background-color: rgb(241, 241, 241);">
             <h3>FAQ</h3>
