@@ -823,6 +823,11 @@
                                                                                     $res = mysqli_query($con, $sql);
                                                                                     $row = mysqli_fetch_array($res);
                                                                                     echo $row['a'] ?>)</a></li>
+                            <li><a href="<?= get_url() ?>call-girls/greater-noida/">Greater Noida(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'greater-noida';
+";
+                                                                                    $res = mysqli_query($con, $sql);
+                                                                                    $row = mysqli_fetch_array($res);
+                                                                                    echo $row['a'] ?>)</a></li>
                             <li><a href="<?= get_url() ?>call-girls/varanasi/">Varanasi(<?php $sql = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'varanasi';
 ";
                                                                                         $res = mysqli_query($con, $sql);
