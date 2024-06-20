@@ -51,7 +51,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/fonts/remixicon.css" defer>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" defer />
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/profile.css">
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/profile.css?v=1">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css?v=1" defer>
     <link rel="canonical" href="<?= $fullURL ?>" />
