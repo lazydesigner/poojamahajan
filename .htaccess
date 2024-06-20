@@ -71,6 +71,17 @@ RewriteRule ^lucknow-escorts/shashi-adil-nagar/?$ /call-girls/lucknow/adil-nagar
 RewriteRule ^lucknow-escorts/sonali-aminabad/?$ /call-girls/lucknow/aminabad/call-girl-185/ [R=301,L]
 
 
+RewriteRule ^call-girls/lucknow/vikas-nagar-extension/?$ /call-girls/lucknow/ [R=301,L]
+RewriteRule ^call-girls/lucknow/gudamba/?$ /call-girls/lucknow/ [R=301,L]
+RewriteRule ^call-girls/lucknow/gosainganj/?$ /call-girls/lucknow/ [R=301,L]
+RewriteRule ^call-girls/lucknow/madiyon/?$ /call-girls/lucknow/ [R=301,L]
+RewriteRule ^call-girls/lucknow/dubagga/?$ /call-girls/lucknow/ [R=301,L]
+RewriteRule ^call-girls/lucknow/chand-ganj/?$ /call-girls/lucknow/ [R=301,L]
+RewriteRule ^call-girls/lucknow/nadan-mahal-road/?$ /call-girls/lucknow/ [R=301,L]
+
+
+
+
 #GUWAHATI
 RewriteRule ^guwahati-escorts/?$ /call-girls/guwahati/ [R=301,L]
 #PAGES
