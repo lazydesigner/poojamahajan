@@ -446,7 +446,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                     if(mysqli_num_rows($result_area_near_by) > 0){
                         while($row_area_near_by = mysqli_fetch_assoc($result_area_near_by)){
 
-                            $filterquery = "SELECT * FROM profiles WHERE area = '{$row_area_near_by['area_value']}' && index_page = 'index'";
+                            $filterquery = "SELECT * FROM profiles WHERE area = '{$row_area_near_by['area_value']}'";
                             $filterres = mysqli_query($con, $filterquery);
                             if(mysqli_num_rows($filterres) > 0){
                                 $sqlcount = "SELECT COUNT(*) as a FROM profiles WHERE catigory = 'call-girls' && state = 'nashik';
