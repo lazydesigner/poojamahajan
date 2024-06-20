@@ -23,7 +23,7 @@ $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL
 $url = htmlspecialchars('https://poojamahajan.com');
 $xml .= "\t<url>\n";
 $xml .= "\t\t<loc>$url</loc>\n";
-$xml .= "\t\t<lastmod>"."2024-01-02T13:23:31+05:30"."</lastmod>\n";
+$xml .= "\t\t<lastmod>"."2024-06-02T13:23:31+05:30"."</lastmod>\n";
 $xml .= "\t\t<changefreq>weekly</changefreq>\n";
 $xml .= "\t\t<priority>1.00</priority>\n";
 $xml .= "\t</url>\n";
@@ -46,7 +46,7 @@ foreach($pagess as $page){
                 $url = htmlspecialchars('https://poojamahajan.com/call-girls/'.strtolower($row['city']).'/');
                 $xml .= "\t<url>\n";
                 $xml .= "\t\t<loc>$url</loc>\n";
-                $xml .= "\t\t<lastmod>2024-01-04T13:23:31+05:30</lastmod>\n";
+                $xml .= "\t\t<lastmod>2024-06-04T13:23:31+05:30</lastmod>\n";
                 $xml .= "\t\t<changefreq>weekly</changefreq>\n";
                 $xml .= "\t\t<priority>0.8</priority>\n";
                 $xml .= "\t</url>\n";
@@ -54,7 +54,7 @@ foreach($pagess as $page){
                 $url = htmlspecialchars('https://poojamahajan.com/call-girls/'.$row['city_id'].'/'.$row['area_value'].'/');
                 $xml .= "\t<url>\n";
                 $xml .= "\t\t<loc>$url</loc>\n";
-                $xml .= "\t\t<lastmod>2024-01-03T06:13:31+05:30</lastmod>\n";
+                $xml .= "\t\t<lastmod>2024-06-03T06:13:31+05:30</lastmod>\n";
                 $xml .= "\t\t<changefreq>weekly</changefreq>\n";
                 $xml .= "\t\t<priority>0.7</priority>\n";
                 $xml .= "\t</url>\n";
@@ -62,7 +62,7 @@ foreach($pagess as $page){
                 $url = htmlspecialchars('https://poojamahajan.com/call-girls/'.$row['state'].'/'.$row['area'].'/'.$row['profile_id'].'/');
                 $xml .= "\t<url>\n";
                 $xml .= "\t\t<loc>$url</loc>\n";
-                $xml .= "\t\t<lastmod>2024-01-03T06:13:31+05:30</lastmod>\n";
+                $xml .= "\t\t<lastmod>2024-06-03T06:13:31+05:30</lastmod>\n";
                 $xml .= "\t\t<changefreq>weekly</changefreq>\n";
                 $xml .= "\t\t<priority>0.7</priority>\n";
                 $xml .= "\t</url>\n";
