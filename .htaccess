@@ -382,6 +382,10 @@ RewriteRule ^call-girls/wanowarie/?$ https://poojamahajan.com/call-girls/pune/ [
 RewriteRule ^call-girls/pashan/?$ https://poojamahajan.com/call-girls/pune/pashan/ [R=301,L]
 
 
+RewriteRule ^call-girls/lucknow/nairala-nagar/?$ https://poojamahajan.com/call-girls/lucknow/nirala-nagar/ [R=301,L]
+RewriteRule ^call-girls/lucknow/rae-bareli-road/?$ https://poojamahajan.com/call-girls/lucknow/raebareli-road/ [R=301,L]
+
+
 
 
 

@@ -110,7 +110,7 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/fonts/remixicon.css" async>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/list-of-profile.css?v=2">
+    <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/list-of-profile.css?v=2" async>
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/navbar.css">
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/faq.css?v=1" defer>
     <link rel="stylesheet" href="<?= get_url() ?>dashboard/assets/css/footer.css?v=1" defer>
@@ -364,38 +364,6 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         // script2.text = JSON.stringify(mySchema2);
         // document.head.appendChild(script2);
     </script>
-    <script>
-        const mySchema3 = {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-                "@type": "Question",
-                "name": "What is the price of call girls in <?= $city ?>?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The price of call girls differs from model to model. Generally, the price starts at Rs. 2000 per shot and Rs. 10,000 per night. Contact the provided number for more details."
-                }
-            }, {
-                "@type": "Question",
-                "name": "How do I reserve a call girl in <?= $city ?>?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Anyone can book a call girls by visiting our official website and contacting us at the provided number. As we used to update numbers timely, only contact live numbers on our website."
-                }
-            }, {
-                "@type": "Question",
-                "name": "What kind of services do these call girls provide in <?= $city ?>?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Our call girls provide various services like body kissing, licking, sex, foreplay, 69, etc. But we don't guarantee anal sex or lip kissing."
-                }
-            }]
-        }
-        const script3 = document.createElement('script');
-        script3.type = "application/ld+json";
-        script3.text = JSON.stringify(mySchema3);
-        document.head.appendChild(script3);
-    </script>
 </head>
 
 <body onload="checkCookie()">
@@ -423,11 +391,11 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
         <div class="page-detail-and-information">
             <div id="breadcrumbs">
                 <ol style="display: flex;align-items:center;gap:.5%;list-style:none;padding:0" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?= get_url() ?>"><span itemprop="name">Home</span></a>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" title="Genuine Call girls &amp; escorts Service: Photos, Phone number | dreamgal" class="crumb" href="<?=get_url() ?>"><span itemprop="name">Home</span></a>
                         <meta itemprop="position" content="1">
                     </li>
                     <li><b><i class="ri-arrow-right-s-line"></i></b></li>
-                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="" title="Call girls in <?= $city ?> cash Payment Service"><span itemprop="name"><?= $new_city_name ?></span></a>
+                    <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemtype="http://schema.org/Thing" itemprop="item" class="crumb" href="" title="Call girls in <?=$city ?> cash Payment Service"><span itemprop="name"><?= $new_city_name ?></span></a>
                         <meta itemprop="position" content="2">
                     </li>
                 </ol>
@@ -726,6 +694,39 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
             "logo": "https://poojamahajan.com/dashboard/assets/images/POOJA.webp.png"
         }
     </script>
+    
+    <script>
+        const mySchema3 = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                "@type": "Question",
+                "name": "What is the price of call girls in <?= $city ?>?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The price of call girls differs from model to model. Generally, the price starts at Rs. 2000 per shot and Rs. 10,000 per night. Contact the provided number for more details."
+                }
+            }, {
+                "@type": "Question",
+                "name": "How do I reserve a call girl in <?= $city ?>?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Anyone can book a call girls by visiting our official website and contacting us at the provided number. As we used to update numbers timely, only contact live numbers on our website."
+                }
+            }, {
+                "@type": "Question",
+                "name": "What kind of services do these call girls provide in <?= $city ?>?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our call girls provide various services like body kissing, licking, sex, foreplay, 69, etc. But we don't guarantee anal sex or lip kissing."
+                }
+            }]
+        }
+        const script3 = document.createElement('script');
+        script3.type = "application/ld+json";
+        script3.text = JSON.stringify(mySchema3);
+        document.head.appendChild(script3);
+    </script>   
 </body>
 
 </html>
