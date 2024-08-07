@@ -421,28 +421,22 @@ $fullURL = "http" . (isset($_SERVER['HTTPS']) ? "s" : "") . "://" . $_SERVER['HT
                     $path_of_img = $ax[0];
                 }else{
                     $path_of_img = 'https://cdn.poojamahajan.com/profiles/'.$ax[0];
-                }
-                $imageData = @getimagesize($path_of_img);
-                if ($imageData !== false) {
-                    $w100 = ' '; 
-                    $w0 = ' '; 
-                }else{
-                    $w100 = 'style="width:100%"'; 
-                    $w0 = 'style="width:0%"'; 
                 }}
+
+                $alternative_img = "https://s3.ap-south-1.amazonaws.com/poojamahajan.com/Guwahati/Reena+4.jpg";
             ?>
                 <div class="profile-section-box">
-                    <div class="profile-section-box-image" <?=$w0 ?> >
+                    <div class="profile-section-box-image" > 
                         <?php
                         if(!empty($ax[0])){
                         if (strpos($s, $w) !== false) { ?>
-                            <a href="<?= get_url() ?><?= $row['page_url'] ?>" aria-label="call girls service in <?=$city ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="call girls in <?= $new_city_name ?> at your Door Step" loading="lazy"><span style="display:none">call girls in <?=$city ?></span></a>
+                            <a href="<?= get_url() ?><?= $row['page_url'] ?>" aria-label="call girls service in <?=$city ?>"><img src="<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="call girls in <?= $new_city_name ?> at your Door Step" onerror="this.onerror=null; this.src='<?=$alternative_img ?>'" loading="lazy"><span style="display:none">call girls in <?=$city ?></span></a>
                         <?php } else { ?>
-                            <a href="<?= get_url() ?><?= $row['page_url'] ?>" aria-label="call girls service in <?=$city ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?= $alt[0] ?>" loading="lazy"><span style="display:none">call girls in <?=$city ?></span></a>
+                            <a href="<?= get_url() ?><?= $row['page_url'] ?>" aria-label="call girls service in <?=$city ?>"><img src="https://cdn.poojamahajan.com/profiles/<?= $ax[0] ?>" width="100%" height="100%" style="object-fit: cover;object-position:top" alt="<?= $alt[0] ?>" onerror="this.onerror=null; this.src='<?=$alternative_img ?>'" loading="lazy"><span style="display:none">call girls in <?=$city ?></span></a>
                         <?php }} ?>
 
                     </div>
-                    <div class="profile-section-box-detail" <?=$w100 ?> >
+                    <div class="profile-section-box-detail" >
                         <h3><a href="<?= get_url() ?><?= $row['page_url'] ?>"><?= $row['page_h1'] ?></a></h3>
                         <div class="multiline-ellipsis" style="margin-bottom: 2%;"><?php if(!empty($row['page_description'])){ $content = $row['page_description']; $content = trim($content);$content = preg_replace('/\s+/', ' ', $content); echo $content;;}else{$content = $row['content'];$content = trim($content);$content = preg_replace('/\s+/', ' ', $content); echo $content; } ?></div>
                         <div class="profile-section-button-detail">
