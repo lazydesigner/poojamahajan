@@ -43,6 +43,11 @@ foreach($pagess as $page){
     if(mysqli_num_rows($result)>0){
         while ($row = mysqli_fetch_assoc($result)) {
             if($page == 'city'){
+
+                $_sql_ = "SELECT * FROM profiles WHERE `state` = '{$row['city']}' ";
+                $res = mysqli_query($con, $_sql_);
+
+                if (mysqli_num_rows($res) > 0) {  
                 $url = htmlspecialchars('https://poojamahajan.com/call-girls/'.strtolower($row['city']).'/');
                 $xml .= "\t<url>\n";
                 $xml .= "\t\t<loc>$url</loc>\n";
@@ -50,7 +55,12 @@ foreach($pagess as $page){
                 $xml .= "\t\t<changefreq>weekly</changefreq>\n";
                 $xml .= "\t\t<priority>0.8</priority>\n";
                 $xml .= "\t</url>\n";
+                }
             }elseif($page == 'area'){
+                $_sql_ = "SELECT * FROM profiles WHERE `state` = '{$row['city']}' AND `area` = '{$row['area_value']}' ";
+                $res = mysqli_query($con, $_sql_);
+
+                if (mysqli_num_rows($res) > 0) { 
                 $url = htmlspecialchars('https://poojamahajan.com/call-girls/'.$row['city_id'].'/'.$row['area_value'].'/');
                 $xml .= "\t<url>\n";
                 $xml .= "\t\t<loc>$url</loc>\n";
@@ -58,6 +68,7 @@ foreach($pagess as $page){
                 $xml .= "\t\t<changefreq>weekly</changefreq>\n";
                 $xml .= "\t\t<priority>0.7</priority>\n";
                 $xml .= "\t</url>\n";
+            }
             }elseif($page == 'profiles'){
                 $url = htmlspecialchars('https://poojamahajan.com/call-girls/'.$row['state'].'/'.$row['area'].'/'.$row['profile_id'].'/');
                 $xml .= "\t<url>\n";
